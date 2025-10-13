@@ -1978,6 +1978,21 @@ slopes_eig_total
 
 ### Plot Social Network Maps ###
 
+raw_male <- read_csv("raw_male_groom_mount_23_24_25.csv", show_col_types = FALSE)
+
+make_edges <- function(dat, grp) {
+  dat %>%
+    filter(group == grp, action == "Gr") %>%
+    transmute(giver_id = actor1, receiver_id = recipient1) %>%
+    filter(!is.na(giver_id), !is.na(receiver_id), giver_id != "", receiver_id != "") %>%
+    group_by(giver_id, receiver_id) %>%
+    summarise(groom_count = n(), .groups = "drop")
+}
+
+write_csv(make_edges(raw_male, "1"), "grooming_edge_list_1.csv")
+write_csv(make_edges(raw_male, "2"), "grooming_edge_list_2.csv")
+
+
 ## SSB 
 
 plot_group_map_count <- function(edges_file, df_group, title_text) {
