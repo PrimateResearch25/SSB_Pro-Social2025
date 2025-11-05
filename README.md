@@ -8,6 +8,8 @@ ior_23-25_organised_collapsed.csv - Inter-observ reliability dataset, organised 
 
 raw_aggression_mount_23_24_25.csv - All aggression and mounting observations across 2023, 2024, and 2025.
 
+raw_coalition_mount_23_24_25.csv - All coalition and mounting observations across 2023, 2024, and 2025.
+
 raw_groom_mount_23_24_25.csv - All grooming and mounting observations across 2023, 2024, and 2025.
 
 raw_male_aggression_mount_23_24_25.csv - All male-male aggression and mounting observations across 2023, 2024, and 2025.
