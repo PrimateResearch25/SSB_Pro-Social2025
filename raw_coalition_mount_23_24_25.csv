@@ -1,0 +1,2150 @@
+time,date,group,obs,action,actor1,actor2,actor3,recipient1,recipient2,recipient3,context,response,agg_supp,intromission,pe,ejaculation,thrust_number,prox_10m_af,prox_10m_ef,prox_10m_all
+10:45:26,3/13/2023,1,CC,Ag,M198,M242,,M176,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:51:40,3/13/2023,1,CC,Ag,M143,,,M042,M080,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:07:08,3/13/2023,1,CC,M,M145,,,FUN,,,R,NA,No Value,NA,PE,NA,4,14,No Value,21
+12:42:22,3/13/2023,1,CC,M,M042,,,FUN,,,Gr,NA,No Value,NA,PE,NA,4,3,No Value,5
+12:45:06,3/13/2023,1,CC,M,M042,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,No Value,NA
+13:13:23,3/13/2023,1,CC,Ag,M192,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:15:54,3/13/2023,1,CC,Ag,FUN,,,M146,M192,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:17:47,3/13/2023,1,CC,Ag,M038,,,M121,M224,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:54:32,3/13/2023,1,CC,Ag,M150,,,M093,M192,M097,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:57:40,3/13/2023,1,CC,M,M093,,,M097,,,Co-Ag,NA,No Value,NA,PE,NA,3,2,No Value,5
+7:49:04,3/14/2023,1,CC,M,M049,,,FUN,,,Gr,NA,No Value,NA,PE,NA,4,3,No Value,3
+7:50:03,3/14/2023,1,CC,M,M049,,,FUN,,,Gr,NA,No Value,NA,PE,NA,3,3,No Value,3
+7:50:46,3/14/2023,1,CC,M,M049,,,FUN,,,Gr,NA,No Value,NA,PE,NA,2,3,No Value,3
+7:51:15,3/14/2023,1,CC,M,M049,,,FUN,,,Gr,NA,No Value,NA,PE,NA,5,3,No Value,3
+7:52:39,3/14/2023,1,CC,M,M049,,,FUN,,,R,NA,No Value,NA,PE,NA,5,0,No Value,3
+7:53:17,3/14/2023,1,CC,M,M049,,,FUN,,,R,NA,No Value,NA,PE,Ejac,5,3,No Value,3
+7:54:10,3/14/2023,1,CC,M,M049,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,11,3,No Value,3
+8:14:31,3/14/2023,1,CC,Ag,M029,M162,,M034,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:53,3/14/2023,1,CC,M,M141,,,M221,,,R,NA,No Value,NA,NA,NA,2,9,No Value,23
+8:25:41,3/14/2023,1,CC,Ag,M147,,,M112,M168,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:41:35,3/14/2023,1,CC,M,M080,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:42:11,3/14/2023,1,CC,M,M080,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:42:32,3/14/2023,1,CC,M,M080,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,4,No Value,4
+8:42:51,3/14/2023,1,CC,M,M080,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,4,No Value,4
+8:43:10,3/14/2023,1,CC,M,M080,,,M154,,,R,NA,No Value,NoIntro,NoPE,NoEjac,2,4,No Value,4
+8:56:17,3/14/2023,1,CC,Ag,M100,M013,M064,M242,M059,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:07,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,NA,3,2,No Value,2
+9:00:03,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,NA,4,2,No Value,2
+9:00:20,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,NA,7,2,No Value,2
+9:00:38,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,NA,4,2,No Value,2
+9:00:55,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,NA,2,2,No Value,2
+9:01:24,3/14/2023,1,CC,M,M037,,,FUN,,,R,NA,No Value,NA,PE,Ejac,6,2,No Value,2
+9:11:18,3/14/2023,1,CC,Ag,M151,,,M026,M121,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:17:38,3/14/2023,1,CC,M,M221,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,No Value,NA
+9:18:58,3/14/2023,1,CC,Ag,M145,M140,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:21:29,3/14/2023,1,CC,M,M145,,,M140,,,Co-Ag,NA,No Value,NA,2PE,NA,6,1,No Value,9
+10:42:44,3/14/2023,1,CC,Ag,M252,M151,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:59:22,3/14/2023,1,CC,Ag,M074,,,M151,M133,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:06:33,3/14/2023,1,CC,M,M194,,,FUN,,,Aff,NA,No Value,NA,NA,NA,5,5,No Value,7
+11:07:13,3/14/2023,1,CC,M,M194,,,FUN,,,Aff,NA,No Value,NA,NA,NA,2,5,No Value,7
+11:07:53,3/14/2023,1,CC,M,M194,,,FUN,,,Aff,NA,No Value,NA,NA,NA,6,5,No Value,7
+11:28:28,3/14/2023,1,CC,M,M066,,,FUN,,,R,NA,No Value,NA,NA,NA,4,2,No Value,4
+12:50:32,3/14/2023,1,CC,Ag,M102,,,M101,M242,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:03:35,3/14/2023,1,CC,M,M143,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+13:48:04,3/14/2023,1,CC,Ag,M112,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:57:34,3/14/2023,1,CC,Ag,M042,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:32:29,3/15/2023,1,CC,M,M066,,,FUN,,,R,NA,No Value,NA,PE,NA,5,1,No Value,1
+8:35:35,3/15/2023,1,CC,M,M208,,,FUN,,,R,NA,No Value,NA,NA,NA,5,1,No Value,1
+8:55:59,3/15/2023,1,CC,Ag,M145,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:11,3/15/2023,1,CC,M,M207,,,FUN,,,R,NA,No Value,NA,PE,Ejac,13,9,No Value,14
+8:59:20,3/15/2023,1,CC,Ag,M198,M029,M112,M076,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:02:31,3/15/2023,1,CC,M,M093,,,FUN,,,NA,IgnoreRejection,No Value,NA,PE,NA,7,5,No Value,8
+9:03:39,3/15/2023,1,CC,Ag,M101,M198,M162,M075,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:16:57,3/15/2023,1,CC,Ag,M066,M082,M143,M076,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:12,3/15/2023,1,CC,M,M082,,,FUN,,,Co-Ag,NA,No Value,NA,PE,Ejac,5,12,No Value,21
+9:22:12,3/15/2023,1,CC,Ag,M066,M143,,M102,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:25:28,3/15/2023,1,CC,Ag,M100,,,M209,M022,M042,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:04:33,3/15/2023,1,CC,Ag,M099,,,M034,M242,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:36:44,3/15/2023,1,CC,Ag,M074,M121,M151,M080,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:14:35,3/15/2023,1,CC,Ag,M102,M194,M099,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:52:50,3/15/2023,1,CC,Ag,FUN,FUN,,M150,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:58:31,3/15/2023,1,CC,Ag,M112,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:57:03,3/16/2023,1,CC,Ag,M083,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:05:50,3/16/2023,1,CC,Ag,M006,M066,,M101,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:10:18,3/16/2023,1,CC,M,M162,,,FUN,,,R,NA,No Value,NA,NA,NA,5,NA,NA,NA
+8:10:43,3/16/2023,1,CC,M,M162,,,FUN,,,R,NA,No Value,NA,PE,Ejac,5,NA,NA,NA
+8:11:15,3/16/2023,1,CC,M,M143,,,FUN,,,R,NA,No Value,NA,PE,NA,4,NA,NA,NA
+8:12:06,3/16/2023,1,CC,M,M140,,,FUN,,,R,NA,No Value,NA,PE,Ejac,5,NA,NA,NA
+8:12:57,3/16/2023,1,CC,M,M140,,,FUN,,,R,NA,No Value,NA,NA,NA,2,NA,NA,NA
+8:13:21,3/16/2023,1,CC,M,M140,,,FUN,,,R,NA,No Value,NA,NA,NA,6,NA,NA,NA
+8:14:01,3/16/2023,1,CC,M,M207,,,FUN,,,R,NA,No Value,NA,PE,NA,3,NA,NA,NA
+8:15:36,3/16/2023,1,CC,M,M207,,,FUN,,,R,NA,No Value,NA,PE,NA,4,NA,NA,NA
+8:22:16,3/16/2023,1,CC,Ag,M112,M242,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:28:38,3/16/2023,1,CC,Ag,M006,M133,M173,M223,M066,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:47,3/16/2023,1,CC,M,M133,,,M173,,,Co-Ag,NA,No Value,NA,2PE,NA,4,4,0,5
+8:35:27,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,NA,NA,NA,3,3,0,5
+8:35:43,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,NA,PE,NA,4,3,0,5
+8:36:32,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,NA,PE,NA,5,3,0,5
+8:37:01,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,7,3,0,5
+8:37:26,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,NA,PE,NA,7,3,0,5
+8:39:05,3/16/2023,1,CC,M,M027,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,11,3,0,5
+9:04:49,3/16/2023,1,CC,M,M064,,,FUN,,,R,NA,No Value,NA,NA,NA,5,NA,NA,NA
+9:05:56,3/16/2023,1,CC,Ag,M083,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:15:39,3/16/2023,1,CC,M,M221,,,FUN,,,R,NA,No Value,NA,NA,NA,3,NA,NA,NA
+9:24:05,3/16/2023,1,CC,Ag,M006,M168,M076,M205,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:33:09,3/16/2023,1,CC,Ag,M042,M027,M101,M223,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:37:43,3/16/2023,1,CC,M,M002,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:04:18,3/17/2023,1,CC,Ag,M066,M095,,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:07:13,3/17/2023,1,CC,Ag,M097,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:08:26,3/17/2023,1,CC,M,M223,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+8:09:17,3/17/2023,1,CC,Ag,M176,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:12:41,3/17/2023,1,CC,Ag,M034,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:13:05,3/17/2023,1,CC,Ag,FUN,,,M066,M075,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:33:10,3/17/2023,1,CC,M,M146,,,FUN,,,R,NA,No Value,NA,NA,NA,2,NA,NA,NA
+8:34:14,3/17/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,PE,NA,11,NA,NA,NA
+8:34:31,3/17/2023,1,CC,M,M146,,,FUN,,,NA,NA,No Value,NA,PE,NA,7,NA,NA,NA
+8:42:53,3/17/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:43:26,3/17/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:48:59,3/17/2023,1,CC,M,M173,,,M242,,,Co-Ag,NA,No Value,NA,PE,NA,4,NA,NA,NA
+8:49:27,3/17/2023,1,CC,M,M173,,,M242,,,R,NA,No Value,NA,PE,NA,9,NA,NA,NA
+8:53:45,3/17/2023,1,CC,M,M133,,,M173,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:56:02,3/17/2023,1,CC,M,M198,,,M066,,,R,NA,No Value,NA,PE,Ejac,11,NA,NA,NA
+9:01:27,3/17/2023,1,CC,Ag,M066,M162,,M146,M095,M157,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:04:03,3/17/2023,1,CC,Ag,M143,,,M095,M146,M014,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:09:31,3/17/2023,1,CC,Ag,M174,,,M038,M088,M090,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:01:22,3/17/2023,1,CC,M,M026,,,FUN,,,R,NA,No Value,NA,NA,NA,4,12,0,26
+10:16:07,3/17/2023,1,CC,M,M049,,,M146,,,R,NA,No Value,NA,2PE,NA,5,10,0,23
+8:33:35,3/18/2023,2,AK,M,MUN,,,FUN,,,NA,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+9:12:52,3/18/2023,2,AK,Ag,M114,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:14:51,3/18/2023,2,AK,Ag,M200,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:30:00,3/18/2023,2,AK,Ag,M225,M210,M211,M245,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:37:27,3/18/2023,2,AK,Ag,M001,FUN,,SAMUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:41:58,3/18/2023,2,AK,Ag,M148,MUN,,M063,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:18:43,3/18/2023,2,AK,M,M212,,,FUN,,,CoAg,NA,No Value,NA,NA,NA,1,NA,NA,NA
+10:24:41,3/18/2023,2,AK,Ag,M163,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:46:17,3/19/2023,1,CC,Ag,M202,,,M133,M162,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:12:28,3/19/2023,1,CC,Ag,M162,,,M013,M066,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:13:27,3/19/2023,1,CC,Ag,M223,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:18:44,3/19/2023,2,AK,Ag,M067,MUN,,M077,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:21:01,3/19/2023,1,CC,M,M194,,,FUN,,,R,NA,No Value,NA,NA,NA,1,6,1,14
+8:23:05,3/19/2023,1,CC,Ag,FUN,FUN,FUN,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:41:51,3/19/2023,1,CC,M,M097,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,7,3,0,7
+8:51:54,3/19/2023,1,CC,M,M168,,,M162,,,R,NA,No Value,Intro,2PE,Ejac,7,1,0,1
+8:52:40,3/19/2023,1,CC,M,M168,,,M202,,,R,NA,No Value,Intro,2PE,NA,12,1,0,1
+8:55:58,3/19/2023,1,CC,M,M082,,,FUN,,,R,NA,No Value,NA,NA,NA,5,3,0,4
+9:04:38,3/19/2023,2,AK,Ag,M114,M010,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:17:19,3/19/2023,2,AK,M,M114,,,FUN,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,1,16,NA,23
+9:18:16,3/19/2023,1,CC,Ag,M205,,,M006,M223,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:32:52,3/19/2023,2,AK,Ag,M007,M206,M225,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:44:04,3/19/2023,1,CC,M,M141,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,6,6,2,8
+9:48:49,3/19/2023,1,CC,M,M076,,,FUN,,,R,NA,No Value,NA,NA,NA,2,6,2,8
+9:49:51,3/19/2023,1,CC,M,M076,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,10,6,2,8
+10:00:58,3/19/2023,1,CC,Ag,M252,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:21:14,3/19/2023,1,CC,Ag,M026,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:30:57,3/19/2023,1,CC,Ag,M198,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:31:05,3/19/2023,2,AK,M,M062,,,FUN,,,R,NA,No Value,NoIntro,PE,NoEjac,3,0,0,0
+10:37:40,3/19/2023,2,AK,Ag,M180,M007,FUN,M199,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:43:17,3/19/2023,2,AK,Ag,M041,M247,,M199,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:57:54,3/19/2023,1,CC,Ag,M080,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:59:14,3/19/2023,1,CC,Ag,M006,,,M162,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:09:55,3/19/2023,1,CC,Ag,M100,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:11:47,3/19/2023,2,AK,M,M245,,,FUN,,,CoAg,NA,No Value,NA,NA,NA,3,1,1,2
+11:16:57,3/19/2023,1,CC,Ag,M145,M026,M105,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:17:45,3/19/2023,1,CC,Ag,M105,M242,M027,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:52,3/19/2023,1,CC,M,M242,,,FUN,,,R,NA,No Value,NA,NA,NA,6,3,0,7
+11:43:42,3/19/2023,2,AK,M,M036,,,FUN,,,T,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+12:05:51,3/19/2023,2,AK,M,M180,,,FUN,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+12:25:48,3/19/2023,2,AK,M,M114,,,FUN,,,Gr,NA,No Value,NA,NA,NA,4,2,2,3
+12:29:01,3/19/2023,2,AK,M,M114,,,FUN,,,Gr,NA,No Value,NA,NA,NA,4,2,2,3
+12:29:22,3/19/2023,1,CC,M,M151,,,M105,,,Gr,NA,No Value,NA,PE,NA,2,2,0,6
+12:33:14,3/19/2023,1,CC,Ag,M101,M066,,M146,M105,M006,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:40:11,3/19/2023,2,AK,M,M212,,,M246,,,Gr,NA,No Value,NA,PE,NA,4,0,0,2
+12:47:15,3/19/2023,2,AK,M,M212,,,M246,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+12:49:35,3/19/2023,2,AK,M,M212,,,M246,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+13:01:09,3/19/2023,1,CC,M,M143,,,FUN,,,R,NA,No Value,NA,NA,NA,9,4,2,5
+13:15:26,3/19/2023,1,CC,M,M223,,,M116,,,Gr,NA,No Value,Intro,PE,NoEjac,7,NA,NA,NA
+13:22:27,3/19/2023,1,CC,M,M030,,,FUN,,,R,NA,No Value,NA,PE,Ejac,3,4,1,5
+13:34:00,3/19/2023,1,CC,M,M208,,,M037,,,Gr,NA,No Value,NA,NA,NA,10,NA,NA,NA
+7:53:41,3/20/2023,1,CC,Ag,M080,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:15:39,3/20/2023,1,CC,Ag,M027,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:22:09,3/20/2023,1,CC,Ag,M059,,,M014,M042,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:23,3/20/2023,1,CC,Ag,JVUN,,,M090,M145,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:41:28,3/20/2023,1,CC,Ag,M030,,,M242,M034,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:41:57,3/20/2023,1,CC,Ag,M011,M141,,M038,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:43:07,3/20/2023,1,CC,Ag,M030,M174,,M205,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:46:29,3/20/2023,1,CC,Ag,M169,FUN,,M088,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:57:36,3/20/2023,2,AK,Ag,M126,,,M182,M103,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:05:59,3/20/2023,2,AK,M,M094,,,FUN,,,Ag,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:01,3/20/2023,2,AK,Ag,M132,FUN,,M182,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:23:14,3/20/2023,1,CC,Ag,M037,FUN,FUN,M006,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:23:57,3/20/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,3,0,0,4
+9:26:27,3/20/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,3,0,0,2
+9:27:40,3/20/2023,2,AK,M,M001,,,FUN,,,NA,NA,No Value,Intro,PE,NA,4,0,1,2
+10:06:53,3/20/2023,1,CC,Ag,FUN,,,M151,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:08:28,3/20/2023,1,CC,Ag,M188,M150,,M064,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:09:07,3/20/2023,2,AK,Ag,M175,FUN,,M035,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:33:20,3/20/2023,1,CC,M,M140,,,FUN,,,R,NA,No Value,NA,PE,Ejac,6,NA,NA,NA
+10:37:25,3/20/2023,1,CC,Ag,M151,,,M034,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:41:27,3/20/2023,1,CC,M,M121,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,11,2,0,4
+10:42:47,3/20/2023,1,CC,M,M121,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,11,2,0,4
+10:48:42,3/20/2023,1,CC,Ag,M097,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:53:12,3/20/2023,1,CC,M,M162,,,FUN,,,R,NA,No Value,NA,NA,NA,7,8,2,9
+10:54:02,3/20/2023,1,CC,M,M162,,,FUN,,,R,NA,No Value,NA,NA,NA,2,8,2,9
+10:56:09,3/20/2023,1,CC,Ag,M162,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:08:39,3/20/2023,1,CC,Ag,M162,M030,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:21:19,3/20/2023,1,CC,Ag,M162,,,M162,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:40:24,3/20/2023,1,CC,M,M192,,,M168,,,Gr,NA,No Value,NA,NA,NA,2,3,0,8
+12:55:25,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,3,3,1,3
+12:55:52,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,7,3,1,3
+12:56:16,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,8,3,1,3
+12:56:59,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,5,3,1,3
+12:57:45,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,5,3,1,3
+12:58:11,3/20/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,3,3,1,3
+13:05:27,3/20/2023,1,CC,Ag,M013,M027,,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:08:38,3/20/2023,2,AK,M,M041,,,M245,,,Gr,NA,No Value,NoIntro,PE,NoEjac,3,0,0,0
+13:13:53,3/20/2023,1,CC,M,M143,,,M029,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+13:14:33,3/20/2023,2,AK,M,M041,,,FUN,,,NA,NA,No Value,NA,NA,NA,3,0,0,0
+13:47:30,3/20/2023,1,CC,M,M198,,,FUN,,,R,NA,No Value,NA,NA,NA,5,2,0,3
+13:54:53,3/20/2023,1,CC,M,M140,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,1,6,2,8
+7:31:46,3/21/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,NA,NA,NA,4,1,0,1
+7:39:18,3/21/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,NA,NA,NA,4,1,0,1
+7:46:01,3/21/2023,1,CC,Ag,M162,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:46:57,3/21/2023,1,CC,M,M188,,,FUN,,,R,NA,No Value,Intro,PE,NA,7,16,3,22
+7:48:07,3/21/2023,1,CC,M,M188,,,FUN,,,R,NA,No Value,NA,NA,NA,9,16,3,22
+7:48:45,3/21/2023,1,CC,M,M188,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,7,16,3,22
+7:53:09,3/21/2023,1,CC,M,M188,,,FUN,,,R,NA,No Value,NA,NoPE,NoEjac,16,16,3,22
+7:53:33,3/21/2023,1,CC,M,M188,,,FUN,,,R,NA,No Value,NA,PE,Ejac,8,16,3,22
+7:56:19,3/21/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,5,9,2,14
+7:57:22,3/21/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,4,9,2,14
+7:57:32,3/21/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,4,9,2,14
+7:57:57,3/21/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,NA,PE,Ejac,8,9,2,14
+7:59:03,3/21/2023,2,AK,Ag,M187,M063,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:10:58,3/21/2023,2,AK,Ag,FUN,M001,,M163,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:21:17,3/21/2023,1,CC,Ag,M161,M090,,M013,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:32:40,3/21/2023,1,CC,M,M202,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:34:34,3/21/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,PE,NA,6,2,0,6
+8:39:56,3/21/2023,1,CC,Ag,M066,FUN,FUN,M162,M143,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:43:07,3/21/2023,2,AK,Ag,M227,,,M035,M077,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:45:14,3/21/2023,1,CC,M,M066,,,FUN,,,R,NA,No Value,NA,NA,NA,4,1,0,1
+8:45:54,3/21/2023,1,CC,M,M066,,,FUN,,,R,NA,No Value,NA,NA,NA,4,1,0,1
+8:46:53,3/21/2023,1,CC,M,M013,,,M014,,,Ag,NA,No Value,NA,NA,NA,3,3,0,5
+8:47:34,3/21/2023,1,CC,Ag,M141,M221,,M162,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:56:20,3/21/2023,2,AK,Ag,M200,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:05:56,3/21/2023,1,CC,M,M141,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+9:09:01,3/21/2023,1,CC,Ag,M143,M074,,M105,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:01,3/21/2023,1,CC,Ag,M075,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:23:17,3/21/2023,1,CC,M,M154,,,FUN,,,R,NA,No Value,NA,NA,NA,15,5,0,13
+9:24:50,3/21/2023,1,CC,M,M154,,,FUN,,,R,NA,No Value,NA,PE,Ejac,7,5,0,13
+9:30:10,3/21/2023,2,AK,Ag,M041,M010,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:49:19,3/21/2023,2,AK,Ag,M206,MUN,,M125,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:05:03,3/21/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:09,3/21/2023,1,CC,Ag,M027,,,M064,M049,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:28:19,3/21/2023,2,AK,Ag,M180,FUN,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:43:30,3/21/2023,1,CC,Ag,M059,M140,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:46:04,3/21/2023,2,AK,M,M227,,,M246,,,Gr,NA,No Value,NoIntro,NoPE,NoEjac,2,1,1,5
+11:27:12,3/21/2023,2,AK,M,M225,,,M262,,,CoAg,NA,No Value,Intro,PE,NoEjac,7,0,0,1
+11:29:02,3/21/2023,2,AK,M,M225,,,M262,,,CoAg,NA,No Value,NoIntro,PE,NoEjac,6,0,0,1
+12:10:46,3/21/2023,2,AK,M,M001,,,FUN,,,CoAg,NA,No Value,NoIntro,PE,NoEjac,2,0,0,1
+12:26:14,3/21/2023,2,AK,M,M009,,,FUN,,,R,NA,No Value,NA,NA,NA,2,0,0,2
+12:28:28,3/21/2023,2,AK,M,M009,,,FUN,,,R,NA,No Value,NA,NA,NA,3,0,0,2
+12:50:21,3/21/2023,1,CC,M,M105,,,M026,,,Co-Ag,NA,No Value,NA,NA,NA,4,2,0,5
+13:30:55,3/21/2023,1,CC,Ag,M059,M090,,M101,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:32:40,3/21/2023,1,CC,Ag,M076,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:33:41,3/21/2023,1,CC,Ag,M161,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:34:32,3/21/2023,1,CC,Ag,M198,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:36:44,3/21/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,NA,NA,NA,3,11,3,18
+13:42:55,3/21/2023,2,AK,M,M228,,,M225,,,T,NA,No Value,NoIntro,NoPE,NoEjac,3,0,0,3
+13:55:50,3/21/2023,2,AK,Ag,M044,M009,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:59:25,3/21/2023,1,CC,Ag,M011,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:01:18,3/21/2023,1,CC,Ag,M013,,,M011,M026,M116,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:06:19,3/22/2023,1,CC,Ag,M030,M074,M013,M156,M049,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:12:28,3/22/2023,1,CC,M,M143,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,4,7,1,11
+8:18:44,3/22/2023,1,CC,Ag,M066,,,M011,M147,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:34:01,3/22/2023,1,CC,M,M093,,,M022,,,R,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+8:34:39,3/22/2023,1,CC,Ag,M014,M161,M121,M116,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:36:26,3/22/2023,1,CC,Ag,M092,,,M116,M026,M099,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:36,3/22/2023,1,CC,Ag,M100,M064,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:51:17,3/22/2023,1,CC,Ag,M140,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:55:32,3/22/2023,1,CC,Ag,M082,,,M154,M093,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:29,3/22/2023,1,CC,Ag,M064,M013,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:53,3/22/2023,1,CC,Ag,M064,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:56,3/22/2023,1,CC,M,M116,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,8,1,12
+9:00:28,3/22/2023,1,CC,Ag,M011,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:04:38,3/22/2023,1,CC,M,M146,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,6,16,3,25
+9:06:30,3/22/2023,1,CC,M,M002,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,12,2,23
+9:07:17,3/22/2023,1,CC,Ag,M002,M097,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:08:15,3/22/2023,1,CC,Ag,M027,,,M205,M074,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:15:34,3/22/2023,1,CC,Ag,M022,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:16:47,3/22/2023,1,CC,Ag,M224,M049,,M202,M088,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:22:36,3/22/2023,1,CC,Ag,M049,M157,,FUN,,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:25:15,3/22/2023,1,CC,M,M014,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+9:41:33,3/22/2023,1,CC,M,M141,,,FUN,,,Gr,NA,No Value,Intro,PE,NA,18,2,0,4
+9:48:31,3/22/2023,1,CC,Ag,M066,,,M105,M205,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:49:22,3/22/2023,1,CC,Ag,M066,M100,M146,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:29:31,3/22/2023,1,CC,M,M034,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,15,3,0,4
+10:29:56,3/22/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,5,8,3,12
+10:30:28,3/22/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,5,8,3,12
+10:30:44,3/22/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,8,3,12
+10:31:11,3/22/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,8,3,12
+10:33:15,3/22/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,8,3,12
+10:34:00,3/22/2023,1,CC,Ag,M034,M102,,M026,M143,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:45:02,3/22/2023,1,CC,Ag,FUN,FUN,FUN,M205,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:46:06,3/22/2023,1,CC,M,M161,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+11:11:56,3/22/2023,1,CC,Ag,M185,M049,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:21:33,3/22/2023,1,CC,M,M205,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,8,0,10
+11:46:07,3/22/2023,1,CC,Ag,M224,M087 (F),,M097,M205,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:37:37,3/22/2023,1,CC,M,M014,,,M209,,,R,NA,No Value,NoIntro,PE,NoEjac,8,4,0,5
+12:38:18,3/22/2023,1,CC,M,M209,,,M014,,,R,NA,No Value,NoIntro,2PE,NoEjac,4,4,0,5
+12:51:33,3/22/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,NA,NA,NA,3,2,0,2
+12:52:35,3/22/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,NA,NA,NA,3,2,0,2
+12:52:48,3/22/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,NA,NA,NA,7,2,0,2
+12:52:59,3/22/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,NA,NA,Ejac,3,2,0,2
+13:15:43,3/22/2023,1,CC,Ag,M162,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:16:34,3/22/2023,1,CC,M,M202,,,FUN,,,R,NA,No Value,NoIntro,PE,Ejac,3,8,1,13
+13:17:23,3/22/2023,1,CC,Ag,M011,FUN,FUN,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:26:09,3/22/2023,1,CC,M,M013,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,8,3,0,5
+8:25:11,3/22/2023,2,AK,Ag,M053,M007,FUN,M163,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:38:52,3/22/2023,2,AK,Ag,M212,M020,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:42,3/22/2023,2,AK,Ag,M103,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:05:24,3/22/2023,2,AK,Ag,M206,M219,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:10:38,3/22/2023,2,AK,Ag,M103,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:17:40,3/22/2023,2,AK,Ag,M001,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:24:18,3/22/2023,2,AK,M,M041,,,M245,,,CoAg,NA,No Value,NA,NA,NA,4,1,0,6
+9:26:20,3/22/2023,2,AK,Ag,M200,,,M245,M041,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:28:31,3/22/2023,2,AK,Ag,M053,FUN,,M163,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:16:44,3/22/2023,2,AK,Ag,M138,,,M170,M206,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:20:09,3/22/2023,2,AK,Ag,M062,M053,,M200,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:03:55,3/22/2023,2,AK,M,M041,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,4,2,1,3
+12:07:01,3/22/2023,2,AK,M,M041,,,FUN,,,Gr,NA,No Value,NA,PE,NA,3,2,1,3
+12:07:49,3/22/2023,2,AK,M,M041,,,FUN,,,Gr,NA,No Value,NA,PE,NA,NA,NA,NA,NA
+12:16:31,3/22/2023,2,AK,Ag,M177,M058,,M036,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:00:40,3/22/2023,2,AK,M,M094,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,6,0,0,0
+13:02:11,3/22/2023,2,AK,M,M094,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,0,0,0
+13:02:46,3/22/2023,2,AK,M,M094,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,1,0,0,0
+13:03:26,3/22/2023,2,AK,M,M094,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,21,0,0,0
+7:45:37,3/23/2023,1,CC,Ag,M162,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:57:26,3/23/2023,2,AK,Ag,MUN,M132,,M062,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:00:03,3/23/2023,1,CC,M,M059,,,FUN,,,R,NA,No Value,NA,NA,NA,2,19,5,27
+8:00:46,3/23/2023,1,CC,Ag,M116,M173,,M059,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:07:24,3/23/2023,1,CC,Ag,M066,M013,,M083,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:08:04,3/23/2023,1,CC,Ag,M011,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:31,3/23/2023,1,CC,Ag,M066,,,M143,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:25:04,3/23/2023,1,CC,M,M076,,,M059,,,R,NA,No Value,NA,2PE,NoEjac,6,2,0,4
+8:25:44,3/23/2023,1,CC,Ag,M059,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:33:29,3/23/2023,2,AK,M,M103,,,FUN,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:38:51,3/23/2023,1,CC,M,M161,,,M093,,,R,NA,No Value,NoIntro,PE,NoEjac,4,6,1,9
+8:44:30,3/23/2023,1,CC,Ag,M101,M013,,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:49:12,3/23/2023,2,AK,Ag,FUN,FUN,FUN,M044,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:49:23,3/23/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,6,6,1,8
+8:49:59,3/23/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,8,6,1,8
+8:50:09,3/23/2023,2,AK,M,M212,,,M228,,,NA,NA,No Value,NoIntro,NoPE,NoEjac,4,0,0,4
+8:50:20,3/23/2023,1,CC,Ag,M066,,,M013,M185,M075,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:53:47,3/23/2023,1,CC,Ag,M027,,,M145,M156,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:56:36,3/23/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,5,0,8
+8:57:04,3/23/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,12,5,0,8
+8:58:29,3/23/2023,1,CC,Ag,M161,M030,M143,M133,M013,M146,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:21:24,3/23/2023,1,CC,Ag,M161,,,M026,M209,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:05:05,3/23/2023,1,CC,Ag,M027,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:28:21,3/23/2023,1,CC,Ag,M101,,,M076,M194,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:47:30,3/23/2023,2,AK,M,M067,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,5,2,1,7
+10:48:31,3/23/2023,2,AK,M,M067,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,1,1,6
+10:50:16,3/23/2023,2,AK,M,M067,,,FUN,,,R,NA,No Value,Intro,PE,NA,6,1,1,4
+10:56:03,3/23/2023,2,AK,M,M067,,,FUN,,,R,NA,No Value,Intro,PE,NA,3,0,0,0
+10:57:40,3/23/2023,2,AK,Ag,M020,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:02:52,3/23/2023,2,AK,Ag,M206,M210,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:45:53,3/23/2023,2,AK,M,M035,,,M267,,,Gr,NA,No Value,NoIntro,PE,NoEjac,3,4,0,6
+12:07:38,3/23/2023,2,AK,M,M180,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,14,5,2,5
+12:16:22,3/23/2023,2,AK,M,M114,,,FUN,,,CoAg,NA,No Value,Intro,PE,Ejac,5,0,0,4
+12:18:00,3/23/2023,2,AK,M,M114,,,FUN,,,NA,NA,No Value,Intro,PE,NoEjac,5,0,0,5
+12:18:50,3/23/2023,2,AK,M,M114,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,4,0,0,3
+7:56:27,3/24/2023,2,AK,Ag,M126,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:47:15,3/24/2023,2,AK,Ag,M020,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:13:55,3/24/2023,2,AK,Ag,M245,FUN,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:53,3/24/2023,2,AK,M,M245,,,FUN,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,5,7,3,14
+9:24:48,3/24/2023,2,AK,M,M114,,,FUN,,,CoAg,NA,No Value,Intro,PE,Ejac,6,0,0,3
+9:38:57,3/24/2023,2,AK,Ag,FUN,FUN,,M044,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:58,3/24/2023,2,AK,Ag,M094,M063,,M245,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:46:33,3/24/2023,2,AK,Ag,M170,M210,M206,M007,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:09:07,3/24/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,NA,NA,NA,NA
+12:11:00,3/24/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,2,1,0,1
+12:12:02,3/24/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,5,1,0,1
+12:12:56,3/24/2023,2,AK,M,M062,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,1,0,2
+12:14:03,3/24/2023,2,AK,M,M062,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,14,1,1,3
+12:18:51,3/24/2023,2,AK,Ag,M010,,,M225,M228,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:46:03,3/24/2023,2,AK,M,M132,,,FUN,,,CoAg,NA,No Value,Intro,PE,NoEjac,0,0,0,0
+12:47:37,3/24/2023,2,AK,M,M132,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,4,0,0,0
+12:49:03,3/24/2023,2,AK,M,M132,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,5,1,1,1
+13:03:24,3/24/2023,2,AK,M,M058,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,5,6,4,7
+13:04:36,3/24/2023,2,AK,M,M058,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,6,4,7
+13:54:32,3/24/2023,2,AK,Ag,M053,FUN,FUN,M163,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:02:20,3/24/2023,2,AK,M,M058,,,FUN,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+7:44:19,3/26/2023,2,AK,Ag,M103,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:01:50,3/26/2023,1,CC,Ag,M037,,,M252,M169,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:03:00,3/26/2023,1,CC,Ag,M161,M037,M027,M026,M042,M076,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:04:48,3/26/2023,1,CC,M,M037,,,M252,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,3,6,0,8
+8:05:47,3/26/2023,1,CC,Ag,M037,,,M252,M093,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:09:11,3/26/2023,1,CC,M,M027,,,FUN,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,4,3,0,4
+8:12:46,3/26/2023,2,AK,M,M077,,,M261,,,NA,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+8:16:46,3/26/2023,2,AK,M,M077,,,M261,,,R,NA,No Value,NoIntro,PE,NoEjac,4,0,0,0
+8:16:51,3/26/2023,2,AK,Ag,M077,JVUN,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:19:08,3/26/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,2,1,0,2
+8:20:51,3/26/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,NoPE,NoEjac,1,0,0,1
+8:22:30,3/26/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NoPE,NA,6,0,0,1
+8:25:44,3/26/2023,1,CC,Ag,M049,,,M027,M093,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:25:49,3/26/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,RPE,NoEjac,1,0,0,2
+8:26:16,3/26/2023,1,CC,Ag,M161,M027,,M049,M080,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:26:21,3/26/2023,2,AK,M,M043,,,M166,,,Gr,NA,No Value,NoIntro,PE,NoEjac,8,0,0,3
+8:26:59,3/26/2023,1,CC,Ag,M013,M147,,M034,,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:49:13,3/26/2023,2,AK,M,M041,,,FUN,,,R,NA,No Value,NA,PE,NA,2,11,NA,19
+8:53:36,3/26/2023,2,AK,Ag,M062,M007,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:00,3/26/2023,1,CC,Ag,M013,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:06:12,3/26/2023,2,AK,Ag,M007,M211,,MUN,,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:26:59,3/26/2023,1,CC,M,M034,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,5,7,0,8
+9:27:54,3/26/2023,1,CC,M,M034,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,12,7,0,9
+9:35:33,3/26/2023,1,CC,Ag,M027,M037,,JVUN,JVUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:41:42,3/26/2023,2,AK,Ag,M103,M211,,M210,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:46:35,3/26/2023,2,AK,Ag,M114,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:01:57,3/26/2023,2,AK,Ag,FUN,FUN,M001,FUN,MUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:49,3/26/2023,2,AK,Ag,FUN,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:38:11,3/26/2023,2,AK,Ag,M193,M206,,M043,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:40:17,3/26/2023,2,AK,Ag,M044,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:51:23,3/26/2023,2,AK,M,M132,,,FUN,,,R,NA,No Value,NA,NA,NA,2,5,0,5
+10:54:02,3/26/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,2,0,3
+10:54:34,3/26/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,2,0,3
+10:55:13,3/26/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,NoIntro,PE,NoEjac,4,2,0,3
+10:58:13,3/26/2023,1,CC,M,M075,,,FUN,,,R,NA,No Value,NoIntro,PE,NoEjac,4,5,0,6
+11:01:07,3/26/2023,2,AK,Ag,M043,M068,,M166,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:11:55,3/26/2023,1,CC,Ag,M049,M140,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:19:03,3/26/2023,1,CC,Ag,M022,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:47,3/26/2023,1,CC,M,M076,,,FUN,,,R,NA,No Value,NA,NA,NA,6,9,1,16
+11:35:24,3/26/2023,2,AK,Ag,M028,M148,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:50:23,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,NA,NA,NA,4,0,0,1
+11:52:32,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,NA,NA,NA,4,0,0,0
+11:56:44,3/26/2023,2,AK,M,M020,,,FUN,,,CoAg,NA,No Value,NA,NA,NA,4,3,NA,5
+11:59:55,3/26/2023,2,AK,M,M020,,,FUN,,,CoAg,NA,No Value,NA,NA,NA,5,3,NA,5
+12:24:10,3/26/2023,2,AK,M,M001,,,FUN,,,NA,NA,No Value,Intro,PE,NoEjac,4,0,0,2
+12:25:10,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,6,1,0,2
+12:26:54,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,7,3,2,3
+12:28:18,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,NA,NA,NA,7,3,2,3
+12:29:28,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,10,3,2,5
+12:35:20,3/26/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,12,0,0,2
+12:55:55,3/26/2023,2,AK,Ag,FUN,,,M228,M225,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:04:25,3/26/2023,1,CC,M,M223,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,8,6,0,16
+7:46:44,3/27/2023,1,CC,Ag,M090,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:48:56,3/27/2023,2,AK,M,M055,,,JVMUN,,,Gr,NA,No Value,NA,NA,NA,9,0,0,0
+7:50:54,3/27/2023,2,AK,M,M055,,,JVMUN,,,Gr,NA,No Value,NA,PE,NA,7,0,0,0
+7:51:40,3/27/2023,2,AK,M,M055,,,JVMUN,,,Gr,NA,No Value,NoIntro,PE,NA,5,1,0,1
+7:51:42,3/27/2023,1,CC,Ag,M037,M161,M143,M027,M013,M026,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:53:19,3/27/2023,2,AK,M,M055,,,JVMUN,,,R,NA,No Value,NoIntro,PE,NoEjac,3,1,0,1
+7:55:39,3/27/2023,1,CC,Ag,M026,M205,M252,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:57:11,3/27/2023,2,AK,M,M055,,,JVMUN,,,Gr,NA,No Value,NA,PE,NA,3,2,0,3
+8:01:32,3/27/2023,1,CC,M,M078,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,8,34,3,51
+8:03:45,3/27/2023,1,CC,Ag,M037,,,M013,M143,M076,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:04:34,3/27/2023,1,CC,M,M156,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,11,36,3,52
+8:04:55,3/27/2023,2,AK,M,M182,,,M264,,,Gr,NA,No Value,NA,PE,NA,5,8,NA,15
+8:05:15,3/27/2023,2,AK,M,M182,,,M264,,,Gr,NA,No Value,NoIntro,PE,NoEjac,9,8,NA,12
+8:05:25,3/27/2023,1,CC,M,M156,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,8,36,3,52
+8:06:59,3/27/2023,2,AK,M,M182,,,M264,,,R,NA,No Value,NA,PE,NA,10,3,NA,5
+8:18:47,3/27/2023,1,CC,Ag,M013,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:25:03,3/27/2023,1,CC,Ag,M101,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:26:57,3/27/2023,2,AK,Ag,M041,M147,,M198,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:38:08,3/27/2023,1,CC,Ag,M066,M143,,M223,M029,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:40:44,3/27/2023,2,AK,Ag,FUN,M163,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:49:16,3/27/2023,2,AK,Ag,M103,M007,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:22:01,3/27/2023,1,CC,M,M146,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,1,0,1
+10:00:26,3/27/2023,2,AK,Ag,FUN,FUN,,M094,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:04:52,3/27/2023,2,AK,Ag,M025,M009,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:16:45,3/27/2023,2,AK,Ag,M053,M020,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:27:14,3/27/2023,2,AK,M,M114,,,FUN,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,5,5,1,9
+10:45:07,3/27/2023,1,CC,Ag,M006,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:46:07,3/27/2023,1,CC,M,M194,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,7,8,0,11
+10:46:44,3/27/2023,1,CC,M,M194,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,11,8,0,11
+10:47:32,3/27/2023,1,CC,M,M194,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,22,8,0,11
+10:48:10,3/27/2023,1,CC,M,M194,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,14,8,0,11
+10:48:53,3/27/2023,1,CC,M,M194,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,9,8,0,11
+10:49:58,3/27/2023,1,CC,M,M224,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,4,6,0,9
+10:54:59,3/27/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+10:58:10,3/27/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,7,12,1,15
+11:01:56,3/27/2023,1,CC,M,M133,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,12,1,15
+11:43:10,3/27/2023,2,AK,M,M035,,,JVMUN,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,5,1,1,1
+11:54:01,3/27/2023,1,CC,Ag,M026,M038,,M105,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:56:10,3/27/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:02:34,3/27/2023,1,CC,M,M022,,,FUN,,,Gr,NA,No Value,NA,NA,NA,7,9,1,14
+12:03:39,3/27/2023,1,CC,Ag,M173,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:05:53,3/27/2023,1,CC,Ag,M027,M026,M112,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:07:00,3/27/2023,1,CC,Ag,M011,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:20:30,3/27/2023,2,AK,M,M007,,,FUN,,,R,NA,No Value,Intro,PE,NA,4,3,1,5
+12:25:47,3/27/2023,1,CC,Ag,M146,,,M105,M080,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:27:37,3/27/2023,2,AK,M,M007,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,2,1,2
+12:39:43,3/27/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,2,0,0,0
+12:58:19,3/27/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,1,0,0,1
+13:04:22,3/27/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,1,0,0,1
+13:04:31,3/27/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,1,0,0,1
+13:19:55,3/27/2023,1,CC,M,M147,,,FUN,,,Co-Ag,NA,No Value,NoIntro,PE,NoEjac,6,2,0,6
+13:33:38,3/27/2023,1,CC,Ag,FUN,FUN,,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:48:37,3/27/2023,2,AK,M,M175,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,2,2,4
+13:50:03,3/27/2023,2,AK,M,M175,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,3,2,2,4
+8:35:51,3/28/2023,1,CC,M,M157,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,12,16,1,23
+8:42:48,3/28/2023,1,CC,M,M011,,,FUN,,,R,NA,No Value,NA,NA,NA,12,12,1,19
+8:46:18,3/28/2023,1,CC,M,M146,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,6,8,2,14
+8:46:53,3/28/2023,1,CC,Ag,M161,M022,M027,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:48:46,3/28/2023,1,CC,Ag,M097,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:49:24,3/28/2023,1,CC,Ag,M027,M161,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:13:19,3/28/2023,1,CC,M,M168,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+9:15:15,3/28/2023,1,CC,M,M168,,,FUN,,,R,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+9:17:19,3/28/2023,1,CC,Ag,M027,M066,,M034,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:44:32,3/28/2023,1,CC,M,M161,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,7,1,13
+10:30:44,3/28/2023,1,CC,Ag,M037,M082,M034,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:54:08,3/28/2023,1,CC,M,M209,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,8,3,15
+10:54:32,3/28/2023,1,CC,M,M209,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,8,3,15
+10:54:48,3/28/2023,1,CC,M,M209,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,8,8,3,15
+10:55:20,3/28/2023,1,CC,M,M209,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,11,8,3,15
+10:55:45,3/28/2023,1,CC,M,M209,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,13,8,3,15
+10:57:08,3/28/2023,1,CC,M,M221,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,5,6,2,10
+11:01:39,3/28/2023,1,CC,Ag,M161,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:25:54,3/28/2023,1,CC,Ag,M027,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:56:01,3/28/2023,1,CC,M,M252,,,FUN,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,2,3,0,4
+12:52:06,3/28/2023,1,CC,Ag,M074,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:01:50,3/28/2023,1,CC,Ag,M102,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:03:18,3/28/2023,1,CC,Ag,M027,,,M242,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:08:38,3/28/2023,1,CC,M,M242,,,FUN,,,Gr,NA,No Value,NoIntro,PE,NoEjac,7,13,2,21
+13:31:37,3/28/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,13,8,1,14
+13:34:25,3/28/2023,1,CC,Ag,M026,M121,,FUN,FUN,FUN,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:40:19,3/28/2023,1,CC,Ag,M162,,,M066,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:03:51,3/28/2023,1,CC,M,M162,,,FUN,,,Ag,NA,No Value,NoIntro,PE,NoEjac,3,6,0,8
+8:30:39,3/29/2023,1,CC,M,M154,,,M127 (F),,,Gr,NA,No Value,Intro,PE,NoEjac,4,1,0,1
+8:49:13,3/29/2023,1,CC,M,M027,,,FUN,,,Co-Ag,NA,No Value,NA,NA,NA,4,49,3,57
+8:52:23,3/29/2023,1,CC,Ag,M027,FUN,,M030,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:55:10,3/29/2023,1,CC,M,M141,,,FUN,,,F,NA,No Value,Intro,PE,Ejac,6,6,1,8
+9:05:19,3/29/2023,2,AK,Ag,M212,FUN,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:09:10,3/29/2023,1,CC,M,M097,,,FUN,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,2,2,0,9
+10:10:50,3/29/2023,1,CC,M,M097,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,2,0,9
+10:26:17,3/29/2023,1,CC,Ag,M202,,,M027,M090,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:29:26,3/29/2023,1,CC,Ag,M205,,,M252,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:31:19,3/29/2023,1,CC,Ag,M105,M205,,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:18:44,3/29/2023,1,CC,M,M095,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,5,9,0,14
+11:21:57,3/29/2023,1,CC,M,M095,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,9,0,14
+11:22:41,3/29/2023,1,CC,M,M095,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,9,0,14
+11:23:08,3/29/2023,1,CC,M,M022,,,FUN,,,R,NA,No Value,NA,PE,NoEjac,4,6,0,13
+11:26:03,3/29/2023,1,CC,Ag,M013,,,M095,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:51,3/29/2023,1,CC,M,M112,,,FUN,,,NA,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+11:33:07,3/29/2023,1,CC,M,M161,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,7,8,1,16
+11:33:45,3/29/2023,1,CC,M,M161,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,8,1,16
+11:34:28,3/29/2023,1,CC,M,M161,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,11,8,1,16
+11:40:23,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,PE,NoEjac,1,0,0,0
+11:41:11,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,PE,NoEjac,3,0,0,0
+11:44:57,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,3,0,0,1
+11:49:10,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,Intro,PE,NoEjac,4,1,0,1
+11:50:04,3/29/2023,1,CC,Ag,M162,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:53:15,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,3,0,0,1
+11:54:46,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,NoPE,NoEjac,1,0,0,0
+11:56:33,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NoIntro,RPE,NoEjac,2,0,0,0
+12:15:24,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,2,0,0,0
+12:17:24,3/29/2023,2,AK,M,M166,,,M043,,,T,NA,No Value,NA,NA,NA,2,0,0,0
+12:20:51,3/29/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,PE,NoEjac,2,0,0,0
+12:23:16,3/29/2023,2,AK,M,M166,,,M043,,,NA,NA,No Value,NA,NA,NA,1,0,0,0
+13:20:14,3/29/2023,2,AK,M,M197,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,10,4,1,7
+13:39:14,3/29/2023,2,AK,M,M007,,,FUN,,,NA,NA,No Value,Intro,PE,NoEjac,3,2,1,5
+13:41:10,3/29/2023,2,AK,M,M007,,,FUN,,,Gr,NA,No Value,Intro,PE,Ejac,6,2,1,5
+13:51:24,3/29/2023,2,AK,M,M114,,,FUN,,,R,NA,No Value,NA,NA,NA,4,3,2,3
+13:51:53,3/29/2023,2,AK,M,M114,,,FUN,,,R,NA,No Value,NA,NA,NA,4,3,2,3
+13:55:36,3/29/2023,2,AK,M,M114,,,FUN,,,R,NA,No Value,NA,NA,NA,4,1,1,1
+13:57:57,3/29/2023,1,CC,Ag,M145,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:59:35,3/29/2023,2,AK,Ag,M163,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:03:08,3/29/2023,2,AK,M,M114,,,FUN,,,NA,NA,No Value,NA,NA,NA,NA,NA,NA,NA
+7:43:43,3/30/2023,1,CC,Ag,M105,,,M140,M252,M088,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:48:37,3/30/2023,1,CC,Ag,M013,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:58:42,3/30/2023,2,AK,Ag,M175,M183,MUN,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:59:20,3/30/2023,2,AK,Ag,M041,M132,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:00:27,3/30/2023,2,AK,M,M041,,,FUN,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,1,1,1,6
+8:12:51,3/30/2023,2,AK,Ag,M094,M044,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:29,3/30/2023,2,AK,Ag,M103,,,M035,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:45,3/30/2023,2,AK,Ag,M020,M009,,M001,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:56:50,3/30/2023,2,AK,Ag,M053,FUN,,M020,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:12:47,3/30/2023,2,AK,Ag,M183,MUN,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:20:22,3/30/2023,1,CC,Ag,M013,M027,,M116,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:22:39,3/30/2023,1,CC,Ag,M080,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:52:35,3/30/2023,2,AK,M,M246,,,M267,,,T,NA,No Value,NA,NA,NA,10,2,2,7
+10:03:31,3/30/2023,2,AK,Ag,M044,FUN,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:50:17,3/30/2023,2,AK,M,M041,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,2,6,3,9
+11:32:11,3/30/2023,1,CC,Ag,M074,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:44:33,3/30/2023,1,CC,Ag,M162,M013,,M161,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:55:05,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,7,1,0,2
+11:57:36,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,4,1,0,2
+11:59:42,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,3,1,0,2
+12:17:59,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,5,3,1,3
+12:19:47,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,NA,PE,,6,3,1,3
+12:20:40,3/30/2023,2,AK,M,M001,,,FUN,,,R,NA,No Value,Intro,PE,NA,4,3,1,3
+12:35:20,3/30/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,NA,NA,NA,3,0,0,0
+12:37:02,3/30/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,NA,No Value,0,0,0
+12:37:58,3/30/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,NA,2,0,0,0
+12:38:53,3/30/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,NA,NA,NA,4,0,0,0
+12:40:45,3/30/2023,2,AK,M,M062,,,FUN,,,Gr,NA,No Value,Intro,PE,NA,2,0,0,0
+13:18:19,3/30/2023,1,CC,Ag,M112,M162,,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:18:54,3/30/2023,1,CC,Ag,M037,M242,,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:46:17,3/30/2023,2,AK,Ag,M041,M165,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:46:39,3/30/2023,1,CC,Ag,M173,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:55:34,3/30/2023,1,CC,Ag,M022,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:56:49,3/30/2023,1,CC,Ag,M027,M014,,M121,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:59:01,3/30/2023,1,CC,M,M034,,,M140,,,Ag,NA,No Value,NoIntro,2PE,NoEjac,5,8,1,15
+8:25:54,3/31/2023,2,AK,Ag,M187,M067,,M165,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:36:07,3/31/2023,1,CC,Ag,M162,M026,,M006,M185,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:36:45,3/31/2023,2,AK,M,M114,,,FUN,,,F,NA,No Value,Intro,PE,NoEjac,14,16,6,28
+9:06:31,3/31/2023,2,AK,Ag,M114,M103,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:09:58,3/31/2023,1,CC,Ag,M162,,,M145,M014,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:15:13,3/31/2023,1,CC,Ag,M026,,,M143,M011,M116,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:33:59,3/31/2023,2,AK,Ag,FUN,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:35:28,3/31/2023,1,CC,Ag,M066,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:36:08,3/31/2023,2,AK,Ag,M058,FUN,,M025,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:38:55,3/31/2023,1,CC,Ag,M162,,,M011,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:41:56,3/31/2023,2,AK,M,M166,,,M043,,,T,NA,No Value,NoIntro,NoPE,NoEjac,2,2,1,3
+9:43:14,3/31/2023,2,AK,M,M166,,,M043,,,T,NA,No Value,NoIntro,NoPE,NoEjac,3,2,1,3
+9:59:02,3/31/2023,2,AK,Ag,M094,M212,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:08:11,3/31/2023,2,AK,Ag,M187,M170,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:14:07,3/31/2023,1,CC,Ag,M102,FUN,FUN,M185,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:01,3/31/2023,1,CC,Ag,M013,M088,,M242,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:16:01,3/31/2023,1,CC,Ag,M011,,,M161,M092,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:50:35,3/31/2023,1,CC,Ag,M105,,,M242,M151,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:42:23,3/31/2023,1,CC,Ag,M037,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:01:53,4/4/2023,1,CC,Ag,M026,M011,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:08:57,4/4/2023,2,AK,Ag,M062,M007,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:14:53,4/4/2023,2,AK,Ag,M187,M063,M067,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:18:30,4/4/2023,2,AK,Ag,M031,M103,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:20:13,4/4/2023,1,CC,Ag,M161,M101,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:22:44,4/4/2023,1,CC,Ag,FUN,JVUN,,M099,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:26:24,4/4/2023,2,AK,Ag,M187,M193,,M019,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:29:54,4/4/2023,2,AK,Ag,M211,M132,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:32:02,4/4/2023,1,CC,Ag,M161,M252,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:01:03,4/4/2023,1,CC,M,M224,,,M277 (F),,,F,NA,No Value,NA,NA,NA,3,10,0,18
+9:16:14,4/4/2023,2,AK,Ag,M193,M170,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:35:03,4/4/2023,2,AK,Ag,FUN,,,M206,M170,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:53:08,4/4/2023,1,CC,Ag,M174,,,M049,M154,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:59:29,4/4/2023,2,AK,Ag,M103,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:11:01,4/4/2023,1,CC,M,M088,,,FUN,,,F,NA,No Value,Intro,PE,NoEjac,4,2,0,3
+10:14:03,4/4/2023,2,AK,Ag,M200,M063,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:24:47,4/4/2023,1,CC,M,M088,,,FUN,,,F,NA,No Value,Intro,PE,NoEjac,6,2,0,3
+10:27:17,4/4/2023,1,CC,M,M088,,,FUN,,,F,NA,No Value,Intro,PE,NoEjac,5,2,0,3
+10:55:33,4/4/2023,2,AK,Ag,M212,M062,,M166,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:00:01,4/4/2023,2,AK,M,M200,,,JVMUN,,,Gr,NA,No Value,NA,NA,NA,6,6,2,8
+12:11:02,4/4/2023,2,AK,M,M200,,,JVMUN,,,Gr,NA,No Value,NoIntro,NoPE,NoEjac,5,4,1,5
+12:13:46,4/4/2023,2,AK,M,M200,,,JVMUN,,,Gr,NA,No Value,Intro,PE,NoEjac,14,4,1,5
+12:14:54,4/4/2023,2,AK,M,M200,,,JVMUN,,,Gr,NA,No Value,NA,PE,NA,5,4,1,5
+12:25:20,4/4/2023,2,AK,Ag,M041,,,M036,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:28:18,4/4/2023,2,AK,Ag,M062,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:58:01,4/4/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:03:42,4/4/2023,1,CC,Ag,M006,,,FUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:45:40,4/4/2023,1,CC,Ag,M026,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:03:51,4/4/2023,2,AK,M,M166,,,M043,,,Aff,NA,No Value,NoIntro,PE,NoEjac,1,0,0,0
+14:05:17,4/4/2023,2,AK,M,M166,,,M043,,,Aff,NA,No Value,NA,NA,NA,4,1,0,2
+14:07:45,4/4/2023,2,AK,M,M166,,,M043,,,Gr,NA,No Value,NA,NA,NA,3,1,0,2
+8:11:23,4/5/2023,2,AK,M,JVUN,,,JVUN,,,NA,NA,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+8:16:11,4/5/2023,2,AK,Ag,M053,MUN,MUN,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:01,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,NA,NA,NA,7,3,NA,5
+8:38:00,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,NA,NA,NA,NA,3,NA,5
+8:38:09,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,NA,NA,NA,NA,3,NA,5
+8:39:26,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,Intro,PE,Ejac,9,3,NA,5
+9:22:15,4/5/2023,2,AK,Ag,MUN,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:22:36,4/5/2023,1,CC,Ag,M147,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:26:45,4/5/2023,1,CC,Ag,M064,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:38:35,4/5/2023,1,CC,M,M074,,,FUN,,,R,NA,No Value,Intro,PE,Ejac,4,2,0,3
+10:51:51,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,Intro,PE,NoEjac,3,4,2,7
+10:55:01,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,Intro,PE,NoEjac,6,4,2,7
+10:56:20,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,NA,NA,NA,4,4,2,7
+11:00:00,4/5/2023,2,AK,M,M009,,,FUN,,,Aff,NA,No Value,Intro,PE,Ejac,5,4,2,7
+11:03:52,4/5/2023,1,CC,Ag,M101,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:02:03,4/10/2023,1,CC,Ag,M022,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:21:01,4/10/2023,1,CC,Ag,M038,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:23:56,4/10/2023,1,CC,Ag,M049,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:24:37,4/10/2023,2,AK,Ag,M041,M007,,M212,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:26:13,4/10/2023,2,AK,M,M041,,,M007,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,1,0,0,1
+8:35:03,4/10/2023,2,AK,Ag,M063,M041,M247,M212,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:36:40,4/10/2023,2,AK,M,M212,,,M247,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,2,1,0,1
+8:41:46,4/10/2023,2,AK,Ag,M103,M044,M211,M031,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:52:34,4/10/2023,1,CC,Ag,M042,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:56,4/10/2023,2,AK,Ag,M062,M228,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:07:01,4/10/2023,2,AK,Ag,FUN,M007,,M062,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:08:00,4/10/2023,2,AK,Ag,M062,M212,M228,M035,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:14:46,4/10/2023,2,AK,Ag,M126,M200,,M247,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:31:07,4/10/2023,2,AK,Ag,M212,M211,,M225,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:38:39,4/10/2023,1,CC,Ag,JVUN,JVUN,,M151,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:38:48,4/10/2023,1,CC,Ag,M076,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:39:18,4/10/2023,1,CC,Ag,M076,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:46:06,4/10/2023,2,AK,Ag,M175,M132,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:22:46,4/10/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:29:29,4/10/2023,1,CC,M,M029,,,FUN,,,R,NA,No Value,NA,NA,NA,13,3,0,6
+11:38:49,4/10/2023,1,CC,Ag,M151,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:37:54,4/10/2023,1,CC,Ag,M014,M066,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:24:11,4/10/2023,2,AK,M,M132,,,FUN,,,CoAg,NA,No Value,NoIntro,NoPE,NoEjac,1,0,0,2
+7:53:17,4/11/2023,2,AK,Ag,M126,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:57:45,4/11/2023,2,AK,M,M245,,,M163,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,3,0,0,0
+8:19:35,4/11/2023,2,AK,Ag,M225,M212,,M043,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:25:35,4/11/2023,2,AK,Ag,M163,M247,,M200,,,Ag,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:28:44,4/11/2023,2,AK,Ag,M007,M062,,M028,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:29:08,4/11/2023,2,AK,Ag,M114,,,JVUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:52,4/11/2023,2,AK,Ag,M010,FUN,,,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:07:43,4/11/2023,2,AK,Ag,M062,FUN,,M148,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:28:07,4/11/2023,2,AK,Ag,M212,M212,,M165,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:29:38,4/11/2023,2,AK,Ag,M132,M212,,M165,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:39:45,4/11/2023,2,AK,Ag,M001,M183,,M182,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:52:03,4/11/2023,2,AK,M,M182,,,M246,,,Gr,NA,No Value,NoIntro,PE,NoEjac,5,1,0,2
+11:57:38,4/11/2023,2,AK,M,M182,,,M246,,,Gr,NA,No Value,NA,PE,NoEjac,4,1,0,2
+7:46:57,4/12/2023,1,CC,Ag,M026,,,M066,M101,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:48:58,4/12/2023,1,CC,Ag,JVUN,JVUN,,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:06:49,4/12/2023,1,CC,Ag,M185,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:08:09,4/12/2023,2,AK,Ag,M114,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:22:49,4/12/2023,1,CC,Ag,FUN,FUN,,M133,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:27:23,4/12/2023,2,AK,M,M211,,,FUN,,,T,NA,No Value,Intro,PE,NoEjac,9,3,1,8
+8:33:34,4/12/2023,2,AK,Ag,M132,M094,M212,M036,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:40:53,4/12/2023,2,AK,Ag,M009,M114,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:32,4/12/2023,2,AK,Ag,M041,FUN,,M187,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:01:29,4/12/2023,1,CC,Ag,M034,FUN,,M026,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:12:18,4/12/2023,2,AK,Ag,M183,FUN,,M031,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:45:20,4/12/2023,1,CC,Ag,M224,FUN,,M093,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:18:11,4/12/2023,2,AK,Ag,M114,FUN,,M180,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:36:42,4/12/2023,1,CC,Ag,M011,FUN,,M090,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:37:25,4/12/2023,1,CC,Ag,M121,M026,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:40:17,4/12/2023,1,CC,Ag,M022,,,M099,M133,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:23:37,4/12/2023,1,CC,Ag,M161,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:46:13,4/12/2023,1,CC,Ag,M151,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:02:25,4/12/2023,2,AK,Ag,M058,FUN,,M148,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:03:00,4/12/2023,2,AK,M,M058,,,FUN,,,CoAg,NA,No Value,Intro,PE,NoEjac,1,2,0,5
+8:16:11,4/13/2023,2,AK,Ag,M212,M062,M044,M142,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:26:45,4/13/2023,2,AK,Ag,M163,MUN,,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:32:43,4/13/2023,2,AK,Ag,FUN,FUN,,M114,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:39,4/13/2023,2,AK,Ag,FUN,FUN,M008,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:21:10,4/13/2023,2,AK,Ag,M062,M212,,M155,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:19:00,4/13/2023,2,AK,Ag,FUN,FUN,,M062,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:28:37,4/13/2023,2,AK,Ag,M212,M200,,M187,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:38:24,4/13/2023,2,AK,Ag,M062,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:00:59,4/13/2023,2,AK,Ag,M053,,,M020,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:20,4/14/2023,2,AK,Ag,M031,M211,M170,M019,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:38:14,4/14/2023,2,AK,Ag,M063,M211,,M031,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:39:45,4/14/2023,2,AK,Ag,M094,FUN,,M146,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:56:45,4/14/2023,2,AK,Ag,M077,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:06:12,4/14/2023,2,AK,Ag,M058,M200,,M166,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:26:28,4/14/2023,2,AK,Ag,M163,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:14:15,4/14/2023,2,AK,Ag,M126,M053,M007,M044,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:19:05,4/14/2023,2,AK,Ag,M062,FUN,,M246,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:24:06,4/14/2023,2,AK,Ag,FUN,FUN,,M001,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:43:30,4/14/2023,2,AK,Ag,M228,M187,,M031,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:13:20,4/14/2023,2,AK,Ag,M114,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:19:29,4/14/2023,2,AK,Ag,FUN,FUN,,M001,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:46:23,4/14/2023,2,AK,Ag,M132,FUN,,M058,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:23:32,4/18/2023,1,CC,Ag,M037,,,M030,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:28,4/18/2023,1,CC,Ag,M147,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:37:44,4/18/2023,1,CC,Ag,M161,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:39:24,4/18/2023,1,CC,Ag,M101,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:42:19,4/18/2023,1,CC,Ag,M202,M143,,M078,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:52:17,4/18/2023,1,CC,Ag,M161,M030,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:20:10,4/21/2023,2,AK,Ag,M211,FUN,,M183,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:43:56,4/21/2023,2,AK,Ag,M062,M211,M212,MUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:48:35,4/21/2023,2,AK,Ag,M114,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:59:24,4/21/2023,2,AK,Ag,FUN,M020,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:06:26,4/21/2023,2,AK,Ag,FUN,FUN,,M035,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:53,4/21/2023,2,AK,M,M262,,,JVFUN,,,T,NA,No Value,NoIntro,NoPE,NoEjac,9,5,1,7
+9:22:26,4/21/2023,2,AK,M,M262,,,JVMUN,,,T,NA,No Value,NA,PE,NoEjac,14,3,0,5
+9:24:56,4/21/2023,2,AK,Ag,FUN,FUN,,M166,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:33:41,4/21/2023,2,AK,M,M163,,,FUN,,,T,NA,No Value,NoIntro,NoPE,NoEjac,2,8,1,16
+10:29:15,4/21/2023,2,AK,Ag,M138,M187,,M148,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:53:17,4/21/2023,2,AK,M,M053,,,FUN,,,F,NA,No Value,NA,NA,NA,3,21,4,38
+12:44:58,4/21/2023,2,AK,M,M132,,,FUN,,,NA,NA,No Value,Intro,PE,Ejac,NA,5,1,12
+12:58:06,4/21/2023,2,AK,Ag,FUN,JVMUN,,M028,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:38:24,4/24/2023,1,CC,Ag,M013,M066,,M030,M143,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:08:15,4/24/2023,1,CC,M,M082,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,2,8,0,9
+8:10:02,4/24/2023,2,AK,M,M175,,,FUN,,,CoAg,NA,No Value,Intro,PE,NoEjac,11,17,3,42
+8:14:20,4/24/2023,2,AK,Ag,M126,FUN,,FUN,M163,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:14:44,4/24/2023,2,AK,Ag,FUN,M094,M114,M062,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:34,4/24/2023,2,AK,Ag,M020,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:29:59,4/24/2023,2,AK,Ag,M126,,,JVMUN,JVFUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:36:48,4/24/2023,2,AK,Ag,FUN,FUN,,M193,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:41:33,4/24/2023,2,AK,Ag,M009,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:53:15,4/24/2023,2,AK,Ag,M212,SAMUN,,M044,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:07:49,4/24/2023,2,AK,Ag,FUN,M165,,M028,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:12:12,4/24/2023,2,AK,Ag,M134,FUN,,M165,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:26:11,4/24/2023,2,AK,Ag,M132,,,M077,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:38:50,4/24/2023,1,CC,Ag,M097,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:42:44,4/24/2023,2,AK,Ag,M211,M187,,M138,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:53:51,4/24/2023,2,AK,Ag,M009,,,FUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:54:23,4/24/2023,2,AK,Ag,M247,FUN,,M010,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:55:12,4/24/2023,2,AK,Ag,FUN,FUN,,M142,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:56:27,4/24/2023,2,AK,Ag,M010,,,M247,JVMUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:28,4/24/2023,2,AK,Ag,M063,M187,M103,M031,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:15:41,4/24/2023,2,AK,Ag,M187,M063,,M035,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:24:06,4/24/2023,2,AK,Ag,M063,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:57:51,4/24/2023,2,AK,Ag,M228,M225,,M025,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:00:19,4/24/2023,1,CC,Ag,M105,M097,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:01:04,4/24/2023,2,AK,Ag,M228,M225,,M010,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:35,4/24/2023,1,CC,Ag,M022,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:45:49,4/24/2023,1,CC,Ag,M092,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:53:37,4/24/2023,2,AK,Ag,M114,FUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:09:21,4/24/2023,2,AK,M,M227,,,M246,,,R,NA,No Value,NoIntro,PE,NoEjac,7,4,0,12
+13:09:25,4/24/2023,2,AK,M,M246,,,JVFUN,,,NA,NA,No Value,NA,NA,NA,3,4,0,12
+8:54:09,4/25/2023,1,CC,Ag,FUN,JVUN,,M095,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:54:40,4/25/2023,1,CC,Ag,M095,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:55:45,4/25/2023,1,CC,Ag,M030,FUN,FUN,JVUN,JVUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:15:02,4/25/2023,1,CC,Ag,M161,FUN,,JVUN,JVUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:27:40,4/25/2023,1,CC,Ag,M006,M022,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:36:09,4/25/2023,1,CC,Ag,M027,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:46:32,4/25/2023,1,CC,Ag,FUN,FUN,,M099,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:48:31,4/25/2023,1,CC,M,M027,,,FUN,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,1,7,0,9
+9:54:34,4/25/2023,1,CC,Ag,FUN,FUN,,M037,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:40:08,4/25/2023,1,CC,Ag,M022,M030,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:03:57,4/25/2023,1,CC,Ag,FUN,FUN,,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:46:10,4/25/2023,1,CC,Ag,M088,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:52:41,4/25/2023,1,CC,Ag,M030,M209,,M192,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:04:13,4/25/2023,1,CC,Ag,FUN,FUN,JVUN,M099,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:08:26,4/25/2023,1,CC,Ag,M161,M038,,,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:46:25,4/26/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:15:14,4/26/2023,1,CC,M,M224,,,FUN,,,F,NA,No Value,NoIntro,NoPE,NoEjac,2,16,0,26
+8:53:31,4/26/2023,1,CC,Ag,M161,M101,,M202,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:32:31,4/26/2023,1,CC,Ag,M185,M141,FUN,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:48:33,4/26/2023,1,CC,Ag,M030,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:41:45,4/26/2023,1,CC,Ag,M151,M064,,M121,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:57:54,4/26/2023,1,CC,M,M156,,,M145,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,1,2,0,4
+11:02:14,4/26/2023,1,CC,Ag,M143,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:13:46,4/27/2023,1,CC,Ag,FUN,FUN,FUN,M202,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:15:11,4/27/2023,1,CC,Ag,M026,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:45:48,4/27/2023,1,CC,Ag,M066,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:18:05,4/27/2023,1,CC,Ag,M011,FUN,FUN,M099,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:46:29,4/27/2023,1,CC,Ag,M027,M162,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:38:22,4/27/2023,1,CC,Ag,M034,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:44:44,4/27/2023,1,CC,Ag,M141,M006,M097,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:57:46,4/27/2023,1,CC,Ag,M101,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:43:32,4/27/2023,1,CC,Ag,M157,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:36:49,5/1/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:45:02,5/1/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:48:55,5/1/2023,2,AK,Ag,M009,M200,FUN,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:50:08,5/1/2023,1,CC,Ag,M161,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:01:26,5/1/2023,2,AK,Ag,M020,M053,,M163,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:18:33,5/1/2023,2,AK,M,M114,,,FUN,,,F,NA,No Value,NoIntro,NoPE,NoEjac,3,11,0,23
+8:23:37,5/1/2023,1,CC,Ag,M161,M202,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:34:09,5/1/2023,1,CC,M,M224,,,FUN,,,F,IgnoreRejection,No Value,NA,NA,NA,NA,NA,No Value,No Value
+8:50:47,5/1/2023,2,AK,Ag,M103,,,FUN,JVMUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:54:25,5/1/2023,1,CC,Ag,M105,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:46,5/1/2023,1,CC,Ag,FUN,FUN,FUN,M121,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:05:26,5/1/2023,2,AK,Ag,M114,M103,,M175,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:07:25,5/1/2023,2,AK,Ag,FUN,FUN,,M132,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:22:26,5/1/2023,2,AK,Ag,FUN,M103,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:33:46,5/1/2023,1,CC,Ag,FUN,FUN,,M006,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:34:27,5/1/2023,1,CC,Ag,FUN,FUN,JVUN,M161,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:37:42,5/1/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:49:25,5/1/2023,2,AK,Ag,M187,M068,,M146,M031,M210,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:51:55,5/1/2023,1,CC,Ag,M101,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:57:47,5/1/2023,2,AK,Ag,M114,,,FUN,INFANT,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:00:04,5/1/2023,2,AK,Ag,M020,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:08:27,5/1/2023,2,AK,Ag,M227,JVMUN,,M197,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:14:11,5/1/2023,2,AK,Ag,FUN,FUN,,M063,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:31:56,5/1/2023,2,AK,Ag,M225,M228,,M193,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:45:45,5/1/2023,1,CC,Ag,M014,M064,,M156,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:53:43,5/1/2023,1,CC,Ag,M223,M161,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:58:45,5/1/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:56:36,5/1/2023,1,CC,Ag,M066,M030,,M140,M156,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:47:42,5/1/2023,1,CC,Ag,M049,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:11:19,5/1/2023,1,CC,M,M146,,,M150,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,2,0,0,0
+13:17:28,5/1/2023,1,CC,Ag,M101,M006,,M037,M133,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:25:51,5/1/2023,1,CC,Ag,M027,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:52:06,5/2/2023,2,AK,Ag,M211,M170,M010,M160,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:59:55,5/2/2023,2,AK,Ag,M227,M246,,M028,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:32:51,5/2/2023,2,AK,Ag,M180,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:13:36,5/2/2023,2,AK,Ag,FUN,FUN,,M126,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:42:36,5/2/2023,2,AK,Ag,M035,,,JVMUN,INFANT,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:58:32,5/2/2023,2,AK,Ag,M147,M036,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:00:32,5/2/2023,2,AK,Ag,M228,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:45:26,5/3/2023,1,CC,Ag,M105,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:51:18,5/3/2023,1,CC,M,M154,,,M140,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,1,0,1
+8:04:23,5/3/2023,1,CC,Ag,M161,FUN,,FUN,JVUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:06:59,5/3/2023,1,CC,Ag,FUN,,,M095,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:45:08,5/3/2023,1,CC,Ag,M013,M006,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:58:19,5/3/2023,1,CC,Ag,M150,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:13:23,5/3/2023,1,CC,Ag,M027,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:18:28,5/3/2023,1,CC,Ag,M100,M141,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:50:10,5/3/2023,1,CC,Ag,M223,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:51:33,5/3/2023,1,CC,Ag,M034,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:55:41,5/3/2023,1,CC,Ag,FUN,FUN,,M066,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:03:23,5/3/2023,1,CC,Ag,FUN,FUN,,M161,FUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:22,5/3/2023,1,CC,Ag,M022,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:32:05,5/3/2023,1,CC,M,M188,,,M011,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,No Value,No Value,No Value
+10:36:37,5/3/2023,1,CC,Ag,M075,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:38:05,5/3/2023,1,CC,Ag,FUN,FUN,,M011,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:45:01,5/3/2023,1,CC,Ag,FUN,FUN,FUN,M030,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:47:25,5/4/2023,1,CC,Ag,M185,JVUN,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:28:55,5/4/2023,1,CC,Ag,M176,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:29:44,5/4/2023,1,CC,Ag,FUN,FUN,,M082,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:48:13,5/4/2023,1,CC,Ag,M162,,,M150,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:41:50,5/5/2023,1,CC,Ag,M011,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:53:19,5/5/2023,1,CC,Ag,M162,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:54:13,5/5/2023,1,CC,Ag,M095,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:55:53,5/5/2023,1,CC,Ag,M173,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:58:18,5/5/2023,1,CC,Ag,M154,,,M095,M022,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:03:32,5/5/2023,1,CC,Ag,M185,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:13:54,5/5/2023,1,CC,Ag,M027,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:15:52,5/5/2023,1,CC,Ag,M100,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:21,5/5/2023,1,CC,Ag,FUN,FUN,,M205,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:27:40,5/5/2023,1,CC,Ag,M013,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:29:14,5/5/2023,1,CC,Ag,M013,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:33:00,5/5/2023,1,CC,Ag,M076,FUN,,M140,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:43:50,5/5/2023,1,CC,Ag,FUN,FUN,,M042,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:59:41,5/5/2023,1,CC,Ag,M223,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:24:01,5/5/2023,1,CC,Ag,M224,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:26:08,5/5/2023,1,CC,Ag,M145,FUN,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:12:03,5/5/2023,1,CC,Ag,M141,M223,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:21:43,5/5/2023,1,CC,M,M156,,,FUN,,,Gr,NA,No Value,Intro,PE,NoEjac,6,4,0,13
+7:34:03,5/8/2023,1,CC,Ag,M185,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:46:44,5/8/2023,1,CC,Ag,M112,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:47,5/8/2023,1,CC,Ag,M037,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:35:14,5/8/2023,1,CC,Ag,M224,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:35:29,5/8/2023,1,CC,Ag,M224,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:48:59,5/8/2023,1,CC,Ag,M059,M161,,M116,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:57:39,5/8/2023,1,CC,Ag,M188,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:05:56,5/8/2023,1,CC,Ag,M066,M133,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:13:57,5/8/2023,1,CC,Ag,M162,M161,,FUN,FUN,FUN,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:19:06,5/8/2023,1,CC,Ag,M059,FUN,,FUN,JVUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:20:03,5/8/2023,1,CC,Ag,M011,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:43:34,5/8/2023,1,CC,M,M221,,,FUN,,,Ag,NA,No Value,NA,NA,NA,3,8,0,11
+9:44:10,5/8/2023,1,CC,M,M221,,,FUN,,,Ag,NA,No Value,Intro,PE,NoEjac,9,8,0,11
+9:46:32,5/8/2023,1,CC,Ag,M173,M116,,M092,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:47:20,5/8/2023,1,CC,Ag,M066,,,M146,M092,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:56:32,5/8/2023,1,CC,Ag,M037,M076,M092,M026,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:37:00,5/8/2023,1,CC,Ag,M013,M026,M066,M112,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:39:49,5/8/2023,1,CC,Ag,M059,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:55:18,5/8/2023,1,CC,Ag,M162,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:50:15,5/8/2023,1,CC,Ag,M049,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:14:48,5/8/2023,1,CC,Ag,M027,FUN,,FUN,JVUN,,NA,NA,AS-RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:15:51,5/8/2023,1,CC,Ag,M252,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:33:15,5/8/2023,1,CC,Ag,M192,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:44:30,5/8/2023,1,CC,Ag,M011,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:50:52,5/8/2023,1,CC,Ag,FUN,FUN,,M143,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:04,5/9/2023,1,CC,M,M011,,,JVUN,,,Ply,NA,No Value,NoIntro,NoPE,NoEjac,6,2,0,6
+8:22:54,5/9/2023,1,CC,Ag,FUN,FUN,JVUN,M176,M083,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:03:04,5/9/2023,1,CC,Ag,M161,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:05:06,5/9/2023,1,CC,Ag,M090,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:21:35,5/9/2023,1,CC,Ag,M078,M092,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:25:59,5/9/2023,1,CC,Ag,M156,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:31:35,5/9/2023,1,CC,Ag,M192,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:47:33,5/10/2023,1,CC,Ag,M185,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:20:06,5/10/2023,1,CC,Ag,M161,M075,,M064,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:23:57,5/10/2023,1,CC,Ag,M169,M092,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:25:34,5/10/2023,1,CC,Ag,FUN,FUN,,M092,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:42:44,5/10/2023,1,CC,Ag,M099,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:44:26,5/10/2023,1,CC,Ag,M100,,,FUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:46:51,5/10/2023,1,CC,Ag,M066,M030,,FUN,FUN,FUN,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:02:03,5/10/2023,1,CC,Ag,M101,,,JVUN,JVUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:07:56,5/10/2023,1,CC,Ag,M075,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:17:50,5/10/2023,1,CC,M,M011,,,M099,,,R,IgnoreRejection,No Value,NA,NA,NA,No Value,No Value,No Value,No Value
+11:22:11,5/10/2023,1,CC,Ag,M123,FUN,,M048,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:31:20,5/10/2023,1,CC,Ag,FUN,FUN,,M123,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:39:33,5/10/2023,1,CC,M,M097,,,M162,,,Ag,NA,No Value,NoIntro,NoPE,NoEjac,9,14,0,20
+13:40:54,5/10/2023,1,CC,M,M006,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,2,0,6
+13:45:53,5/10/2023,1,CC,M,M157,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,4,6,0,8
+13:47:37,5/10/2023,1,CC,M,M157,,,FUN,,,R,NA,No Value,Intro,PE,NoEjac,3,6,0,14
+13:49:01,5/10/2023,1,CC,Ag,M030,M090,,M093,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:51:23,5/12/2023,1,CC,Ag,M075,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:17:56,5/12/2023,1,CC,Ag,M048,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:24:15,5/12/2023,1,CC,Ag,M145,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:29:22,5/12/2023,1,CC,Ag,M075,M140,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:33:07,5/12/2023,1,CC,Ag,M075,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:38:05,5/12/2023,1,CC,Ag,M185,M049,,M066,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:21:16,5/12/2023,1,CC,Ag,M162,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:27:57,5/12/2023,1,CC,Ag,M027,M049,,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:40:13,5/12/2023,1,CC,Ag,M161,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:40:40,5/12/2023,1,CC,Ag,M161,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:44:37,5/12/2023,1,CC,M,M207,,,JVUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,5,2,0,7
+10:00:48,5/12/2023,1,CC,Ag,M022,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:01:27,5/12/2023,1,CC,Ag,M022,FUN,FUN,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:05:36,5/12/2023,1,CC,Ag,M022,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:06:48,5/12/2023,1,CC,Ag,M076,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:07,5/12/2023,1,CC,Ag,M076,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:14:23,5/12/2023,1,CC,Ag,M133,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:34:30,5/12/2023,1,CC,Ag,M030,M080,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+14:01:53,5/12/2023,1,CC,Ag,M101,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:58:45,5/15/2023,1,CC,Ag,M099,,,JVUN,JVUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:04:35,5/15/2023,1,CC,Ag,M185,,,JVUN,JVUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:05:01,5/15/2023,1,CC,Ag,M099,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:28:33,5/15/2023,1,CC,Ag,M095,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:30:23,5/15/2023,1,CC,Ag,M224,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:18:37,5/15/2023,1,CC,Ag,M097,,,FUN,FUN,FUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:34:53,5/15/2023,1,CC,Ag,M075,M145,,JVUN,JVUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:51:57,5/15/2023,1,CC,Ag,M042,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:56:51,5/15/2023,1,CC,Ag,FUN,,,M145,M076,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:58:28,5/15/2023,1,CC,Ag,M075,FUN,,JVUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+9:58:49,5/15/2023,1,CC,Ag,M076,M188,,FUN,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:06:15,5/15/2023,1,CC,Ag,FUN,FUN,,M143,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:07:07,5/15/2023,1,CC,Ag,M037,,,FUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+11:28:57,5/15/2023,1,CC,Ag,M048,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+12:01:54,5/15/2023,1,CC,M,M093,,,FUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,6,0,11
+12:58:55,5/15/2023,1,CC,M,M252,,,JVUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,3,0,0,1
+13:22:08,5/15/2023,1,CC,Ag,M121,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:54:45,5/15/2023,1,CC,Ag,M048,,,JVUN,JVUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:45:23,5/16/2023,1,CC,Ag,M042,,,FUN,FUN,JVUN,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+7:53:43,5/16/2023,1,CC,Ag,M042,M030,,M095,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:15:57,5/16/2023,1,CC,Ag,M223,,,JVUN,JVUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:21:26,5/16/2023,1,CC,Ag,FUN,FUN,JVUN,M223,M209,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:23:56,5/16/2023,1,CC,Ag,M076,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+8:54:03,5/16/2023,1,CC,Ag,M156,M161,,FUN,FUN,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:03:26,5/16/2023,1,CC,Ag,JVUN,JVUN,FUN,M154,,,NA,NA,AS,NA,NA,NA,No Value,No Value,No Value,No Value
+10:14:46,5/16/2023,1,CC,M,M205,,,JVUN,,,R,NA,No Value,NoIntro,NoPE,NoEjac,NA,NA,NA,NA
+10:45:16,5/16/2023,1,CC,Ag,M037,,,FUN,FUN,,NA,NA,RS,NA,NA,NA,No Value,No Value,No Value,No Value
+13:17:38,2/8/2024,1,WR,Ag,M151,,,M059,FUN,,,,RS,,NA,,,,,
+13:19:02,2/8/2024,1,WR,M,M151,,,FUN,,,Ag,,,,NoErection,,5,,,
+9:34:55,2/9/2024,1,WR,M,M092,,,FUN,,,,,,Intro,Erection,Ejac,3,1,1,3
+10:10:33,2/9/2024,1,WR,Ag,M223,,,M201 (F),FUN,,,,RS,,,,,,,
+10:34:56,2/9/2024,2,JF,M,M062,,,MUN,,,Gr,,,,,,,,,
+10:49:41,2/9/2024,2,JF,M,M062,,,MUN,,,Gr,,,,,,,,,
+11:38:43,2/9/2024,1,WR,M,M099,,,FUN,,,Gr,,,Intro,Erection,Ejac,4,11,4,25
+12:42:14,2/9/2024,2,JF,M,SAMUN,,,M211,,,Gr,,,,,,4,,,
+12:48:31,2/9/2024,1,WR,Ag,M059,M101,,M075,,,T,,AS,,,,,,,
+7:52:39,2/12/2024,2,JF,M,M125,,,FUN,,,R,,,,NA,,5,,,
+7:58:55,2/12/2024,1,WR,Ag,M189,,,M002,MUN,,,,RS,,,,,,,
+8:31:58,2/12/2024,1,WR,M,M097,,,FUN,,,Ag,,,Intro,Erection,Ejac,,,,
+8:36:15,2/12/2024,2,JF,Ag,M175,,,FUN,INFANT,,R,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:52:16,2/12/2024,2,JF,Ag,MUN,MUN,,FUN,,,R,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:15:26,2/12/2024,2,JF,Ag,M103,,,FUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:23:06,2/12/2024,2,JF,M,M098,,,MUN,,,Ag,,,,,,2,,,
+10:26:04,2/12/2024,1,WR,M,M042,,,FUN,,,Gr,,,NoIntro,NoErection,NoEjac,1,,,
+10:56:39,2/12/2024,1,WR,M,M097,,,FUN,,,Gr,,,Intro,Erection,NA,3,,,3
+12:15:07,2/12/2024,2,JF,M,M182,,,M245,,,Gr,,,,,,3,,,
+12:15:36,2/12/2024,2,JF,M,M182,,,M245,,,Gr,,,,,,2,,,
+13:05:48,2/12/2024,1,WR,Ag,M011,M105,,M059,M185,,,,AS,,NA,,,,,
+7:53:20,2/13/2024,2,JF,Ag,M053,,,FUN,JVUN,,R,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:56:22,2/13/2024,2,JF,M,M053,,,FUN,,,Ag,,,,Erection,,10,,,
+8:52:51,2/13/2024,1,WR,M,M189,,,M078,,,Gr,,,NoIntro,NoErection,NoEjac,2,,,4
+8:54:16,2/13/2024,1,WR,Ag,M189,M078,,M014,,,,,AS,,,,,,,
+8:56:47,2/13/2024,1,WR,Ag,M189,,,M078,FUN,,CoAg,,RS,NoIntro,NoErection,NoEjac,1,1,,5
+8:59:04,2/13/2024,1,WR,M,M189,,,FUN,,,,,,NoIntro,NoErection,NoEjac,1,,,5
+10:59:49,2/13/2024,2,JF,M,M182,,,SAMUN,,,Ag,,,,,,3,,,
+11:00:18,2/13/2024,2,JF,M,M062,,,SAMUN,,,,,,,,,2,,,
+12:01:59,2/13/2024,1,WR,Ag,M154,,,M093,M048,,,,RS,,,,,,,
+13:24:51,2/13/2024,1,WR,M,M205,,,M162,,,Gr,,,NoIntro,NoErection,NoEjac,2,,,
+13:29:21,2/13/2024,1,WR,M,M205,,,M162,,,Gr,,,NoIntro,NoErection,NoEjac,4,,,
+8:14:58,2/14/2024,2,JF,M,M062,,,M010,,,R,,,,NoErection,,2,,,
+8:32:05,2/14/2024,2,JF,M,M063,,,FUN,,,F,,,,NoErection,,2,,,
+9:16:06,2/14/2024,2,JF,M,M104,,,FUN,,,Ag,,,,NoErection,,2,,,
+11:02:30,2/14/2024,1,WR,Ag,M059,M101,,M083,,,,,AS,,,,,,,
+12:36:32,2/14/2024,1,WR,Ag,M169,,,M168,M176,,,,RS,,,,,,,
+13:17:39,2/14/2024,1,WR,M,M075,,,FUN,,,,,,Intro,Erection,Ejac,4,5,2,15
+8:09:40,2/15/2024,2,JF,M,M063,,,FUN,,,,,,,NoErection,,3,,,
+8:16:19,2/15/2024,2,JF,Ag,M001,M063,,M010,,,NA,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:20:26,2/15/2024,2,JF,M,M104,,,FUN,,,,,,,,NoEjac,4,,,
+8:37:12,2/15/2024,2,JF,M,M063,,,,,,R,,,,NoErection,NoEjac,1,,,
+8:47:30,2/15/2024,1,WR,M,M090,,,M141,,,Gr,,,NoIntro,Erection,NoEjac,2,6,2,17
+10:34:37,2/15/2024,2,JF,M,INFANT,,,JVMUN,,,Ag,,,NoIntro,NoErection,NoEjac,2,,,
+10:40:25,2/15/2024,2,JF,M,M062,,,M207,,,Gr,,,,,NoEjac,3,,,
+12:40:37,2/15/2024,2,JF,M,M282,,,FUN,,,Gr,,,,,NoEjac,3,,,
+12:43:32,2/15/2024,2,JF,M,M282,,,FUN,,,Gr,,,,,NoEjac,2,,,
+13:02:21,2/15/2024,2,JF,M,M104,,,FUN,,,Gr,,,,,,8,,,
+13:26:58,2/15/2024,2,JF,M,JVMUN,,,JVMUN,,,Gr,,,,,NoEjac,4,,,
+13:29:42,2/15/2024,2,JF,M,M104,,,FUN,,,,,,,,,,,,
+13:32:10,2/15/2024,2,JF,M,JVMUN,,,M298,,,Gr,,,,,,3,,,
+8:23:08,2/16/2024,2,JF,M,M062,,,FUN,,,,IgnoreRejection,,NoIntro,,NoEjac,2,,,
+8:24:34,2/16/2024,2,JF,Ag,M058,,,JVUN,JVUN,,R,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:38:49,2/16/2024,1,WR,M,M085,,,FUN,,,F,,,,Erection,,,,,
+8:39:46,2/16/2024,1,WR,Ag,M085,,,FUN,JVUN,,,,RS,,,,,,,
+8:44:57,2/16/2024,2,JF,Ag,M132,M175,,M025,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:47:14,2/16/2024,1,WR,Ag,M074,,,FUN,JVUN,,F,,RS,,,,,,,
+10:01:33,2/16/2024,2,JF,M,M053,,,FUN,,,,,,,,NoEjac,6,,,
+8:16:41,2/20/2024,2,JF,Ag,M098,M131,,MUN,,,R,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:23:06,2/20/2024,2,JF,Ag,M067,M207,,M063,,,NA,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:12:29,2/20/2024,2,JF,M,SAMUN,,,SAMUN,,,,,,NoIntro,,,6,,,
+10:13:13,2/20/2024,2,JF,M,SAMUN,,,SAMUN,,,,,,,,,2,,,
+10:13:36,2/20/2024,2,JF,M,SAMUN,,,SAMUN,,,R,,,,,,5,,,
+10:39:02,2/20/2024,2,JF,M,M007,,,FUN,,,F,,,,,,5,,,
+13:20:01,2/20/2024,2,JF,Ag,M166,,,SAMUN,SAMUN,,NA,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:27:26,2/21/2024,2,JF,M,M165,,,M104,,,CoAg,,,,,,3,,,
+8:35:49,2/21/2024,2,JF,Ag,M103,,,SAMUN,JVUN,,NA,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+10:04:38,2/21/2024,2,JF,M,M053,,,FUN,,,F,,,,,NoEjac,6,,,
+8:08:26,2/22/2024,2,JF,M,M020,,,JVMUN,,,Gr,,,NoIntro,,NoEjac,3,,,
+10:16:48,2/26/2024,2,JF,M,JVMUN,,,JVMUN,,,Ply,,,NoIntro,NoErection,NoEjac,3,,,
+10:19:00,2/26/2024,2,JF,M,JVMUN,,,JVFUN,,,,,,,,NoEjac,5,,,
+10:19:34,2/26/2024,2,JF,M,JVMUN,,,JVFUN,,,,,,,,NoEjac,4,,,
+7:41:34,2/27/2024,2,JF,M,M063,,,FUN,,,Gr,,,,,NoEjac,4,,,
+7:44:21,2/27/2024,2,JF,M,M063,,,FUN,,,Gr,,,,,,5,,,
+8:04:24,2/27/2024,2,JF,M,,,,FUN,,,,,,,,,,,,
+8:34:49,2/27/2024,1,WR,M,M185,,,,,,,,,,,,,,,
+8:46:55,2/27/2024,1,WR,Ag,M037,M111,,MUN,,,,,AS,,,,,,,
+11:08:31,2/27/2024,1,WR,M,M076,,,FUN,,,Gr,,,NoIntro,NoErection,NoEjac,2,11,1,23
+11:39:34,2/27/2024,1,WR,Ag,M080,,,FUN,FUN,,,,RS,,,,,,,
+12:33:51,2/27/2024,1,WR,M,M171,,,FUN,,,,,,NoIntro,Erection,NoEjac,2,3,,8
+12:38:18,2/27/2024,1,WR,M,M171,,,FUN,,,Gr,,,Intro,Erection,Ejac,6,4,,8
+12:55:17,2/27/2024,1,WR,M,M064,,,FUN,,,,,,Intro,Erection,Ejac,5,5,1,12
+13:06:18,2/27/2024,1,WR,M,MUN,,,M083,,,,,,,,,,,,
+7:45:29,2/28/2024,1,WR,Ag,M076,,,FUN,FUN,,,,RS,,,,,,,
+7:57:51,2/28/2024,1,WR,M,M101,,,FUN,,,F,,,NoIntro,Erection,NoEjac,5,11,,28
+12:54:17,2/28/2024,1,WR,M,M088,,,MUN,,,,,,NoIntro,Erection,NoEjac,3,1,,4
+13:23:29,2/28/2024,1,WR,M,M027,,,FUN,,,Gr,,,Intro,Erection,NoEjac,7,10,2,16
+13:50:35,2/28/2024,1,WR,M,JVFUN,,,JVFUN,,,,,,,,,,,,
+7:52:20,2/29/2024,2,JF,M,M182,,,M227,,,F,,,NoIntro,,NoEjac,4,,,
+7:52:36,2/29/2024,1,WR,Ag,M011,FUN,,FUN,,,,,AS,,,,,,,
+7:56:30,2/29/2024,2,JF,M,M182,,,,,,CoAg,,,NoIntro,,NoEjac,4,,,
+8:28:06,2/29/2024,2,JF,Ag,,FUN,,,,,NA,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:07:08,2/29/2024,1,WR,Ag,M006,,,FUN,JVUN,,,,RS,,,,,,,
+9:39:03,2/29/2024,2,JF,M,M182,,,,,,CoAg,,,,,,,,,
+9:57:15,2/29/2024,1,WR,Ag,M011,,,FUN,FUN,,,,RS,,,,,,,
+10:00:58,2/29/2024,2,JF,M,JVMUN,,,JVMUN,,,Gr,,,NoIntro,,NoEjac,10,,,
+10:04:49,2/29/2024,2,JF,M,M165,,,FUN,,,CoAg,IgnoreRejection,,NoIntro,,NoEjac,1,,,
+11:38:14,2/29/2024,1,WR,M,M203,,,FUN,,,,,,Intro,Erection,Ejac,6,3,1,6
+11:55:40,2/29/2024,1,WR,M,M026,,,FUN,,,,,,NoIntro,Erection,NoEjac,4,5,1,12
+12:34:55,2/29/2024,1,WR,M,M101,,,FUN,,,,,,NoIntro,Erection,NoEjac,5,6,,14
+13:12:51,2/29/2024,1,WR,Ag,M178,M111,,MUN,,,,,AS,,,,,,,
+13:22:29,2/29/2024,1,WR,M,M016,,,FUN,,,,,,Intro,Erection,NoEjac,9,2,2,3
+10:49:31,3/1/2024,1,WR,M,M011,,,FUN,,,R,,,NoIntro,NoErection,NoEjac,3,1,,6
+10:32:37,3/4/2024,1,WR,M,M011,,,M151,,,R,,,NoIntro,NoErection,NoEjac,5,9,1,16
+9:17:28,3/5/2024,1,WR,M,M059,,,M100,,,T,,,NoIntro,NoErection,NoEjac,3,4,,12
+10:09:49,3/8/2024,1,WR,M,M076,,,MUN,,,,,,NoIntro,NoErection,NoEjac,5,3,,9
+8:06:51,3/13/2024,1,WR,M,M133,,,M011,,,T,,,NoIntro,NoErection,NoEjac,2,3,1,8
+8:45:56,3/13/2024,1,WR,M,JVMUN,,,JVMUN,,,,,,,,,,,,
+9:05:07,3/13/2024,1,WR,M,M188,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,4,10,1,19
+9:06:39,3/13/2024,1,WR,M,M188,,,FUN,,,Gr,,,NA,Erection,NoEjac,6,10,1,23
+9:53:23,3/13/2024,1,WR,Ag,M042,M078,,MUN,FUN,,,,AS,,,,,,,
+10:17:25,3/13/2024,1,WR,M,JVFUN,,,FUN,,,,,,,,,,,,
+11:10:27,3/13/2024,1,WR,Ag,M011,MUN,,M140,,,,,AS,,,,,,,
+13:09:59,3/13/2024,1,WR,Ag,M048,MUN,,,,,,,AS,,,,,,,
+13:10:36,3/13/2024,1,WR,M,MUN,,,M048,MUN,,CoAg,,,NoIntro,NoErection,NoEjac,5,1,,6
+13:33:26,3/13/2024,1,WR,M,JVMUN,,,JVUN,,,,,,NA,NA,NA,3,,,
+9:43:48,3/14/2024,1,WR,Ag,M011,MUN,,M141,,,,,AS,,,,,,,
+10:01:14,3/14/2024,1,WR,M,M252,,,,,,Gr,,,,Erection,NoEjac,,,,
+10:19:56,3/14/2024,1,WR,M,M002,,,FUN,,,T,,,NoIntro,NoErection,NoEjac,4,6,1,14
+12:18:45,3/14/2024,1,WR,Ag,M105,,,,INFANT,FUN,,,RS,,,,,,,
+13:15:30,3/14/2024,1,WR,Ag,M192,,,FUN,INFANT,,,,RS,,,,,,,
+13:39:21,3/14/2024,1,WR,M,M048,,,FUN,,,Gr,,,NA,Erection,NoEjac,3,1,,2
+13:40:46,3/14/2024,1,WR,Ag,MUN,,,M048,FUN,,,,RS,,,,,,,
+8:01:02,3/15/2024,1,WR,Ag,M074,,,FUN,JVUN,FUN,,,RS,,,,,,,
+8:19:52,3/15/2024,1,WR,M,M027,,,FUN,,,T,,,NoIntro,Erection,NoEjac,5,27,3,60
+8:23:21,3/15/2024,1,WR,M,M027,,,FUN,,,Gr,,,,Erection,NoEjac,7,27,3,60
+8:40:01,3/15/2024,1,WR,Ag,M026,M011,,MUN,,,,,AS,,,,,,,
+9:15:21,3/15/2024,1,WR,M,M064,,,FUN,,,Gr,,,Intro,Erection,Ejac,9,6,,14
+10:20:15,3/18/2024,1,WR,Ag,M011,MUN,,M141,,,,,AS,,,,,,,
+10:47:46,3/18/2024,1,WR,M,M151,,,FUN,,,R,,,NoIntro,NoErection,NoEjac,4,1,,4
+11:00:29,3/18/2024,1,WR,M,M133,,,FUN,,,T,,,NoIntro,NoErection,NoEjac,2,7,1,19
+11:05:52,3/18/2024,1,WR,Ag,M014,,,FUN,INFANT,,,,RS,,,,,,,
+11:49:21,3/18/2024,1,WR,M,M112,,,FUN,,,Gr,,,NoIntro,NoErection,NoEjac,2,4,,8
+11:53:29,3/18/2024,1,WR,M,M112,,,FUN,,,Gr,,,NA,Erection,NoEjac,5,3,,7
+12:37:46,3/18/2024,1,WR,Ag,M107,FUN,,FUN,INFANT,,,,AS,,,,,,,
+7:59:03,3/19/2024,1,WR,Ag,M042,,,FUN,INFANT,,,,RS,,,,,,,
+8:09:46,3/19/2024,1,WR,M,M140,,,FUN,,,Ag,,,NA,Erection,NoEjac,4,7,,19
+8:58:43,3/19/2024,1,WR,Ag,M133,FUN,,MUN,,,,,AS,,,,,,,
+9:23:08,3/19/2024,1,WR,M,M141,,,FUN,,,Gr,,,Intro,Erection,,7,2,,6
+10:19:29,3/19/2024,1,WR,Ag,M026,,,M143,FUN,JVUN,,,RS,,,,,,,
+11:04:42,3/19/2024,1,WR,M,M048,,,FUN,,,T,,,NoIntro,NoErection,NoEjac,3,9,1,17
+11:05:31,3/19/2024,1,WR,M,M076,,,M074,,,T,,,NoIntro,NoErection,NoEjac,2,6,1,15
+11:06:32,3/19/2024,1,WR,Ag,M048,,,MUN,FUN,,,,RS,,,,,,,
+11:07:08,3/19/2024,1,WR,Ag,M076,M074,,M048,,,,,AS,,,,,,,
+11:29:02,3/19/2024,1,WR,Ag,M097,,,FUN,MUN,,,,RS,,,,,,,
+11:30:29,3/19/2024,1,WR,Ag,M143,,,MUN,MUN,,,,RS,,,,,,,
+12:31:28,3/19/2024,1,WR,Ag,M095,,,,FUN,JVUN,,,RS,,,,,,,
+13:00:55,3/19/2024,1,WR,Ag,M157,,,FUN,INFANT,,,,RS,,,,,,,
+13:01:25,3/19/2024,1,WR,M,M157,,,FUN,,,Ag,,,NoIntro,NoErection,NoEjac,2,1,,4
+13:25:08,3/19/2024,1,WR,Ag,M078,,,,INFANT,JVUN,,,RS,,,,,,,
+7:50:00,3/20/2024,2,KP,M,M104,,,M182,,,Ag,,,,NA,,2,,,
+8:16:25,3/20/2024,2,KP,Ag,M062,M200,,MUN,,,Ag,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:30:02,3/20/2024,1,WR,Ag,M097,,,FUN,FUN,,,,RS,,,,,,,
+8:53:04,3/20/2024,1,WR,Ag,M202,,,FUN,INFANT,,,,RS,,,,,,,
+9:13:01,3/20/2024,1,WR,M,M006,,,FUN,,,Gr,,,Intro,Erection,NoEjac,7,2,,7
+9:15:42,3/20/2024,2,KP,M,M103,,,FUN,,,F,,,,NA,,2,,,
+9:22:44,3/20/2024,1,WR,M,M006,,,FUN,,,,,,Intro,Erection,Ejac,8,2,,6
+9:27:43,3/20/2024,2,KP,M,M103,,,FUN,,,R,,,,NA,,2,,,
+9:28:29,3/20/2024,2,KP,M,,,,FUN,,,R,,,,NA,,3,,,
+9:28:58,3/20/2024,2,KP,M,M103,,,FUN,,,R,,,,NA,,,,,
+9:29:55,3/20/2024,2,KP,M,M103,,,FUN,,,Gr,,,,Erection,,8,,,
+10:53:38,3/20/2024,1,WR,M,M169,,,FUN,,,,,,NoIntro,NoErection,NoEjac,3,4,,10
+11:00:19,3/20/2024,1,WR,M,M059,,,FUN,,,Gr,,,,Erection,NoEjac,5,12,,30
+11:22:11,3/20/2024,1,WR,Ag,M011,M105,,M169,,,,,AS,,,,,,,
+11:23:05,3/20/2024,1,WR,M,M011,,,M105,,,CoAg,,,NoIntro,NoErection,NoEjac,2,4,,10
+13:05:03,3/20/2024,1,WR,M,M112,,,FUN,,,Ag,,,,NoErection,NoEjac,3,2,,5
+13:13:07,3/21/2024,1,WR,M,M011,,,FUN,,,Ag,,,,NoErection,,3,9,,20
+13:30:14,3/21/2024,1,WR,Ag,M169,,,FUN,JVUN,,,,RS,,,,,,,
+8:05:25,3/25/2024,2,KP,M,M207,,,M225,,,Ag,,,,NA,,2,1,1,4
+8:10:56,3/25/2024,1,WR,Ag,M095,,,FUN,INFANT,,,,RS,,,,,,,
+8:33:58,3/25/2024,2,KP,Ag,M022,,,JVUN,JVUN,JVUN,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:44:27,3/25/2024,1,WR,M,M140,,,FUN,,,F,,,,NoErection,,3,8,,19
+9:02:05,3/25/2024,2,KP,Ag,M103,,,JVUN,JVUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:04:21,3/25/2024,2,KP,Ag,M121,,,JVUN,FUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:07:59,3/25/2024,2,KP,Ag,M121,MUN,,MUN,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:17:48,3/25/2024,2,KP,Ag,M134,,,MUN,,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:22:57,3/25/2024,1,WR,Ag,MUN,MUN,,M192,,,,,AS,,,,,,,
+9:26:44,3/25/2024,2,KP,Ag,M067,,,FUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:29:41,3/25/2024,1,WR,M,M083,,,FUN,,,Gr,,,,Erection,NoEjac,5,9,,16
+9:33:00,3/25/2024,1,WR,M,M083,,,FUN,,,R,,,Intro,Erection,Ejac,8,14,,20
+10:14:33,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,NoIntro,NA,NoEjac,3,,,
+10:15:51,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,,Erection,,5,2,2,4
+10:17:07,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,Intro,Erection,NoEjac,5,1,1,3
+10:17:52,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,Intro,Erection,NoEjac,4,2,2,4
+10:19:34,3/25/2024,2,KP,M,M001,,,FUN,,,F,,,NoIntro,Erection,NoEjac,5,1,1,3
+10:21:13,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,NoIntro,Erection,NoEjac,4,1,1,5
+10:22:34,3/25/2024,2,KP,M,M001,,,FUN,,,F,,,NoIntro,Erection,NoEjac,4,2,2,6
+10:23:52,3/25/2024,2,KP,M,M001,,,FUN,,,F,,,NoIntro,Erection,NoEjac,4,2,2,6
+10:24:41,3/25/2024,2,KP,M,M001,,,FUN,,,R,,,NoIntro,Erection,Ejac,8,2,2,4
+10:39:36,3/25/2024,1,WR,Ag,M156,M150,,M169,,,,,AS,,,,,,,
+11:02:09,3/25/2024,1,WR,M,M042,,,FUN,,,Ag,,,,NoErection,,2,6,,13
+11:28:20,3/25/2024,1,WR,Ag,M078,,,JVUN,INFANT,,,,RS,,,,,,,
+11:35:59,3/25/2024,1,WR,Ag,M141,MUN,,M078,,,,,AS,,,,,,,
+11:39:58,3/25/2024,1,WR,Ag,M026,,,FUN,FUN,,,,RS,,,,,,,
+11:47:55,3/25/2024,1,WR,Ag,M169,,,INFANT,FUN,,,,RS,,,,,,,
+12:12:15,3/25/2024,2,KP,M,M163,,,FUN,,,R,,,NoIntro,Erection,NoEjac,5,1,1,2
+12:13:19,3/25/2024,2,KP,M,M103,,,FUN,,,Ag,,,NoIntro,Erection,NoEjac,5,1,1,2
+12:14:11,3/25/2024,2,KP,M,M103,,,FUN,,,R,,,NoIntro,Erection,NoEjac,6,1,1,2
+12:14:56,3/25/2024,2,KP,M,M103,,,FUN,,,R,,,NoIntro,Erection,NoEjac,6,1,1,2
+12:15:37,3/25/2024,2,KP,M,M103,,,FUN,,,R,,,NoIntro,Erection,NoEjac,5,1,1,2
+12:54:39,3/25/2024,2,KP,M,M104,,,FUN,,,Gr,,,NoIntro,NA,NoEjac,3,2,2,4
+12:55:33,3/25/2024,2,KP,M,M104,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,3,2,2,4
+12:56:59,3/25/2024,2,KP,M,M104,,,FUN,,,R,,,NoIntro,,NoEjac,3,2,2,4
+12:58:14,3/25/2024,2,KP,M,MUN,,,FUN,,,R,,,NoIntro,,NoEjac,4,2,2,4
+12:59:27,3/25/2024,2,KP,M,M104,,,FUN,,,R,,,NoIntro,,NoEjac,4,1,1,2
+13:00:29,3/25/2024,2,KP,M,M104,,,FUN,,,R,,,NoIntro,NA,NoEjac,3,1,1,2
+13:02:48,3/25/2024,2,KP,M,M104,,,FUN,,,Gr,,,NoIntro,NA,Ejac,7,1,1,2
+7:52:45,3/26/2024,2,KP,M,M062,,,FUN,,,Gr,,,NoIntro,NA,NoEjac,3,4,4,8
+7:53:48,3/26/2024,2,KP,M,M062,,,FUN,,,Gr,,,NoIntro,NA,NoEjac,3,4,4,9
+7:55:13,3/26/2024,2,KP,Ag,M175,MUN,MUN,MUN,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:13:19,3/26/2024,1,WR,Ag,M083,M014,,MUN,,,,,AS,,,,,,,
+8:44:23,3/26/2024,2,KP,Ag,M138,,,FUN,JVUN,JVUN,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:48:14,3/26/2024,2,KP,Ag,M103,,,JVUN,JVUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:49:58,3/26/2024,2,KP,Ag,M001,M044,MUN,M121,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:56:45,3/26/2024,1,WR,M,M140,,,FUN,,,R,,,,NoErection,,4,7,,13
+8:57:35,3/26/2024,2,KP,Ag,M175,M001,M041,MUN,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:11:21,3/26/2024,1,WR,M,M059,,,FUN,,,Gr,,,NA,Erection,NoEjac,5,6,,13
+9:13:46,3/26/2024,1,WR,M,M059,,,FUN,,,Gr,,,Intro,Erection,Ejac,9,6,,13
+9:23:00,3/26/2024,1,WR,Ag,M059,,,M188,MUN,,,,RS,,,,,,,
+9:33:43,3/26/2024,2,KP,Ag,M245,,,FUN,MUN,,Ag,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+10:02:49,3/26/2024,2,KP,M,M063,,,JVUN,,,R,,,,,,,,,
+10:07:44,3/26/2024,1,WR,Ag,M145,,,M099,FUN,,,,RS,,,,,,,
+10:22:50,3/26/2024,1,WR,Ag,M064,,,FUN,FUN,,,,RS,,,,,,,
+11:02:46,3/26/2024,1,WR,Ag,M026,M143,,,,,,,AS,,,,,,,
+11:11:07,3/26/2024,1,WR,M,M026,,,M143,,,Ag,,,,NoErection,,2,6,,13
+11:11:56,3/26/2024,1,WR,Ag,M026,M143,,MUN,MUN,,CoAg,,AS,,,,,,,
+11:13:53,3/26/2024,1,WR,M,M026,,,M143,,,CoAg,,,,NoErection,,3,5,,14
+11:43:34,3/26/2024,1,WR,Ag,M024,,,INFANT,JVUN,,,,RS,,,,,,,
+7:51:05,3/27/2024,2,KP,M,M165,,,FUN,,,T,,,NoIntro,NA,NoEjac,2,,,
+8:18:12,3/27/2024,2,KP,Ag,M104,,,JVUN,JVUN,,CoAg,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:37:20,3/27/2024,2,KP,Ag,M164 (F),M175,MUN,M020,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:44:50,3/27/2024,2,KP,Ag,M164 (F),,,FUN,JVUN,,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:17:00,3/27/2024,2,KP,Ag,M138,,,FUN,FUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:18:48,3/27/2024,2,KP,Ag,M164 (F),,,JVUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:19:34,3/27/2024,2,KP,Ag,M062,,,MUN,JVUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:42:01,3/27/2024,2,KP,M,M163,,,FUN,,,F,,,NoIntro,Erection,NA,3,11,11,23
+9:42:52,3/27/2024,2,KP,M,M163,,,FUN,,,F,,,,Erection,,2,12,12,25
+9:54:44,3/27/2024,1,WR,M,M083,,,M202,,,F,,,,NoErection,,2,1,,3
+10:13:23,3/27/2024,2,KP,Ag,M132,,,FUN,JVUN,JVUN,Ply,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+10:27:30,3/27/2024,2,KP,Ag,M062,,,JVUN,JVUN,FUN,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+11:08:50,3/27/2024,1,WR,Ag,M078,,,M242,FUN,INFANT,,,RS,,,,,,,
+11:38:43,3/27/2024,1,WR,Ag,M189,,,M223,MUN,,,,RS,,,,,,,
+11:56:12,3/27/2024,1,WR,Ag,M059,M223,,M192,,,,,AS,,,,,,,
+13:27:46,3/27/2024,1,WR,M,M011,,,FUN,,,Ag,,,,NoErection,,2,6,,14
+7:41:43,3/28/2024,1,WR,Ag,M097,,,FUN,INFANT,,,,RS,,,,,,,
+7:50:16,3/28/2024,2,KP,M,M098,,,M104,,,Ag,,,NoIntro,NA,NA,2,4,4,10
+8:07:34,3/28/2024,1,WR,Ag,M105,,,FUN,INFANT,,,,RS,,,,,,,
+8:13:13,3/28/2024,2,KP,Ag,MUN,,,JVUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:14:15,3/28/2024,2,KP,Ag,M020,M163,M103,MUN,MUN,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:16:10,3/28/2024,2,KP,Ag,M134,,,FUN,INFANT,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:27:20,3/28/2024,2,KP,Ag,M134,,,FUN,JVUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:59:28,3/28/2024,1,WR,Ag,M011,M140,,MUN,MUN,,,,AS,,,,,,,
+9:27:35,3/28/2024,2,KP,Ag,M063,,,FUN,INFANT,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+10:14:31,3/28/2024,1,WR,Ag,M101,,,INFANT,INFANT,,,,RS,,,,,,,
+12:55:30,3/28/2024,1,WR,Ag,M014,,,M099,INFANT,,,,RS,,,,,,,
+13:24:14,3/28/2024,1,WR,Ag,M059,,,MUN,MUN,,,,RS,,,,,,,
+8:03:05,3/29/2024,1,WR,Ag,M011,M078,,M111,MUN,,,,AS,,,,,,,
+8:11:34,3/29/2024,1,WR,Ag,M027,,,FUN,INFANT,,,,RS,,,,,,,
+8:17:05,3/29/2024,1,WR,M,M076,,,FUN,,,Ag,,,,NoErection,,3,6,,15
+8:18:41,3/29/2024,1,WR,M,M076,,,FUN,,,,,,NA,Erection,NoEjac,5,6,,12
+8:20:24,3/29/2024,1,WR,M,M076,,,FUN,,,R,,,Intro,Erection,Ejac,9,6,,13
+9:20:06,3/29/2024,1,WR,M,M076,,,MUN,,,Gr,,,NoIntro,NoErection,NoEjac,9,1,,6
+10:36:33,3/29/2024,1,WR,M,M188,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,6,4,,9
+10:42:42,3/29/2024,1,WR,M,M188,,,FUN,,,Gr,,,Intro,Erection,NoEjac,7,5,,8
+10:44:40,3/29/2024,1,WR,M,M188,,,FUN,,,Gr,,,Intro,Erection,Ejac,8,4,,9
+7:58:01,4/1/2024,1,WR,Ag,M059,,,FUN,JVUN,,,,RS,,,,,,,
+8:15:25,4/1/2024,1,WR,Ag,M097,,,INFANT,INFANT,,,,RS,,,,,,,
+9:16:06,4/1/2024,1,WR,M,M141,,,FUN,,,Gr,,,Intro,Erection,NoEjac,5,11,2,19
+9:18:45,4/1/2024,1,WR,M,M141,,,FUN,,,Gr,,,Intro,Erection,Ejac,11,10,1,17
+10:13:53,4/1/2024,1,WR,Ag,M011,M059,,MUN,FUN,,,,AS-RS,,,,,,,
+10:24:06,4/1/2024,1,WR,Ag,M011,,,JVUN,JVUN,,,,RS,,,,,,,
+10:28:51,4/1/2024,1,WR,M,M026,,,M048,,,R,,,,NoErection,,4,1,,4
+10:37:57,4/1/2024,1,WR,Ag,M026,MUN,,M169,MUN,,,,AS,,,,,,,
+11:13:48,4/1/2024,1,WR,Ag,M140,M105,,MUN,,,,,AS,,,,,,,
+7:37:16,4/2/2024,2,KP,Ag,M098,,,MUN,FUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:39:36,4/2/2024,2,KP,Ag,M163,,,FUN,INFANT,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:47:06,4/2/2024,2,KP,Ag,M001,,,FUN,INFANT,FUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:51:24,4/2/2024,2,KP,Ag,M138,,,JVUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:51:50,4/2/2024,2,KP,Ag,M163,,,FUN,FUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+7:52:25,4/2/2024,2,KP,M,M053,,,FUN,,,F,,,NoIntro,NA,NA,2,28,28,39
+8:04:53,4/2/2024,1,WR,M,JVMUN,JVMUN,,,,,Ply,,,,NoErection,,3,3,,7
+8:10:53,4/2/2024,1,WR,Ag,M097,,,FUN,JVUN,,,,RS,,,,,,,
+8:11:45,4/2/2024,2,KP,Ag,M103,,,FUN,FUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:38:25,4/2/2024,2,KP,M,M200,,,FUN,,,R,,,,NA,,3,2,2,3
+8:40:50,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,NA,NoEjac,3,1,1,2
+8:41:35,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,,Erection,,6,1,1,2
+8:42:40,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,3,1,1,2
+8:43:09,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,3,1,1,2
+8:47:17,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,,Erection,,3,1,1,2
+8:48:19,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,5,1,1,2
+8:49:42,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,3,1,1,2
+8:50:30,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,7,1,1,2
+8:52:56,4/2/2024,2,KP,M,M200,,,FUN,,,Gr,,,,Erection,,3,1,1,2
+9:17:17,4/2/2024,1,WR,M,M143,,,FUN,,,Ag,,,,NoErection,,4,7,,15
+9:21:04,4/2/2024,1,WR,M,M143,,,FUN,,,Gr,,,,Erection,,7,6,,11
+9:27:13,4/2/2024,1,WR,Ag,M143,,,M117,FUN,,,,RS,,,,,,,
+9:28:34,4/2/2024,2,KP,Ag,M103,,,MUN,MUN,,Ag,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:49:15,4/2/2024,1,WR,M,M027,,,FUN,,,Ag,,,Intro,Erection,NA,8,9,1,23
+10:59:12,4/2/2024,2,KP,M,M077,,,FUN,,,Gr,,,,Erection,,2,6,6,10
+11:01:50,4/2/2024,2,KP,M,M077,,,FUN,,,T,,,NoIntro,Erection,NoEjac,5,2,2,4
+11:04:45,4/2/2024,2,KP,M,M077,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,4,2,2,4
+11:41:17,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,,Erection,,2,6,6,10
+11:42:24,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,,Erection,,2,6,6,8
+11:45:03,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,,,,3,5,5,7
+11:46:26,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,,Erection,,2,4,4,6
+11:48:32,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,,Erection,,5,4,4,6
+11:49:40,4/2/2024,2,KP,M,M007,,,FUN,,,Gr,,,NoIntro,Erection,Ejac,6,4,4,6
+12:58:43,4/2/2024,2,KP,M,M103,,,MUN,,,Gr,,,NoIntro,Erection,NoEjac,2,3,3,5
+8:08:37,4/3/2024,2,KP,Ag,M103,,,FUN,JVUN,,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:13:30,4/3/2024,2,KP,M,M217,,,FUN,,,Ply,,,,,,,,,
+8:34:34,4/3/2024,2,KP,Ag,M063,M001,,FUN,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:50:17,4/3/2024,2,KP,Ag,M077,,,JVUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+8:58:51,4/3/2024,2,KP,Ag,M138,,,FUN,INFANT,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:21:29,4/3/2024,2,KP,Ag,M020,,,FUN,FUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:24:03,4/3/2024,2,KP,Ag,M067,M227,,MUN,,,CoAg,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:48:09,4/4/2024,1,WR,Ag,M048,MUN,,FUN,,,,,AS,,,,,,,
+9:00:17,4/4/2024,2,KP,Ag,MUN,MUN,,M063,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:22:12,4/4/2024,2,KP,Ag,M062,,,FUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:56:57,4/4/2024,2,KP,Ag,M067,MUN,,M134,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:00:12,4/4/2024,2,KP,Ag,M020,M103,M063,MUN,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:43:35,4/4/2024,1,WR,Ag,M143,M011,,MUN,,,,,AS,,,,,,,
+11:26:51,4/4/2024,2,KP,M,M165,,,,,,R,,,,,,,,,
+11:39:40,4/4/2024,2,KP,Ag,M247,,,JVUN,M008,,T,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+12:53:29,4/4/2024,2,KP,Ag,M200,,,FUN,INFANT,,R,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+13:09:23,4/4/2024,2,KP,M,M007,,,FUN,,,R,,,NoIntro,Erection,NoEjac,2,1,1,4
+13:10:17,4/4/2024,2,KP,M,M007,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,4,1,1,4
+13:11:27,4/4/2024,2,KP,M,M007,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,4,1,1,4
+8:47:42,4/5/2024,2,KP,M,M207,,,M211,,,Gr,,,,,,3,,,2
+9:24:46,4/5/2024,1,WR,Ag,M213,M252,,JVUN,,,,,AS,,,,,,,
+9:39:14,4/5/2024,1,WR,Ag,FUN,JVFUN,,M075,,,,,AS,,,,,,,
+9:40:08,4/5/2024,2,KP,Ag,M007,M103,M163,MUN,,,T,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:46:11,4/5/2024,1,WR,Ag,M011,M048,,M042,,,,,AS,,,,,,,
+10:14:20,4/5/2024,2,KP,Ag,M163,,,FUN,JVMUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+10:22:43,4/5/2024,2,KP,Ag,M062,M138,,MUN,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:44:40,4/5/2024,1,WR,M,M150,,,FUN,,,Ag,,,,NoErection,,3,4,,8
+10:47:05,4/5/2024,1,WR,M,M150,,,FUN,,,R,,,Intro,Erection,Ejac,11,3,,7
+7:37:01,4/8/2024,1,WR,M,M083,,,,,,R,,,NA,Erection,Ejac,,,,
+7:53:00,4/8/2024,2,KP,M,M062,,,M225,,,Ag,,,NoIntro,NA,NoEjac,3,,,3
+7:55:50,4/8/2024,1,WR,Ag,M097,,,FUN,JVUN,,,,RS,,,,,,,
+8:37:37,4/8/2024,2,KP,Ag,M007,M160,,M166,,,T,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+9:10:01,4/8/2024,2,KP,Ag,M132,,,FUN,,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:12:20,4/8/2024,2,KP,Ag,M007,,,FUN,JVUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:13:17,4/8/2024,2,KP,Ag,M020,,,JVUN,JVUN,FUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:48:41,4/8/2024,2,KP,Ag,M001,MUN,MUN,JVUN,JVUN,JVUN,F,NA,AS-RS,NA,NA,NA,NA,NA,No Value,No Value
+10:03:40,4/8/2024,2,KP,M,M132,,,FUN,,,R,,,NoIntro,Erection,NoEjac,3,,1,2
+10:04:22,4/8/2024,2,KP,M,M132,,,FUN,,,R,,,NoIntro,Erection,NoEjac,5,1,1,5
+10:17:17,4/8/2024,1,WR,Ag,M143,M196 (F),,MUN,,,,,AS,,,,,,,
+9:17:11,4/9/2024,2,KP,Ag,M211,,,FUN,INFANT,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:23:03,4/9/2024,2,KP,Ag,M103,,,FUN,FUN,,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:24:54,4/9/2024,2,KP,Ag,M103,,,FUN,FUN,JVUN,F,NA,RS,NA,NA,NA,NA,NA,No Value,No Value
+9:28:21,4/9/2024,1,WR,Ag,FUN,FUN,,M097,,,,,AS,,,,,,,
+9:38:23,4/9/2024,1,WR,Ag,M105,M111,,MUN,,,,,AS,,,,,,,
+12:54:36,4/9/2024,1,WR,M,M011,,,FUN,,,Gr,,,NA,NoErection,NA,6,1,,5
+12:59:37,4/9/2024,1,WR,M,M011,,,FUN,,,Gr,,,NA,NoErection,NA,5,1,,2
+7:59:50,4/10/2024,2,KP,Ag,M132,,,FUN,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:32:24,4/10/2024,2,KP,Ag,MUN,MUN,,M134,,,F,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:45:00,4/10/2024,1,WR,M,M189,,,FUN,,,T,,,,NoErection,,3,4,,8
+8:49:53,4/10/2024,2,KP,Ag,M103,,,MUN,,,NA,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+8:54:03,4/10/2024,2,KP,Ag,M058,,,M227,,,T,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:01:36,4/10/2024,1,WR,Ag,M202,,,MUN,FUN,,,,RS,,,,,,,
+10:16:12,4/10/2024,2,KP,Ag,M211,M200,M058,MUN,,,R,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+10:16:50,4/10/2024,2,KP,Ag,M211,,,FUN,,,Ag,NA,AS,NA,NA,NA,NA,NA,No Value,No Value
+12:07:54,4/10/2024,1,WR,M,M140,,,,,,Gr,,,Intro,Erection,NoEjac,4,2,,5
+12:08:45,4/10/2024,1,WR,M,M140,,,FUN,,,Gr,,,Intro,Erection,NoEjac,5,2,,5
+12:37:18,4/10/2024,1,WR,Ag,M205,M176,,M192,,,,,AS,,,,,,,
+8:00:00,4/11/2024,1,WR,Ag,M194,MUN,,M078,,,,,AS,,,,,,,
+8:08:36,4/11/2024,1,WR,M,M097,,,FUN,,,T,,,,NoErection,,1,14,1,29
+9:23:57,4/11/2024,1,WR,Ag,M223,MUN,,M078,,,,,AS,,,,,,,
+9:34:02,4/11/2024,1,WR,Ag,M048,,,FUN,INFANT,,,,RS,,,,,,,
+10:56:46,4/11/2024,1,WR,Ag,M076,M141,,,,,,,AS,,,,,,,
+10:57:07,4/11/2024,1,WR,Ag,M076,M011,,M140,,,,,AS,,,,,,,
+11:07:11,4/11/2024,1,WR,M,M011,,,M076,,,T,,,,NoErection,,2,4,,10
+10:31:32,17/04/2024,1,WR,M,M242,,,FUN,,,Ag,,,,,,,,,
+10:51:56,17/04/2024,1,WR,Ag,M078,,,FUN,JVUN,,,,RS,,,,,,,
+10:12:03,18/04/2024,1,WR,Ag,FUN,FUN,,M188,,,,,AS,,,,,,,
+11:01:23,18/04/2024,1,WR,Ag,M105,,,FUN,INFANT,,,,RS,,,,,,,
+9:02:53,19/04/2024,1,WR,M,M078,,,FUN,,,Ag,,,,,,,,,
+8:23:48,1/22/2025,2,Katarina,M,M200,,,FUN,,,Ag,,,NA,NA,NA,1,,,
+8:40:25,1/22/2025,2,Katarina,M,M200,,,FUN,,,Gr,,,,,,,,,
+8:48:48,1/22/2025,2,Katarina,Ag,M035,,,FUN,JVUN,,T,,RS,,,,,,,
+8:49:26,1/22/2025,2,Katarina,M,M104,,,FUN,,,R,,,,,,2,,,
+9:17:22,1/22/2025,2,Katarina,M,M265,,,FUN,,,R,,,,,,2,,,
+8:46:23,1/27/2025,2,Katarina,M,M175,,,FUN,,,T,,,,,,,,,
+8:54:44,1/27/2025,2,Katarina,Ag,MUN,M062,M063,JVUN,,,CoAg,,AS,,,,,,,
+8:59:44,1/27/2025,2,Katarina,Ag,M025,M098,,M207,,,T,,AS,,,,,,,
+9:25:20,1/27/2025,2,Katarina,Ag,M138,,,JVUN,FUN,,,,RS,,,,,,,
+8:12:23,1/29/2025,2,Katarina,Ag,M132,,,FUN,FUN,JVUN,T,,RS,,,,,,,
+8:26:53,1/29/2025,2,Katarina,Ag,M062,M044,M063,MUN,,,CoAg,,AS,,,,,,,
+8:28:55,1/29/2025,2,Katarina,Ag,M132,,,JVUN,JVUN,,,,RS,,,,,,,
+8:40:25,1/29/2025,2,Katarina,M,M225,,,FUN,,,T,,,,,,,,,
+9:32:28,1/29/2025,2,Katarina,M,M053,,,FUN,,,F,,,,,,,,,
+9:44:39,1/29/2025,2,Katarina,M,M132,,,FUN,,,F,,,,,,,,,
+9:59:02,1/29/2025,2,Katarina,Ag,M175,,,INFANT,JVUN,,F,,RS,,,,,,,
+10:05:59,1/29/2025,2,Katarina,Ag,M103,M041,,MUN,,,F,,AS,,,,,,,
+10:34:25,1/29/2025,2,Katarina,Ag,M041,M132,,M077,,,R,,AS,,,,,,,
+11:00:33,1/29/2025,2,Katarina,M,M001,,,FUN,,,,,,,,,,,,
+11:02:23,1/29/2025,2,Katarina,M,M063,,,FUN,,,Ag,,,,,,,,,
+11:10:35,1/29/2025,2,Katarina,M,M132,,,M121,,,T,,,,,,,,,
+11:32:38,1/29/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,,,,
+11:32:54,1/29/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,,,,
+11:36:24,1/29/2025,2,Katarina,M,M142,,,FUN,,,R,,,,,,,,,
+12:10:30,1/29/2025,2,Katarina,M,M023,,,MUN,,,R,,,,,,,,,
+7:53:24,1/30/2025,2,Katarina,M,M212,,,FUN,,,Gr,,,,,,,,,
+7:55:10,1/30/2025,2,Katarina,M,M212,,,FUN,,,Gr,,,,,,,,,
+7:58:48,1/30/2025,2,Katarina,M,M103,,,FUN,,,Gr,,,,,,3,,,
+8:01:13,1/30/2025,2,Katarina,M,M103,,,FUN,,,Gr,,,,Erection,Ejac,6,,,
+8:10:45,1/30/2025,2,Katarina,M,M270,,,FUN,,,Gr,,,,,,,,,
+8:21:12,1/30/2025,2,Katarina,Ag,M058,,,FUN,FUN,,F,,RS,,,,,,,
+8:55:42,1/30/2025,2,Katarina,M,M053,,,FUN,,,F,,,,,,,,,
+10:19:56,1/30/2025,2,Katarina,Ag,M132,M077,,JVUN,,,CoAg,,AS,,,,,,,
+10:21:11,1/30/2025,2,Katarina,Ag,M025,M077,,FUN,,,T,,AS,,,,,,,
+10:23:07,1/30/2025,2,Katarina,M,M001,,,FUN,,,Gr,,,,,,,,,
+11:09:59,1/30/2025,2,Katarina,Ag,M163,,,INFANT,FUN,,R,,RS,,,,,,,
+11:36:48,1/30/2025,2,Katarina,Ag,M020,M062,M175,M044,,,CoAg,,AS,,,,,,,
+12:22:17,1/30/2025,2,Katarina,M,M062,,,M063,,,T,,,,,,,,,
+12:25:34,1/30/2025,2,Katarina,M,M062,,,M063,,,T,,,,,,,,,
+12:27:08,1/30/2025,2,Katarina,M,M062,,,M063,,,Ag,,,,,,3,,,
+12:46:22,1/30/2025,2,Katarina,M,M062,,,M063,,,Ag,,,,,,,,,
+8:27:55,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,,,,,,
+8:28:20,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,3,,,
+8:28:46,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,,,5,,,
+8:29:18,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,,,3,,,
+8:29:48,2/3/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,4,,,
+8:34:06,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,4,,,
+8:34:23,2/3/2025,2,Katarina,M,M044,,,FUN,,,R,,,,,,2,,,
+8:41:44,2/3/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,4,,,
+8:54:09,2/3/2025,2,Katarina,M,M041,,,FUN,,,Gr,,,,,,2,,,
+8:59:17,2/3/2025,2,Katarina,M,M098,,,MUN,,,R,,,,,,3,,,
+9:25:01,2/3/2025,2,Katarina,M,M041,,,FUN,,,R,,,,,,3,,,
+9:25:23,2/3/2025,2,Katarina,M,M041,,,FUN,,,R,,,,,,6,,,
+9:51:52,2/3/2025,2,Katarina,M,M182,,,FUN,,,R,,,,,,,,,
+10:10:25,2/3/2025,2,Katarina,M,M132,,,FUN,,,F,,,,,,,,,
+10:12:51,2/3/2025,2,Katarina,M,M058,,,FUN,,,F,,,,,,,,,
+10:15:16,2/3/2025,2,Katarina,M,M058,,,FUN,,,F,,,,Erection,,3,,,
+10:15:51,2/3/2025,2,Katarina,M,M058,,,FUN,,,F,,,,Erection,,13,,,
+10:16:21,2/3/2025,2,Katarina,M,M077,,,FUN,,,F,,,,,,2,,,
+10:16:39,2/3/2025,2,Katarina,M,M077,,,FUN,,,F,,,,,,2,,,
+10:17:57,2/3/2025,2,Katarina,M,M058,,,FUN,,,F,,,,Erection,,3,,,
+10:20:09,2/3/2025,2,Katarina,M,M058,,,FUN,,,R,,,,,,3,,,
+10:21:35,2/3/2025,2,Katarina,M,M058,,,FUN,,,F,,,,Erection,,4,,,
+10:25:51,2/3/2025,2,Katarina,Ag,M007,M182,M200,M023,,,CoAg,,AS,,,,,,,
+12:06:30,2/3/2025,2,Katarina,M,M098,,,MUN,,,R,,,,,,,,,
+12:26:08,2/3/2025,2,Katarina,M,M058,,,FUN,,,R,,,,,,,,,
+12:27:59,2/3/2025,2,Katarina,M,M268,,,FUN,,,R,,,,,,,,,
+12:29:20,2/3/2025,2,Katarina,M,M268,,,FUN,,,Gr,,,,,,,,,
+12:30:11,2/3/2025,2,Katarina,M,M268,,,FUN,,,R,,,,,,2,,,
+12:42:11,2/3/2025,2,Katarina,Ag,M077,,,FUN,,,CoAg,,AS,,,,,,,
+13:31:08,2/3/2025,2,Katarina,Ag,M163,M067,,MUN,,,CoAg,,AS,,,,,,,
+8:03:30,2/4/2025,2,Katarina,M,M103,,,FUN,,,Gr,,,,Erection,,6,,,
+8:04:32,2/4/2025,2,Katarina,M,M103,,,FUN,,,Ag,,,,Erection,,5,,,
+8:09:25,2/4/2025,2,Katarina,M,M098,,,MUN,,,Gr,,,,,,,,,
+8:24:52,2/4/2025,2,Katarina,M,M098,,,FUN,,,Gr,,,,,,,,,
+8:31:25,2/4/2025,2,Katarina,Ag,M063,,,FUN,FUN,,T,,RS,,,,,,,
+8:35:59,2/4/2025,2,Katarina,Ag,M063,,,FUN,JVUN,JVUN,Gr,,RS,,,,,,,
+8:40:42,2/4/2025,2,Katarina,M,M163,,,M265,,,Ag,,,,,,,,,
+8:48:35,2/4/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,,,,,,
+8:49:12,2/4/2025,2,Katarina,M,M098,,,FUN,,,R,,,,,,,,,
+9:08:37,2/4/2025,2,Katarina,M,M038,,,FUN,,,R,,,,,,,,,
+9:30:33,2/4/2025,2,Katarina,M,M166,,,FUN,,,R,,,,,,,,,
+9:47:13,2/4/2025,2,Katarina,M,M138,,,FUN,,,F,,,,,,,,,
+9:49:03,2/4/2025,2,Katarina,M,M138,,,FUN,,,F,,,,,,,,,
+9:50:34,2/4/2025,2,Katarina,M,M103,,,FUN,,,F,,,,,,,,,
+10:01:42,2/4/2025,2,Katarina,Ag,M058,JVUN,,JVUN,,,F,,AS,,,,,,,
+10:17:26,2/4/2025,2,Katarina,Ag,M132,M025,,FUN,,,CoAg,,AS,,,,,,,
+8:25:49,2/5/2025,2,Katarina,M,MUN,,,M265,,,Ag,,,,,,,,,
+8:41:33,2/5/2025,2,Katarina,M,M265,,,MUN,,,R,,,,,,,,,
+8:44:25,2/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,2,,,
+8:45:14,2/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,3,,,
+8:49:07,2/5/2025,2,Katarina,M,M103,,,FUN,,,Gr,,,,,,4,,,
+9:10:20,2/5/2025,2,Katarina,Ag,M163,M062,MUN,MUN,,,CoAg,,AS,,,,,,,
+9:19:41,2/5/2025,2,Katarina,M,M139,,,FUN,,,R,,,,,,3,,,
+9:22:07,2/5/2025,2,Katarina,Ag,M138,,,FUN,,,CoAg,,AS,,,,,,,
+12:23:35,2/5/2025,2,Katarina,M,M138,,,FUN,,,R,,,,,,1,,,
+12:47:24,2/5/2025,2,Katarina,Ag,M044,,,MUN,,,CoAg,,AS,,,,,,,
+13:15:43,2/5/2025,2,Katarina,Ag,M077,M132,,MUN,,,CoAg,,AS,,,,,,,
+13:24:01,2/5/2025,2,Katarina,M,M200,,,FUN,,,R,,,,,,,,,
+13:24:36,2/5/2025,2,Katarina,Ag,M138,M007,,FUN,,,T,,AS,,,,,,,
+7:57:43,2/6/2025,2,Katarina,M,M182,,,FUN,,,Ag,,,,,,4,,,
+8:16:59,2/6/2025,2,Katarina,M,MUN,,,MUN,,,Gr,,,,,,2,,,
+8:18:25,2/6/2025,2,Katarina,M,M116,,,MUN,,,R,,,,,,2,,,
+8:24:42,2/6/2025,2,Katarina,Ag,M227,,,MUN,,,CoAg,,AS,,,,,,,
+8:52:45,2/6/2025,2,Katarina,M,M098,,,FUN,,,Gr,,,,,,,,,
+8:55:02,2/6/2025,2,Katarina,M,MUN,,,FUN,,,R,,,,Erection,,2,,,
+8:56:23,2/6/2025,2,Katarina,M,M132,,,FUN,,,Gr,,,,,,,,,
+8:56:39,2/6/2025,2,Katarina,M,M053,,,FUN,,,R,,,,,,2,,,
+9:23:38,2/6/2025,2,Katarina,M,M025,,,FUN,,,Gr,,,,,,,,,
+9:24:29,2/6/2025,2,Katarina,M,M025,,,FUN,,,Gr,,,,,,3,,,
+9:25:17,2/6/2025,2,Katarina,M,M025,,,FUN,,,Gr,,,,,,2,,,
+9:25:31,2/6/2025,2,Katarina,M,M025,,,FUN,,,Gr,,,,,,,,,
+9:38:23,2/6/2025,2,Katarina,M,M058,,,FUN,,,Ag,,,,,,2,,,
+10:07:31,2/6/2025,2,Katarina,Ag,M041,,,MUN,,,CoAg,,AS,,,,,,,
+10:10:02,2/6/2025,2,Katarina,Ag,M175,MUN,,M227,,,CoAg,,AS,,,,,,,
+10:15:21,2/6/2025,2,Katarina,Ag,M007,M182,M103,M001,,,CoAg,,AS,,,,,,,
+10:16:16,2/6/2025,2,Katarina,Ag,M132,M063,M062,M001,,,CoAg,,AS,,,,,,,
+11:14:31,2/6/2025,2,Katarina,Ag,FUN,FUN,,M132,,,T,,AS,,,,,,,
+11:18:55,2/6/2025,2,Katarina,Ag,M103,M138,,FUN,,,CoAg,,AS,,,,,,,
+11:35:36,2/6/2025,2,Katarina,M,M268,,,FUN,,,R,,,,Erection,,3,,,
+13:37:38,2/6/2025,2,Katarina,Ag,MUN,MUN,,M035,,,T,,AS,,,,,,,
+8:53:39,2/10/2025,2,Katarina,M,M138,,,FUN,,,T,,,,,,,,,
+9:45:12,2/10/2025,2,Katarina,M,M163,,,FUN,,,F,,,,,,2,,,
+9:52:49,2/10/2025,2,Katarina,Ag,M020,,,FUN,FUN,,F,,RS,,,,,,,
+9:53:21,2/10/2025,2,Katarina,Ag,M020,M053,,FUN,,,F,,AS,,,,,,,
+10:19:55,2/10/2025,2,Katarina,Ag,MUN,MUN,MUN,M104,,,CoAg,,AS,,,,,,,
+11:47:42,2/10/2025,2,Katarina,Ag,M041,M058,,MUN,,,R,,AS,,,,,,,
+11:56:07,2/10/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,Erection,,2,,,
+12:12:12,2/10/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,,,4,,,
+12:12:34,2/10/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,,,4,,,
+12:13:08,2/10/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,NoEjac,4,,,
+12:13:49,2/10/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,,4,,,
+12:14:05,2/10/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,Ejac,6,,,
+8:35:35,2/11/2025,2,Katarina,Ag,M166,,,FUN,JVUN,,R,,RS,,,,,,,
+8:54:30,2/11/2025,2,Katarina,Ag,M041,,,MUN,,,CoAg,,AS,,,,,,,
+9:10:09,2/11/2025,2,Katarina,M,M098,,,FUN,,,R,,,,,,,,,
+9:22:28,2/11/2025,2,Katarina,M,MUN,,,FUN,,,R,,,,Erection,,3,,,
+9:24:34,2/11/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,2,,,
+9:25:23,2/11/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,2,,,
+9:26:14,2/11/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,Erection,,2,,,
+9:26:43,2/11/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,,,3,,,
+9:32:20,2/11/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,3,,,
+10:02:52,2/11/2025,2,Katarina,Ag,M007,M020,M010,M062,,,CoAg,,AS,,,,,,,
+10:09:02,2/11/2025,2,Katarina,Ag,M041,M200,,MUN,,,CoAg,,AS,,,,,,,
+10:10:28,2/11/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,2,,,
+10:14:07,2/11/2025,2,Katarina,Ag,M103,M063,M041,M066,,,R,,AS,,,,,,,
+10:27:51,2/11/2025,2,Katarina,Ag,M175,,,M041,M138,,F,,RS,,,,,,,
+10:31:11,2/11/2025,2,Katarina,Ag,M041,M138,M103,FUN,,,CoAg,,RS,,,,,,,
+7:58:40,2/12/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,Erection,NoEjac,4,,,
+8:00:02,2/12/2025,2,Katarina,M,M098,,,FUN,,,Ag,,,,Erection,NoEjac,3,,,
+8:50:57,2/12/2025,2,Katarina,Ag,M007,M103,,FUN,,,CoAg,,AS,,,,,,,
+8:53:07,2/12/2025,2,Katarina,Ag,M067,FUN,,M010,,,T,,AS,,,,,,,
+7:55:17,2/14/2025,2,Katarina,M,M001,,,FUN,,,Ag,,,,,,,,,
+8:18:28,2/14/2025,2,Katarina,M,M010,,,M271,,,T,,,,Erection,,2,,,
+8:33:32,2/14/2025,2,Katarina,M,M077,,,M268,,,,,,,Erection,,1,,,
+8:41:25,2/14/2025,2,Katarina,M,M062,,,M063,,,R,,,,Erection,,,,,
+7:43:12,2/17/2025,2,Katarina,M,M271,,,,,,Gr,,,,,,,,,
+8:08:44,2/17/2025,2,Katarina,M,M067,,,FUN,,,R,,,,,,,,,
+8:12:51,2/17/2025,2,Katarina,Ag,M142,,,JVUN,FUN,,,,RS,,,,,,,
+8:17:26,2/17/2025,2,Katarina,M,M098,,,FUN,,,T,,,,,,,,,
+8:32:11,2/17/2025,2,Katarina,Ag,M175,M142,M020,MUN,,,CoAg,,AS,,,,,,,
+8:42:34,2/17/2025,2,Katarina,Ag,M041,M062,M200,M067,,,CoAg,,AS,,,,,,,
+9:19:12,2/17/2025,1,Holly,Ag,FUN, MUN,,M078,,,R,,AS,,,,,,,
+9:39:19,2/17/2025,2,Katarina,Ag,M077,M132,,M182,,,CoAg,,AS,,,,,,,
+9:45:25,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,3,,,
+9:50:00,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,7,,,
+9:54:36,2/17/2025,2,Katarina,M,M182,,,FUN,,,Ag,,,,Erection,,7,,,
+9:56:56,2/17/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+9:58:55,2/17/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+10:31:43,2/17/2025,2,Katarina,Ag,M010,M138,,MUN,,,F,,AS,,,,,,,
+10:56:55,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+10:57:22,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+10:58:15,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+11:04:13,2/17/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+7:31:59,2/18/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,7,,,
+7:32:32,2/18/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,4,,,
+7:33:20,2/18/2025,1,Holly,M,M192,,,FUN,,,R,,,,Erection,,4,,,
+7:35:13,2/18/2025,1,Holly,M,M097,,,FUN,,,T,,,,Erection,,,,,
+7:47:02,2/18/2025,2,Katarina,Ag,M001,M020,,MUN,,,CoAg,,AS,,,,,,,
+7:52:09,2/18/2025,2,Katarina,M,M132,,,FUN,,,T,,,,Erection,,1,,,
+7:57:00,2/18/2025,1,Holly,M,MUN,,,FUN,,,CoAg,,,,,,,,,
+8:01:04,2/18/2025,2,Katarina,M,M132,,,FUN,,,R,,,,Erection,,3,,,
+8:02:47,2/18/2025,2,Katarina,M,M132,,,FUN,,,R,,,,Erection,,3,,,
+8:03:40,2/18/2025,2,Katarina,M,M132,,,FUN,,,R,,,,Erection,,6,,,
+8:03:49,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,,,,,,
+8:17:10,2/18/2025,2,Katarina,M,M138,,,FUN,,,R,,,,Erection,,4,,,
+8:17:50,2/18/2025,2,Katarina,M,M138,,,FUN,,,R,,,,Erection,,4,,,
+8:18:20,2/18/2025,2,Katarina,M,M138,,,FUN,,,R,,,,Erection,,3,,,
+8:19:24,2/18/2025,2,Katarina,M,M138,,,FUN,,,Gr,,,,Erection,,3,,,
+8:19:49,2/18/2025,2,Katarina,M,M138,,,FUN,,,Ag,,,,Erection,,2,,,
+8:20:05,2/18/2025,1,Holly,Ag,M060,,,FUN, JVUN,,R,,RS,,,,,,,
+8:29:30,2/18/2025,1,Holly,Ag,M192, MUN,,FUN,,,F,,AS,,,,,,,
+8:32:52,2/18/2025,1,Holly,M,MUN,,,FUN,,,F,,,,,,,,,
+8:34:39,2/18/2025,1,Holly,M,MUN,,,FUN,,,F,,,,,,,,,
+8:35:52,2/18/2025,1,Holly,Ag,M192, MUN,,MUN,,,F,,AS,,,,,,,
+8:43:37,2/18/2025,2,Katarina,Ag,M098,,,MUN,,,Ag,,AS,,,,,,,
+8:49:32,2/18/2025,2,Katarina,Ag,M211,,,FUN,JVUN,,F,,RS,,,,,,,
+8:50:12,2/18/2025,1,Holly,Ag,M253, MUN, FUN,FUN, MUN,,F,,AS-RS,,,,,,,
+8:51:40,2/18/2025,1,Holly,Ag,JVUN, JVUN,,M117,,,F,,AS,,,,,,,
+8:55:08,2/18/2025,1,Holly,Ag,MUN, MUN, MUN,MUN,,,F,,AS,,,,,,,
+9:30:11,2/18/2025,1,Holly,M,MUN,,,FUN,,,F,,,,Erection,,5,,,
+9:34:02,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,5,,,
+9:35:01,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,3,,,
+9:35:58,2/18/2025,2,Katarina,Ag,M053,M020,,M063,,,CoAg,,AS,,,,,,,
+9:42:54,2/18/2025,2,Katarina,Ag,M001,M062,,M163,,,T,,AS,,,,,,,
+10:09:34,2/18/2025,1,Holly,Ag,MUN,,,JVUN, JVUN, JVUN,R,,RS,,,,,,,
+10:14:20,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+10:14:35,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,4,,,
+10:25:19,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+10:26:12,2/18/2025,1,Holly,Ag,MUN, MUN,,MUN,,,T,,AS,,,,,,,
+11:32:16,2/18/2025,2,Katarina,Ag,M041,,,FUN,,,CoAg,,AS,,,,,,,
+11:32:22,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,,,,,,
+11:32:56,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,,,,,,
+11:36:59,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,4,,,
+11:38:14,2/18/2025,2,Katarina,Ag,M041,M200,,MUN,,,T,,AS,,,,,,,
+11:38:48,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,,,,,,
+11:39:32,2/18/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,4,,,
+11:41:16,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:43:42,2/18/2025,1,Holly,Ag,FUN,,,M078, FUN,,T,,RS,,,,,,,
+11:44:50,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:46:32,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:47:14,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:48:00,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:48:56,2/18/2025,1,Holly,Ag,JVUN, FUN,,M005,,,R,,AS,,,,,,,
+11:49:32,2/18/2025,1,Holly,M,M223,,,FUN,,,Ag,,,,,,,,,
+11:50:09,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:51:00,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:51:48,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:52:31,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:53:26,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:57:57,2/18/2025,2,Katarina,Ag,M041,,,MUN,,,CoAg,,AS,,,,,,,
+11:59:29,2/18/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+12:02:26,2/18/2025,1,Holly,Ag,FUN, FUN,,M192,,,Ag,,AS,,,,,,,
+12:03:25,2/18/2025,1,Holly,Ag,M078, FUN,,M192,,,Ag,,AS,,,,,,,
+12:13:04,2/18/2025,1,Holly,Ag,M117,,,FUN, FUN,,T,,RS,,,,,,,
+12:15:23,2/18/2025,1,Holly,Ag,M161,,,FUN, FUN,,R,,RS,,,,,,,
+12:37:40,2/18/2025,2,Katarina,M,M139,,,FUN,,,R,,,,Erection,,4,,,
+12:44:50,2/18/2025,1,Holly,Ag,MUN, M105, M042,MUN,,,R,,AS,,,,,,,
+12:49:57,2/18/2025,1,Holly,Ag,M042,,,FUN, FUN,,R,,RS,,,,,,,
+12:56:19,2/18/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,1,,,
+13:08:43,2/18/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,4,,,
+13:21:30,2/18/2025,2,Katarina,Ag,M200,,,MUN,,,CoAg,,AS,,,,,,,
+13:39:09,2/18/2025,2,Katarina,Ag,M041,M103,M200,MUN,,,CoAg,,AS,,,,,,,
+7:54:26,2/19/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,2,,,
+7:55:10,2/19/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,2,,,
+7:55:55,2/19/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,3,,,
+7:56:27,2/19/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,,3,,,
+7:57:00,2/19/2025,2,Katarina,M,M098,,,FUN,,,R,,,,Erection,Ejac,9,,,
+8:05:52,2/19/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,3,,,
+8:06:38,2/19/2025,1,Holly,Ag,M192, MUN, MUN,MUN,,,F,,AS,,,,,,,
+9:24:05,2/19/2025,2,Katarina,Ag,M103,,,FUN,M044,,F,,RS,,,,,,,
+9:35:09,2/19/2025,2,Katarina,Ag,M175,FUN,,M053,,,F,,AS,,,,,,,
+9:50:32,2/19/2025,1,Holly,Ag,M016, FUN,,MUN,,,T,,AS,,,,,,,
+9:50:48,2/19/2025,1,Holly,M,M016,,,FUN,,,CoAg,,,,,,,,,
+9:51:53,2/19/2025,1,Holly,M,M016,,,FUN,,,CoAg,,,,Erection,,10,,,
+9:52:20,2/19/2025,1,Holly,Ag,M101,,,M016, FUN,,CoAg,,RS,,,,,,,
+10:19:05,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,3,,,
+10:22:43,2/19/2025,1,Holly,Ag,M140, M115,,M101,,,T,,AS,,,,,,,
+11:20:59,2/19/2025,1,Holly,M,M243,,,FUN,,,R,,,,,,,,,
+11:28:03,2/19/2025,1,Holly,Ag,M243,,,FUN, FUN,,R,,RS,,,,,,,
+11:28:30,2/19/2025,1,Holly,M,M243,,,FUN,,,R,,,,,,,,,
+11:33:08,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,,,,,,
+11:36:16,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,2,,,
+11:43:50,2/19/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,2,,,
+12:03:28,2/19/2025,2,Katarina,Ag,M062,,,MUN,,,CoAg,,AS,,,,,,,
+12:04:44,2/19/2025,2,Katarina,Ag,FUN,FUN,,M062,,,CoAg,,AS,,,,,,,
+12:09:55,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,2,,,
+12:10:33,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,3,,,
+12:10:57,2/19/2025,2,Katarina,M,M200,,,FUN,,,Ag,,,,Erection,,3,,,
+12:11:34,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,3,,,
+12:12:04,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,3,,,
+12:12:47,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,4,,,
+12:13:19,2/19/2025,2,Katarina,M,M200,,,FUN,,,Ag,,,,Erection,,4,,,
+12:14:10,2/19/2025,2,Katarina,M,M200,,,FUN,,,Ag,,,,Erection,,4,,,
+12:14:38,2/19/2025,2,Katarina,M,M200,,,FUN,,,R,,,,Erection,,4,,,
+12:15:10,2/19/2025,2,Katarina,M,M200,,,FUN,,,Ag,,,,Erection,,4,,,
+12:27:37,2/19/2025,2,Katarina,Ag,M020,,,M041,,,CoAg,,AS,,,,,,,
+12:43:22,2/19/2025,2,Katarina,Ag,M053,FUN,,JVUN,,,R,,AS,,,,,,,
+12:46:13,2/19/2025,2,Katarina,Ag,M166,,,JVUN,FUN,,Ag,,RS,,,,,,,
+12:50:13,2/19/2025,1,Holly,M,M059,,,FUN,,,T,,,,Erection,,4,,,
+8:09:08,2/20/2025,1,Holly,Ag,M253,,,MUN, MUN,,T,,RS,,,,,,,
+8:09:40,2/20/2025,1,Holly,M,MUN,,,M253,,,CoAg,,,,Erection,,,,,
+8:11:42,2/20/2025,2,Katarina,M,M268,,,FUN,,,Ag,,,,Erection,,2,,,
+8:22:49,2/20/2025,2,Katarina,Ag,M001,,,FUN,FUN,JVUN,R,,RS,,,,,,,
+8:44:44,2/20/2025,1,Holly,Ag,M192, FUN, FUN,MUN,,,CoAg,,AS,,,,,,,
+8:45:27,2/20/2025,1,Holly,Ag,MUN, FUN,,M192, MUN, MUN,CoAg,,AS-RS,,,,,,,
+8:46:04,2/20/2025,1,Holly,Ag,M192, FUN, FUN,MUN, MUN,,CoAg,,AS-RS,,,,,,,
+8:55:29,2/20/2025,2,Katarina,M,M121,,,FUN,,,R,,,,,,,,,
+9:08:34,2/20/2025,2,Katarina,M,M063,,,M104,,,Ag,,,,Erection,,2,,,
+9:19:25,2/20/2025,1,Holly,Ag,FUN, FUN,,M133,,,CoAg,,AS,,,,,,,
+9:23:49,2/20/2025,1,Holly,M,M253,,,FUN,,,F,,,,,,,,,
+9:36:49,2/20/2025,2,Katarina,Ag,M053,M020,,M062,,,CoAg,,AS,,,,,,,
+9:38:29,2/20/2025,1,Holly,Ag,M253,,,FUN, FUN,,T,,RS,,,,,,,
+9:46:16,2/20/2025,2,Katarina,Ag,M200,MUN,,M121,,,CoAg,,AS,,,,,,,
+9:47:13,2/20/2025,2,Katarina,Ag,M103,,,FUN,INFANT,,F,,RS,,,,,,,
+9:55:24,2/20/2025,1,Holly,Ag,MUN,,,M253, FUN, FUN,T,,RS,,,,,,,
+7:52:31,2/21/2025,1,Holly,Ag,M105, FUN,,M090,,,CoAg,,AS,,,,,,,
+8:44:06,2/21/2025,2,Katarina,M,M132,,,M063,,,R,,,,Erection,,1,,,
+8:44:47,2/21/2025,2,Katarina,M,M063,,,M142,,,Ag,,,,Erection,,1,,,
+8:52:21,2/21/2025,2,Katarina,Ag,M053,M020,M175,M062,,,F,,AS,,,,,,,
+8:55:32,2/21/2025,2,Katarina,Ag,M020,FUN,,M062,,,F,,AS,,,,,,,
+9:04:37,2/21/2025,1,Holly,Ag,M097, FUN,,MUN,,,F,,AS,,,,,,,
+9:11:45,2/21/2025,2,Katarina,Ag,M103,,,FUN,FUN,,F,,RS,,,,,,,
+9:41:29,2/21/2025,2,Katarina,Ag,M053,M020,,MUN,,,F,,AS,,,,,,,
+9:53:34,2/21/2025,1,Holly,Ag,M223,,,MUN, FUN,,T,,RS,,,,,,,
+10:25:56,2/21/2025,1,Holly,M,M042,,,FUN,,,R,,,,Erection,,4,,,
+10:26:55,2/21/2025,1,Holly,M,M042,,,FUN,,,Ag,,,,,,,,,
+10:27:43,2/21/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+10:39:31,2/21/2025,1,Holly,M,M042,,,FUN,,,Ag,,,,,,,,,
+7:51:32,2/24/2025,2,Katarina,M,M041,,,FUN,,,R,,,,Erection,,2,,,
+7:53:06,2/24/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,1,,,
+7:58:12,2/24/2025,1,Holly,M,M253,,,,,,R,,,,Erection,,,,,
+7:58:31,2/24/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,,,,
+8:01:48,2/24/2025,1,Holly,M,MUN,,,FUN,,,R,,,,Erection,,,,,
+8:04:13,2/24/2025,2,Katarina,M,M182,,,MUN,,,R,,,,Erection,,2,,,
+8:09:35,2/24/2025,1,Holly,M,M192,,,M117,,,R,,,,,,,,,
+8:20:40,2/24/2025,2,Katarina,Ag,MUN,FUN,,M062,,,F,,AS,,,,,,,
+8:29:14,2/24/2025,2,Katarina,Ag,MUN,MUN,,M121,,,F,,AS,,,,,,,
+9:15:32,2/24/2025,1,Holly,Ag,M117,,,FUN, MUN,,F,,RS,,,,,,,
+9:16:31,2/24/2025,1,Holly,Ag,FUN, MUN,,M117,,,F,,AS,,,,,,,
+9:18:04,2/24/2025,1,Holly,M,M176,,,FUN,,,F,,,,Erection,,11,,,
+9:30:06,2/24/2025,1,Holly,Ag,M253, M078, MUN,MUN,,,F,,AS,,,,,,,
+10:11:25,2/24/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,3,,,
+7:43:19,2/25/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+7:49:22,2/25/2025,1,Holly,Ag,M101, MUN,,MUN,,,R,,AS,,,,,,,
+7:51:37,2/25/2025,1,Holly,M,M161,,,FUN,,,T,,,,Erection,,10,,,
+7:54:48,2/25/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+7:55:53,2/25/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+7:57:26,2/25/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+7:57:59,2/25/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+8:14:31,2/25/2025,1,Holly,M,M101,,,FUN,,,R,,,,Erection,,5,,,
+9:21:07,2/25/2025,1,Holly,Ag,M117,,,JVUN, JVUN,,F,,RS,,,,,,,
+9:46:08,2/25/2025,1,Holly,Ag,M143,,,JVUN, JVUN,,F,,RS,,,,,,,
+9:51:01,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,7,,,
+9:51:44,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,,,,
+9:52:19,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,4,,,
+9:52:40,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,3,,,
+9:53:03,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,4,,,
+9:53:38,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,,,,
+9:54:10,2/25/2025,1,Holly,M,M097,,,FUN,,,F,,,,Erection,,4,,,
+9:57:07,2/25/2025,1,Holly,Ag,MUN, MUN, JVUN,M223,,,F,,AS,,,,,,,
+11:01:44,2/25/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,5,,,
+7:57:48,2/26/2025,1,Holly,Ag,FUN, FUN,,M133,,,T,,AS,,,,,,,
+8:07:40,2/26/2025,1,Holly,Ag,M161,,,FUN, FUN,,R,,RS,,,,,,,
+8:08:04,2/26/2025,1,Holly,Ag,FUN, FUN,,M161,,,Ag,,AS,,,,,,,
+8:08:25,2/26/2025,1,Holly,Ag,M161,,,FUN, FUN,,Ag,,RS,,,,,,,
+8:16:46,2/26/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,6,,,
+8:17:32,2/26/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,5,,,
+8:22:28,2/26/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,6,,,
+8:29:21,2/26/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,3,,,
+8:34:15,2/26/2025,1,Holly,M,M192,,,M078,,,R,,,,,,,,,
+8:41:33,2/26/2025,1,Holly,M,M097,,,FUN,,,Ag,,,,,,,,,
+8:43:52,2/26/2025,1,Holly,M,M192,,,FUN,,,T,,,,Erection,,3,,,
+9:00:04,2/26/2025,1,Holly,M,M145,,,FUN,,,F,,,,,,,,,
+9:00:20,2/26/2025,1,Holly,M,M145,,,FUN,,,F,,,,,,,,,
+9:13:49,2/26/2025,1,Holly,M,M097,,,FUN,,,Ag,,,,,,,,,
+9:18:48,2/26/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,3,,,
+9:19:47,2/26/2025,1,Holly,M,M101,,,FUN,,,F,,,,Erection,,5,,,
+9:24:51,2/26/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,,,,
+9:25:02,2/26/2025,2,Katarina,Ag,M020,M063,M103,MUN,,,CoAg,,AS,,,,,,,
+9:29:07,2/26/2025,2,Katarina,Ag,M001,,,M200,FUN,,F,,RS,,,,,,,
+9:35:53,2/26/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,,,,
+9:36:13,2/26/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,3,,,
+9:47:00,2/26/2025,1,Holly,Ag,M223,,,FUN, FUN,,F,,RS,,,,,,,
+9:48:17,2/26/2025,1,Holly,Ag,M253, MUN,,MUN,,,F,,AS,,,,,,,
+9:55:32,2/26/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,4,,,
+9:55:52,2/26/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,3,,,
+9:56:19,2/26/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,3,,,
+10:31:35,2/26/2025,2,Katarina,Ag,M025,,,JVUN,JVUN,,F,,RS,,,,,,,
+10:57:59,2/26/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,3,,,
+10:58:20,2/26/2025,2,Katarina,M,M104,,,FUN,,,R,,,,,,,,,
+11:05:09,2/26/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,3,,,
+11:05:44,2/26/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,,,,
+11:07:39,2/26/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,15,,,
+11:07:50,2/26/2025,2,Katarina,M,M175,,,FUN,,,R,,,,,,,,,
+11:09:49,2/26/2025,2,Katarina,M,M175,,,FUN,,,R,,,,Erection,,5,,,
+11:11:34,2/26/2025,2,Katarina,M,M175,,,FUN,,,R,,,,Erection,,3,,,
+11:12:09,2/26/2025,2,Katarina,M,M175,,,FUN,,,R,,,,Erection,,3,,,
+11:13:34,2/26/2025,2,Katarina,M,M175,,,FUN,,,Ag,,,,Erection,,2,,,
+11:15:47,2/26/2025,2,Katarina,M,M067,,,FUN,,,R,,,,,,,,,
+11:50:58,2/26/2025,2,Katarina,M,M182,,,M246,,,R,,,,Erection,,2,,,
+11:51:33,2/26/2025,2,Katarina,M,M182,,,M246,,,Gr,,,,Erection,,3,,,
+11:52:16,2/26/2025,2,Katarina,M,M182,,,M246,,,R,,,,Erection,Ejac,7,,,
+12:18:26,2/26/2025,1,Holly,M,M059,,,FUN,,,R,,,,,,,,,
+12:25:18,2/26/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+12:25:42,2/26/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+12:26:25,2/26/2025,1,Holly,M,M253,,,FUN,,,Ag,,,,Erection,,,,,
+12:29:03,2/26/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+12:46:51,2/26/2025,1,Holly,Ag,M253,,,M105, FUN,,R,,RS,,,,,,,
+13:19:29,2/26/2025,1,Holly,M,M078,,,FUN,,,Ag,,,,,,,,,
+7:46:36,2/27/2025,1,Holly,M,MUN,,,M253,,,R,,,,,,,,,
+7:59:58,2/27/2025,1,Holly,Ag,M101,,,FUN, FUN,,T,,RS,,,,,,,
+8:23:50,2/27/2025,2,Katarina,Ag,M062,,,JVUN,FUN,,F,,RS,,,,,,,
+8:52:51,2/27/2025,1,Holly,Ag,FUN, FUN,,M253,,,F,,AS,,,,,,,
+8:53:07,2/27/2025,1,Holly,Ag,M253,,,FUN, FUN,,Ag,,RS,,,,,,,
+9:08:35,2/27/2025,2,Katarina,Ag,M200,FUN,,M062,,,F,,AS,,,,,,,
+9:47:00,2/27/2025,2,Katarina,Ag,M138,MUN,FUN,M062,,,F,,AS,,,,,,,
+10:23:49,2/27/2025,1,Holly,Ag,MUN,,,M097, MUN,,R,,RS,,,,,,,
+10:25:59,2/27/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,3,,,
+10:26:58,2/27/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,3,,,
+10:35:53,2/27/2025,1,Holly,M,M048,,,FUN,,,R,,,,Erection,,5,,,
+10:37:25,2/27/2025,1,Holly,Ag,M115,,,JVUN, JVUN,,Ag,,RS,,,,,,,
+10:41:53,2/27/2025,1,Holly,Ag,M048,,,FUN, MUN,,R,,RS,,,,,,,
+10:43:01,2/27/2025,1,Holly,Ag,M024, FUN,,M048,,,T,,AS,,,,,,,
+11:11:39,2/27/2025,2,Katarina,M,M211,,,FUN,,,R,,,,,,,,,
+11:15:27,2/27/2025,2,Katarina,M,M211,,,FUN,,,R,,,,Erection,,3,,,
+8:07:26,2/28/2025,1,Holly,M,M083,,,FUN,,,R,,,,,,,,,
+8:16:57,2/28/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,4,,,
+8:48:08,2/28/2025,1,Holly,Ag,MUN, MUN,,M024, MUN,,F,,AS-RS,,,,,,,
+8:48:29,2/28/2025,1,Holly,Ag,M024, MUN,,MUN, MUN,,F,,AS-RS,,,,,,,
+8:56:45,2/28/2025,1,Holly,M,M059,,,FUN,,,F,,,,,,,,,
+9:08:11,2/28/2025,2,Katarina,Ag,M020,FUN,,M132,,,F,,AS,,,,,,,
+9:08:51,2/28/2025,1,Holly,Ag,M140, MUN,,FUN,,,F,,AS,,,,,,,
+9:31:53,2/28/2025,1,Holly,Ag,M192, FUN,,FUN,,,T,,AS,,,,,,,
+9:47:18,2/28/2025,1,Holly,M,M140,,,FUN,,,R,,,,Erection,,7,,,
+11:14:21,2/28/2025,2,Katarina,M,MUN,,,M119,,,,,,,Erection,,4,,,
+7:33:17,3/3/2025,1,Holly,Ag,M101,,,JVUN, JVUN,,T,,RS,,,,,,,
+8:00:54,3/3/2025,1,Holly,M,M192,,,FUN,,,F,,,,Erection,,,,,
+8:03:22,3/3/2025,1,Holly,M,M223,,,MUN,,,F,,,,,,,,,
+8:04:05,3/3/2025,1,Holly,M,M253,,,FUN,,,F,,,,,,,,,
+8:05:17,3/3/2025,1,Holly,Ag,MUN, FUN,,M253,,,F,,AS,,,,,,,
+8:41:54,3/3/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,4,,,
+8:42:32,3/3/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,4,,,
+8:45:30,3/3/2025,1,Holly,M,M026,,,FUN,,,F,,,,Erection,,,,,
+8:54:03,3/3/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,,,,
+11:36:26,3/3/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+11:37:06,3/3/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:39:26,3/3/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+12:10:08,3/3/2025,1,Holly,Ag,M192, MUN,,MUN,,,R,,AS,,,,,,,
+12:25:55,3/3/2025,1,Holly,M,M016,,,FUN,,,R,,,,Erection,,,,,
+12:41:45,3/3/2025,1,Holly,M,M105,,,FUN,,,R,,,,Erection,,,,,
+12:42:52,3/3/2025,1,Holly,M,M105,,,FUN,,,R,,,,Erection,,9,,,
+13:31:30,3/3/2025,1,Holly,Ag,M101,,,JVUN, JVUN, JVUN,R,,RS,,,,,,,
+11:38:17,3/4/2025,1,Holly,Ag,MUN, MUN,,M078,,,R,,AS,,,,,,,
+11:54:03,3/4/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,4,,,
+12:02:13,3/4/2025,1,Holly,Ag,M105,,,FUN, FUN,,R,,RS,,,,,,,
+12:12:53,3/4/2025,1,Holly,M,M253,,,FUN,,,R,,,,,,,,,
+12:22:12,3/4/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,4,,,
+12:22:44,3/4/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,8,,,
+12:25:44,3/4/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,,,,
+12:31:58,3/4/2025,1,Holly,Ag,FUN, M223,,M253,,,R,,AS,,,,,,,
+12:37:13,3/4/2025,1,Holly,M,M141,,,FUN,,,R,,,,Erection,,,,,
+12:39:59,3/4/2025,2,Katarina,M,M062,,,FUN,,,R,,,,Erection,,2,,,
+12:41:39,3/4/2025,2,Katarina,M,M062,,,FUN,,,R,,,,Erection,,3,,,
+12:47:02,3/4/2025,2,Katarina,M,M265,,,M264,,,R,,,,,,3,,,
+12:48:30,3/4/2025,2,Katarina,M,M265,,,M264,,,R,,,,Erection,,3,,,
+12:54:50,3/4/2025,2,Katarina,M,M265,,,M264,,,R,,,,,,,,,
+13:12:37,3/4/2025,1,Holly,Ag,M223, M157, M253,MUN,,,R,,AS,,,,,,,
+13:18:24,3/4/2025,1,Holly,M,M042,,,FUN,,,R,,,,Erection,,3,,,
+13:21:35,3/4/2025,1,Holly,M,M042,,,FUN,,,R,,,,Erection,,4,,,
+8:00:13,3/5/2025,1,Holly,M,M042,,,FUN,,,R,,,,,,,,,
+8:06:49,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,3,,,
+8:14:21,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,4,,,
+8:16:11,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,2,,,
+8:17:50,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,2,,,
+8:19:25,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,2,,,
+8:20:34,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,3,,,
+8:21:09,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,3,,,
+8:22:25,3/5/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,Ejac,10,,,
+8:31:17,3/5/2025,1,Holly,Ag,M140, MUN,,M078,,,R,,AS,,,,,,,
+8:42:24,3/5/2025,1,Holly,Ag,FUN, FUN,,M078,,,F,,AS,,,,,,,
+8:49:12,3/5/2025,1,Holly,Ag,M253,,,FUN, FUN,,F,,RS,,,,,,,
+9:38:22,3/5/2025,1,Holly,M,M140,,,FUN,,,R,,,,,,,,,
+10:47:10,3/5/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,3,,,
+10:50:54,3/5/2025,1,Holly,Ag,M161,,,MUN, FUN,,R,,RS,,,,,,,
+11:37:55,3/5/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,3,,,
+11:50:17,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:50:45,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:51:03,3/5/2025,1,Holly,M,M253,,,FUN,,,R,,,,,,,,,
+11:51:35,3/5/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,8,,,
+11:52:13,3/5/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,9,,,
+11:52:59,3/5/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,11,,,
+11:53:42,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:55:19,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:56:23,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:56:50,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:58:19,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+11:59:42,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+12:00:15,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+12:00:57,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+12:02:23,3/5/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,7,,,
+12:49:30,3/5/2025,2,Katarina,M,M010,,,FUN,,,R,,,,Erection,,3,,,
+8:43:37,3/6/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,16,,,
+8:43:58,3/6/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+8:45:05,3/6/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,9,,,
+9:07:19,3/6/2025,2,Katarina,M,M103,,,FUN,,,R,,,,,,,,,
+9:07:59,3/6/2025,1,Holly,Ag,M024, MUN,,MUN,,,F,,AS,,,,,,,
+9:11:16,3/6/2025,2,Katarina,M,M062,,,JVUN,,,R,,,,,,,,,
+9:13:31,3/6/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,2,,,
+9:14:27,3/6/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,,5,,,
+9:15:05,3/6/2025,2,Katarina,M,M103,,,FUN,,,R,,,,Erection,Ejac,8,,,
+9:22:17,3/6/2025,2,Katarina,M,M063,,,M142,,,Ag,,,,,,,,,
+9:23:51,3/6/2025,1,Holly,Ag,M253, FUN,,MUN,,,R,,AS,,,,,,,
+9:39:28,3/6/2025,2,Katarina,Ag,M200,FUN,,M166,,,CoAg,,RS,,,,,,,
+9:43:51,3/6/2025,2,Katarina,Ag,M053,,,FUN,JVUN,,F,,RS,,,,,,,
+9:46:35,3/6/2025,1,Holly,Ag,M115,,,FUN, FUN,,R,,RS,,,,,,,
+10:37:30,3/6/2025,1,Holly,Ag,M101, FUN,,M083,,,R,,AS,,,,,,,
+10:55:44,3/6/2025,1,Holly,M,M140,,,FUN,,,R,,,,Erection,,9,,,
+10:56:12,3/6/2025,1,Holly,M,M140,,,FUN,,,R,,,,Erection,,5,,,
+10:57:26,3/6/2025,1,Holly,M,M140,,,FUN,,,R,,,,Erection,,11,,,
+10:58:37,3/6/2025,1,Holly,M,M140,,,FUN,,,R,,,,Erection,,10,,,
+11:39:51,3/6/2025,2,Katarina,Ag,M063,MUN,MUN,MUN,,,CoAg,,AS,,,,,,,
+12:08:51,3/6/2025,1,Holly,Ag,M253, MUN,,MUN,,,R,,AS,,,,,,,
+12:24:48,3/6/2025,2,Katarina,M,M200,,,FUN,,,R,,,,,,,,,
+12:26:33,3/6/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+12:27:45,3/6/2025,2,Katarina,M,M058,,,FUN,,,R,,,,,,,,,
+12:28:20,3/6/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,3,,,
+12:29:22,3/6/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,4,,,
+12:30:11,3/6/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,Ejac,8,,,
+12:56:48,3/6/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,2,,,
+12:57:18,3/6/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,8,,,
+12:58:08,3/6/2025,2,Katarina,M,M001,,,FUN,,,R,,,,Erection,,5,,,
+12:59:21,3/6/2025,2,Katarina,M,M001,,,FUN,,,R,,,,,,,,,
+13:07:49,3/6/2025,1,Holly,M,M024,,,FUN,,,R,,,,Erection,,5,,,
+7:41:21,3/10/2025,1,Holly,Ag,M253, MUN,,M105,,,Ag,,AS,,,,,,,
+7:42:12,3/10/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,3,,,
+7:46:33,3/10/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,3,,,
+7:47:16,3/10/2025,1,Holly,M,M024,,,FUN,,,F,,,,Erection,,6,,,
+7:56:27,3/10/2025,1,Holly,M,M005,,,FUN,,,F,,,,Erection,,,,,
+8:05:33,3/10/2025,1,Holly,Ag,FUN, FUN,,M048,,,F,,AS,,,,,,,
+8:14:58,3/10/2025,2,Katarina,M,M271,,,M007,,,T,,,,Erection,,2,,,
+8:50:01,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+8:51:57,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+8:53:28,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+8:53:52,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+9:15:23,3/10/2025,2,Katarina,M,M053,,,FUN,,,R,,,,Erection,,3,,,
+9:39:11,3/10/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,3,,,
+10:46:12,3/10/2025,2,Katarina,Ag,FUN,,,M062,,,CoAg,,AS,,,,,,,
+10:53:40,3/10/2025,2,Katarina,Ag,M058,,,M062,,,CoAg,,AS,,,,,,,
+11:01:18,3/10/2025,2,Katarina,M,M058,,,FUN,,,R,,,,,,,,,
+11:03:09,3/10/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+11:03:54,3/10/2025,2,Katarina,M,M058,,,FUN,,,,,,,Erection,,4,,,
+11:04:18,3/10/2025,2,Katarina,M,M044,,,FUN,,,Gr,,,,Erection,,3,,,
+11:05:36,3/10/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,4,,,
+11:06:30,3/10/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,3,,,
+11:06:46,3/10/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+11:08:52,3/10/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,3,,,
+11:09:04,3/10/2025,2,Katarina,M,M044,,,FUN,,,R,,,,Erection,,2,,,
+11:13:46,3/10/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,2,,,
+11:19:56,3/10/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,4,,,
+12:30:43,3/10/2025,1,Holly,M,MUN,,,M005,,,CoAg,,,,,,,,,
+12:58:33,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+13:07:18,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+13:09:43,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+13:11:04,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+13:11:46,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+13:14:01,3/10/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+7:35:47,3/11/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,,2,,,
+7:36:52,3/11/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,,3,,,
+7:47:16,3/11/2025,2,Katarina,M,M163,,,MUN,,,R,,,,Erection,,2,,,
+8:14:50,3/11/2025,2,Katarina,Ag,M053,,,FUN,,,CoAg,,RS,,,,,,,
+8:15:35,3/11/2025,2,Katarina,Ag,M001,,,FUN,,,CoAg,,RS,,,,,,,
+8:16:57,3/11/2025,1,Holly,Ag,MUN,,,M253, FUN, FUN,F,,RS,,,,,,,
+8:18:33,3/11/2025,1,Holly,Ag,MUN,,,M253, FUN,,F,,RS,,,,,,,
+9:15:05,3/11/2025,1,Holly,Ag,MUN, FUN,,M192,,,R,,AS,,,,,,,
+9:26:59,3/11/2025,2,Katarina,Ag,M041,M062,M103,M200,,,R,,AS,,,,,,,
+9:45:57,3/11/2025,1,Holly,M,MUN,,,M151,,,R,,,,,,,,,
+9:54:31,3/11/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,4,,,
+10:18:11,3/11/2025,1,Holly,M,M253,,,FUN,,,R,,,,,,,,,
+10:22:19,3/11/2025,2,Katarina,Ag,M225,MUN,,M207,,,CoAg,,AS,,,,,,,
+10:53:49,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:02:33,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:03:25,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+11:05:22,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:07:40,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:08:25,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:12:38,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+11:13:54,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:14:24,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+11:15:44,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+11:18:28,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+11:19:11,3/11/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+12:31:37,3/11/2025,1,Holly,M,M140,,,FUN,,,R,,,,,,,,,
+8:08:07,3/12/2025,2,Katarina,M,M067,,,FUN,,,F,,,,Erection,,2,,,
+8:08:39,3/12/2025,2,Katarina,M,M067,,,FUN,,,F,,,,Erection,,3,,,
+8:48:30,3/12/2025,2,Katarina,Ag,M041,M142,M200,M138,,,CoAg,,AS,,,,,,,
+8:56:23,3/12/2025,2,Katarina,Ag,M010,,,MUN,FUN,,F,,RS,,,,,,,
+8:58:24,3/12/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,4,,,
+8:59:39,3/12/2025,1,Holly,M,M223,,,FUN,,,F,,,,Erection,,4,,,
+9:10:09,3/12/2025,2,Katarina,Ag,M020,,,M062,,,CoAg,,RS,,,,,,,
+9:13:41,3/12/2025,1,Holly,M,M157,,,FUN,,,F,,,,Erection,,1,,,
+9:25:20,3/12/2025,2,Katarina,M,M067,,,FUN,,,R,,,,Erection,,2,,,
+9:25:56,3/12/2025,2,Katarina,M,M067,,,FUN,,,R,,,,Erection,,1,,,
+9:26:30,3/12/2025,2,Katarina,M,M067,,,FUN,,,R,,,,Erection,,2,,,
+9:48:46,3/12/2025,1,Holly,Ag,MUN, MUN,,M192,,,R,,AS,,,,,,,
+10:47:17,3/12/2025,2,Katarina,Ag,M074,,,FUN,INFANT,,R,,RS,,,,,,,
+11:01:26,3/12/2025,2,Katarina,M,M053,,,FUN,,,R,,,,,,,,,
+11:03:41,3/12/2025,2,Katarina,M,M053,,,FUN,,,R,,,,Erection,,2,,,
+11:09:40,3/12/2025,2,Katarina,M,M053,,,FUN,,,R,,,,,,,,,
+11:31:57,3/12/2025,2,Katarina,M,M104,,,FUN,,,R,,,,Erection,,2,,,
+11:36:05,3/12/2025,2,Katarina,M,M104,,,FUN,,,R,,,,Erection,,2,,,
+11:42:29,3/12/2025,2,Katarina,Ag,M041,M103,,M062,,,CoAg,,AS,,,,,,,
+11:44:22,3/12/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,1,,,
+11:49:02,3/12/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,3,,,
+11:53:29,3/12/2025,1,Holly,M,M133,,,,,,R,,,,Erection,,9,,,
+12:00:11,3/12/2025,2,Katarina,Ag,M076,,,FUN,JVUN,,T,,RS,,,,,,,
+12:04:32,3/12/2025,2,Katarina,M,M067,,,FUN,,,R,,,,Erection,,3,,,
+12:38:31,3/12/2025,2,Katarina,M,M132,,,FUN,,,,,,,,,,,,
+12:46:41,3/12/2025,2,Katarina,M,M132,,,FUN,,,F,,,,Erection,,1,,,
+12:49:37,3/12/2025,2,Katarina,M,M132,,,FUN,,,R,,,,Erection,,1,,,
+12:53:11,3/12/2025,2,Katarina,M,M132,,,FUN,,,Ag,,,,Erection,,2,,,
+13:09:21,3/12/2025,1,Holly,Ag,M133, MUN,,M157,,,R,,AS,,,,,,,
+13:18:49,3/12/2025,1,Holly,M,M024,,,FUN,,,R,,,,Erection,,2,,,
+7:47:17,3/13/2025,1,Holly,M,M078,,,FUN,,,R,,,,Erection,,,,,
+8:15:17,3/13/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,7,,,
+8:36:35,3/13/2025,1,Holly,M,M083,,,FUN,,,F,,,,Erection,,3,,,
+8:38:06,3/13/2025,1,Holly,M,M083,,,FUN,,,F,,,,Erection,,5,,,
+8:45:27,3/13/2025,2,Katarina,Ag,M200,FUN,,M062,,,F,,AS,,,,,,,
+8:48:27,3/13/2025,2,Katarina,Ag,M010,MUN,MUN,M062,,,CoAg,,AS,,,,,,,
+8:49:48,3/13/2025,2,Katarina,Ag,M067,FUN,,M017,,,CoAg,,AS,,,,,,,
+9:30:05,3/13/2025,1,Holly,M,M140,,,FUN,,,F,,,,Erection,,,,,
+9:32:28,3/13/2025,1,Holly,M,M140,,,FUN,,,F,,,,Erection,,7,,,
+9:40:07,3/13/2025,2,Katarina,Ag,M200,,,MUN,,,Ag,,RS,,,,,,,
+10:07:23,3/13/2025,2,Katarina,M,M053,,,FUN,,,Ag,,,,Erection,,4,,,
+10:12:26,3/13/2025,2,Katarina,M,M053,,,FUN,,,R,,,,Erection,,4,,,
+10:43:49,3/13/2025,2,Katarina,M,M267,,,FUN,,,R,,,,,,,,,
+10:46:20,3/13/2025,2,Katarina,M,M267,,,FUN,,,R,,,,,,,,,
+10:56:28,3/13/2025,2,Katarina,M,M104,,,M271,,,R,,,,,,,,,
+10:58:01,3/13/2025,2,Katarina,M,M104,,,M268,,,R,,,,Erection,,2,,,
+11:25:17,3/13/2025,2,Katarina,Ag,M067,M077,,MUN,,,CoAg,,AS,,,,,,,
+12:19:15,3/13/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+12:23:48,3/13/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+12:26:03,3/13/2025,1,Holly,Ag,M223, FUN,,FUN,,,R,,AS,,,,,,,
+12:26:17,3/13/2025,1,Holly,M,M223,,,FUN,,,CoAg,,,,Erection,,2,,,
+12:39:32,3/13/2025,2,Katarina,M,M053,,,FUN,,,Ag,,,,Erection,,2,,,
+12:41:26,3/13/2025,2,Katarina,M,M053,,,FUN,,,R,,,,Erection,,2,,,
+12:46:10,3/13/2025,1,Holly,Ag,M223, M097,,FUN,,,Ag,,AS,,,,,,,
+13:08:03,3/13/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,3,,,
+13:28:21,3/13/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,1,,,
+13:30:49,3/13/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+13:32:26,3/13/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+13:33:46,3/13/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,2,,,
+8:08:29,3/14/2025,1,Holly,M,M078,,,FUN,,,F,,,,Erection,,6,,,
+8:16:14,3/14/2025,1,Holly,Ag,M078, MUN,,M048,,,F,,AS,,,,,,,
+8:20:53,3/14/2025,1,Holly,M,M048,,,FUN,,,F,,,,Erection,,1,,,
+10:35:45,3/14/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,,,,
+10:38:43,3/14/2025,1,Holly,M,M133,,,FUN,,,R,,,,Erection,,,,,
+10:44:13,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+10:51:10,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:52:23,3/14/2025,1,Holly,Ag,M253, MUN,,MUN,,,R,,AS,,,,,,,
+10:54:50,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:55:28,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,1,,,
+10:55:50,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,1,,,
+10:57:57,3/14/2025,1,Holly,M,M223,,,FUN,,,R,,,,,,,,,
+12:50:47,3/14/2025,1,Holly,M,M042,,,FUN,,,R,,,,Erection,,4,,,
+13:03:40,3/14/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,2,,,
+13:06:04,3/14/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,,,,
+13:28:29,3/14/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+13:28:59,3/14/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+8:24:18,3/17/2025,2,Katarina,M,M020,,,FUN,,,R,,,,,,,,,
+8:30:36,3/17/2025,2,Katarina,Ag,M010,,,JVUN,FUN,,R,,RS,,,,,,,
+8:31:04,3/17/2025,2,Katarina,Ag,M010,,,FUN,FUN,,R,,RS,,,,,,,
+8:55:40,3/17/2025,1,Holly,Ag,M078,,,FUN, FUN,,R,,RS,,,,,,,
+9:00:36,3/17/2025,2,Katarina,Ag,MUN,MUN,,M062,,,CoAg,,AS,,,,,,,
+9:03:09,3/17/2025,1,Holly,M,M176,,,FUN,,,R,,,,Erection,,5,,,
+9:46:08,3/17/2025,1,Holly,Ag,M192, M232,,FUN,,,R,,AS,,,,,,,
+9:59:24,3/17/2025,1,Holly,Ag,M016, M192, FUN,MUN,,,R,,AS,,,,,,,
+10:07:09,3/17/2025,1,Holly,M,M115,,,FUN,,,R,,,,Erection,,3,,,
+10:21:19,3/17/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+7:34:32,3/18/2025,1,Holly,M,M042,,,FUN,,,R,,,,Erection,,6,,,
+7:49:44,3/18/2025,1,Holly,M,M069,,,M192,,,R,,,,,,,,,
+7:50:06,3/18/2025,1,Holly,M,M192,,,M069,,,R,,,,,,,,,
+7:50:32,3/18/2025,1,Holly,M,MUN,,,M192,,,R,,,,,,,,,
+9:20:06,3/18/2025,1,Holly,Ag,M133,,,M253, FUN, FUN,F,,RS,,,,,,,
+9:34:18,3/18/2025,2,Katarina,Ag,MUN,,,M063,,,CoAg,,RS,,,,,,,
+11:11:18,3/18/2025,2,Katarina,M,M035,,,M299,,,R,,,,Erection,,2,,,
+7:58:10,3/19/2025,1,Holly,Ag,M253, M223, MUN,MUN,,,R,,AS,,,,,,,
+8:02:30,3/19/2025,2,Katarina,M,M211,,,M191,,,R,,,,Erection,,2,,,
+8:24:50,3/19/2025,1,Holly,Ag,M157, FUN,,FUN,,,F,,AS,,,,,,,
+8:48:46,3/19/2025,1,Holly,M,M042,,,FUN,,,F,,,,Erection,,7,,,
+9:02:31,3/19/2025,2,Katarina,Ag,M001,,,FUN,,,CoAg,,RS,,,,,,,
+9:05:42,3/19/2025,2,Katarina,Ag,M041,,,M077,,,CoAg,,RS,,,,,,,
+9:19:14,3/19/2025,1,Holly,Ag,M078, FUN,,MUN,,,F,,AS,,,,,,,
+10:17:57,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:19:40,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:20:12,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:20:50,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+10:21:14,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,6,,,
+10:21:38,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:22:10,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:22:32,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,6,,,
+10:22:54,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,10,,,
+10:23:45,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+10:24:09,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+10:24:38,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,5,,,
+10:34:22,3/19/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,4,,,
+10:44:05,3/19/2025,1,Holly,Ag,M223, MUN, FUN,M253,,,R,,AS,,,,,,,
+11:01:51,3/19/2025,2,Katarina,M,M007,,,FUN,,,R,,,,Erection,,2,,,
+11:44:14,3/19/2025,2,Katarina,Ag,M062,M041,,MUN,,,CoAg,,AS,,,,,,,
+12:25:04,3/19/2025,2,Katarina,Ag,M041,M025,,M007,,,CoAg,,AS,,,,,,,
+12:49:05,3/19/2025,2,Katarina,Ag,M227,M062,M142,M225,,,CoAg,,AS,,,,,,,
+12:55:19,3/19/2025,2,Katarina,Ag,M062,M041,,M025,,,CoAg,,AS,,,,,,,
+7:43:22,3/20/2025,1,Holly,M,MUN,,,M223,,,R,,,,,,,,,
+8:17:28,3/20/2025,1,Holly,M,M179,,,M011,,,F,,,,Erection,,,,,
+8:20:32,3/20/2025,2,Katarina,Ag,M211,M175,M132,M066,,,R,,AS,,,,,,,
+8:24:23,3/20/2025,2,Katarina,Ag,M207,,,FUN,,,CoAg,,AS,,,,,,,
+9:05:24,3/20/2025,2,Katarina,Ag,M200,M044,,M063,,,F,,AS,,,,,,,
+9:06:04,3/20/2025,2,Katarina,Ag,M132,,,MUN,,,CoAg,,AS,,,,,,,
+9:46:53,3/20/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,5,,,
+10:53:25,3/20/2025,2,Katarina,M,M058,,,FUN,,,R,,,,,,,,,
+10:55:28,3/20/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,2,,,
+10:55:55,3/20/2025,2,Katarina,M,M058,,,,,,,,,,,,,,,
+10:57:21,3/20/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,3,,,
+10:58:29,3/20/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,4,,,
+11:00:16,3/20/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,4,,,
+11:01:55,3/20/2025,2,Katarina,M,M058,,,FUN,,,R,,,,Erection,,2,,,
+11:02:44,3/20/2025,2,Katarina,M,M058,,,FUN,,,Gr,,,,Erection,,2,,,
+11:14:29,3/20/2025,2,Katarina,M,M046,,,M010,,,Gr,,,,Erection,,2,,,
+12:27:07,3/20/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,,1,,,
+12:29:47,3/20/2025,2,Katarina,M,M063,,,FUN,,,Gr,,,,Erection,,1,,,
+12:31:47,3/20/2025,2,Katarina,M,M063,,,FUN,,,R,,,,,,,,,
+13:21:56,3/20/2025,1,Holly,M,M243,,,M242,,,Ag,,,,,,,,,
+13:30:00,3/20/2025,1,Holly,M,M259,,,M242,,,R,,,,,,,,,
+8:16:05,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,6,,,
+8:16:27,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,4,,,
+8:16:46,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,,,,
+8:17:12,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,3,,,
+8:17:31,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,7,,,
+8:18:06,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,,,,
+8:20:13,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,9,,,
+8:21:45,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,3,,,
+8:25:01,3/21/2025,1,Holly,M,M253,,,FUN,,,F,,,,Erection,,6,,,
+10:08:38,3/21/2025,1,Holly,Ag,FUN, FUN,,M085,,,Ag,,AS,,,,,,,
+10:21:11,3/21/2025,1,Holly,M,M101,,,FUN,,,R,,,,Erection,,5,,,
+10:22:56,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,5,,,
+10:26:26,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,5,,,
+10:31:46,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,6,,,
+10:32:28,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,8,,,
+10:52:52,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,3,,,
+10:54:35,3/21/2025,1,Holly,M,M253,,,FUN,,,R,,,,Erection,,,,,
+13:18:40,3/21/2025,1,Holly,Ag,M223,,,FUN, FUN,,R,,RS,,,,,,,
+13:31:13,3/21/2025,1,Holly,M,M253,,,,,,R,,,,Erection,,3,,,
+8:06:54,3/24/2025,1,Holly,M,M285,,,M273 (F),,,R,,,,,,,,,
+8:08:10,3/24/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,5,,,
+8:08:36,3/24/2025,1,Holly,M,M097,,,FUN,,,R,,,,Erection,,4,,,
+8:45:30,3/24/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,,,,
+7:48:40,3/27/2025,1,Holly,M,M292,,,M289,,,Ag,,,,Erection,,,,,
+7:51:02,3/27/2025,1,Holly,M,M301,,,M295,,,R,,,,,,,,,
+12:11:08,3/27/2025,1,Holly,Ag,M161,,,FUN, FUN,,R,,RS,,,,,,,
+12:17:24,3/27/2025,1,Holly,M,M161,,,FUN,,,R,,,,Erection,,,,,
+12:18:04,3/27/2025,1,Holly,M,M223,,,FUN,,,Ag,,,,Erection,,,,,
+12:32:47,3/27/2025,1,Holly,M,M223,,,FUN,,,Ag,,,,Erection,,4,,,
+12:39:09,3/27/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,,,,
+12:40:45,3/27/2025,1,Holly,M,M223,,,FUN,,,R,,,,Erection,,3,,,
+9:54:01,3/28/2025,1,Holly,Ag,FUN,,,M248, FUN,,F,,RS,,,,,,,
+8:04:55,11/3/2024,1,WR,Ag,M189,FUN,,M141,MUN,,,,AS,,,,,,,
+8:05:28,11/3/2024,1,WR,M,M189,,,FUN,,,,,,NoIntro,NoErection,NoEjac,3,26,2,65
+8:31:57,11/3/2024,1,WR,M,M116,,,FUN,,,,,,NoIntro,NoErection,NoEjac,5,6,,10
+8:33:56,11/3/2024,1,WR,M,M116,,,FUN,,,Ag,,,Intro,Erection,NoEjac,7,5,,10
+8:44:00,11/3/2024,1,WR,M,M076,,,FUN,,,F,,,NoIntro,NoErection,NoEjac,1,15,2,24
+8:54:28,11/3/2024,1,WR,M,M097,,,FUN,,,Gr,,,Intro,Erection,NoEjac,5,5,,10
+8:56:07,11/3/2024,1,WR,M,M097,,,FUN,,,,,,Intro,Erection,Ejac,9,5,1,11
+10:04:31,11/3/2024,1,WR,Ag,M059,,,MUN,FUN,,,,RS,,,,,,,
+10:06:32,11/3/2024,1,WR,M,M059,,,FUN,,,Gr,,,NoIntro,NoErection,NoEjac,4,3,,9
+10:47:11,11/3/2024,1,WR,M,JVFUN,,,JVFUN,,,,,,NA,NA,NA,1,,,
+11:01:29,11/3/2024,1,WR,M,M141,,,FUN,,,F,,,,,,5,3,,6
+11:12:01,11/3/2024,1,WR,Ag,M013,MUN,,MUN,,,F,,AS,,,,,,,
+11:40:34,11/3/2024,1,WR,M,M014,,,FUN,,,Gr,,,Intro,Erection,NoEjac,4,3,,6
+11:41:39,11/3/2024,1,WR,M,M014,,,FUN,,,Gr,,,Intro,Erection,NoEjac,5,3,,6
+11:42:21,11/3/2024,1,WR,M,M014,,,FUN,,,Gr,,,Intro,Erection,Ejac,8,3,,6
+12:49:03,11/3/2024,1,WR,M,M059,,,FUN,,,R,,,NA,Erection,NA,21,10,1,16
+12:57:48,11/3/2024,1,WR,Ag,M169,,,M105,FUN,,,,RS,,,,,,,
+13:19:50,11/3/2024,1,WR,M,M133,,,FUN,,,F,,,Intro,Erection,NoEjac,5,4,,9
+13:37:51,11/3/2024,1,WR,M,M016,,,FUN,,,,,,Intro,Erection,Ejac,9,2,,9
+7:57:32,12/3/2024,1,WR,Ag,M078,,,JVUN,FUN,,,,RS,,,,,,,
+8:34:09,12/3/2024,1,WR,M,M027,,,FUN,,,,IgnoreRejection,,NoIntro,NoErection,NoEjac,1,15,2,27
+8:55:00,12/3/2024,1,WR,M,M092,,,FUN,,,F,,,NA,Erection,NoEjac,5,4,,9
+9:54:55,12/3/2024,1,WR,Ag,M120,,,M011,M151,,,,RS,,,,,,,
+12:58:22,12/3/2024,1,WR,M,M006,,,FUN,,,,,,NoIntro,Erection,NoEjac,3,4,,9
+13:03:15,12/3/2024,1,WR,M,M006,,,FUN,,,,,,Intro,Erection,Ejac,7,4,,9
+13:10:18,12/3/2024,1,WR,Ag,M011,MUN,,M105,,,,,AS,,,,,,,
+13:17:50,12/3/2024,1,WR,M,M026,,,FUN,,,Gr,,,,NoErection,,2,5,,14
+13:21:09,12/3/2024,1,WR,M,M026,,,FUN,,,R,,,NA,Erection,NA,4,5,,7
+9:46:06,20/02/2024,1,WR,Ag,M027,,,FUN,INFANT,,,,RS,,,,,,,
+11:07:53,20/02/2024,1,WR,M,M151,,,FUN,,,,,,Intro,Erection,NoEjac,5,6,2,10
+11:12:08,20/02/2024,1,WR,M,M076,,,M042,,,,,,NoIntro,NoErection,NoEjac,2,3,1,12
+11:27:33,20/02/2024,1,WR,Ag,M064,,,M059,FUN,,,,RS,,,,,,,
+8:42:18,21/02/2024,1,WR,M,M192,,,M002,FUN,,,,,NoIntro,NoErection,NoEjac,3,,,1
+12:27:02,21/02/2024,1,WR,M,M042,,,FUN,,,Gr,,,NoIntro,Erection,NoEjac,2,3,1,6
+8:48:43,22/02/2024,1,WR,Ag,M024,,,M072 (F),M002,,,,RS,,,,,,,
+9:54:04,22/02/2024,1,WR,Ag,FUN,FUN,FUN,M194,,,,,AS,,,,,,,
+7:38:29,23/02/2024,1,WR,M,M011,,,FUN,,,Gr,,,,NoErection,,2,8,,12
+8:14:07,23/02/2024,1,WR,Ag,M101,,,FUN,FUN,FUN,,,RS,,,,,,,
+10:31:38,23/02/2024,1,WR,Ag,M112,MUN,,MUN,,,,,AS,,,,,,,
+10:37:25,23/02/2024,1,WR,M,MUN,,,FUN,,,,,,,,,,,,
+7:46:38,26/02/2024,1,WR,M,M192,,,FUN,,,,,,,NoErection,,3,3,,11
+8:00:21,26/02/2024,1,WR,M,M076,,,FUN,,,,,,NoIntro,NoErection,NoEjac,4,12,3,29
+8:05:50,26/02/2024,1,WR,Ag,M026,M189,,M078,,,CoAg,,AS,,,,,,,
+8:14:09,26/02/2024,1,WR,Ag,M042,,,M140,FUN,,,,RS,,,,,,,
+8:38:44,26/02/2024,1,WR,M,M095,,,FUN,,,,,,Intro,Erection,NoEjac,5,2,,7
+8:45:10,26/02/2024,1,WR,M,M080,,,FUN,,,,,,Intro,Erection,Ejac,4,3,,13
+9:49:03,26/02/2024,1,WR,M,M141,,,FUN,,,,,,NoIntro,Erection,NoEjac,6,4,,9
+10:53:17,26/02/2024,1,WR,M,M011,,,FUN,,,,,,Intro,Erection,Ejac,5,2,,10
+12:51:02,26/02/2024,1,WR,M,M064,,,FUN,,,Ag,,,Intro,Erection,Ejac,6,2,,7
+13:24:25,26/02/2024,1,WR,M,M088,,,M092,,,Gr,,,NoIntro,Erection,NoEjac,3,7,1,14
