@@ -1,4 +1,3 @@
-Full code check: 
 ### Load Necessary Packages ###
 
 library(tidyverse)
@@ -15,6 +14,10 @@ library(grid)
 library(lme4)
 library(lmerTest)
 library(irr)
+library(ggeffects)
+library(ggplot2)
+library(patchwork)
+
 
 
 
@@ -385,9 +388,9 @@ write_csv(control_df, "control_variables_23_24_25.csv")
 
 
 
-### Socially complex animals exhibit a repertoire of social behaviours ###
+### Comparisons of overall social behaviours with SSB and DSB ###
 
-## Grooming
+## Grooming, SSB and DSB
 
 control   <- read_csv("control_variables_23_24_25.csv")
 raw_total <- read_csv("raw_groom_mount_23_24_25.csv")
@@ -427,21 +430,17 @@ long <- pairs |>
   mutate(
     partner_is_adult_male = is_adult_male(partner_id),
     partner_is_female     = is_female_id(partner_id),
-    is_mount_ssb = as.integer(action == "M" & partner_is_adult_male),                          
-    is_mount_dsb = as.integer(action == "M" & focal_role == "actor" & partner_is_female),      
+    is_mount_ssb = as.integer(action == "M" & partner_is_adult_male),
+    is_mount_dsb = as.integer(action == "M" & focal_role == "actor" & partner_is_female),
     is_groom_any = as.integer(action == "Gr")
   )
 
 counts <- long |>
   summarise(
-    ssb_count   = sum(is_mount_ssb),
-    dsb_count   = sum(is_mount_dsb),
-    total_mounts = ssb_count + dsb_count,
-    groom_count = sum(is_groom_any),
+    ssb_count     = sum(is_mount_ssb),
+    dsb_count     = sum(is_mount_dsb),
+    groom_count   = sum(is_groom_any),
     .by = focal_id
-  ) |>
-  mutate(
-    SSB_prop = if_else(total_mounts > 0, ssb_count / total_mounts, 0)
   )
 
 male_level <- counts |>
@@ -449,15 +448,16 @@ male_level <- counts |>
   tidyr::drop_na(age, davids_score, observability)
 
 m_groom_activity_composition <- glmmTMB(
-  groom_count ~ total_mounts + SSB_prop + age + davids_score + observability,
+  groom_count ~ ssb_count + dsb_count + age + davids_score + observability,
   family = nbinom2,
   data   = male_level
 )
+
 summary(m_groom_activity_composition)
 
 
 
-## Aggression
+## Aggression, SSB and DSB
 
 control   <- read_csv("control_variables_23_24_25.csv")
 raw_total <- read_csv("raw_aggression_mount_23_24_25.csv")
@@ -497,21 +497,17 @@ long <- pairs |>
   mutate(
     partner_is_adult_male = is_adult_male(partner_id),
     partner_is_female     = is_female_id(partner_id),
-    is_mount_ssb = as.integer(action == "M" & partner_is_adult_male),                         
-    is_mount_dsb = as.integer(action == "M" & focal_role == "actor" & partner_is_female),     
+    is_mount_ssb = as.integer(action == "M" & partner_is_adult_male),
+    is_mount_dsb = as.integer(action == "M" & focal_role == "actor" & partner_is_female),
     is_aggr_any  = as.integer(action == "Ag")
   )
 
 counts <- long |>
   summarise(
-    ssb_count    = sum(is_mount_ssb),
-    dsb_count    = sum(is_mount_dsb),
-    total_mounts = ssb_count + dsb_count,
+    ssb_count        = sum(is_mount_ssb),
+    dsb_count        = sum(is_mount_dsb),
     aggression_count = sum(is_aggr_any),
     .by = focal_id
-  ) |>
-  mutate(
-    SSB_prop = if_else(total_mounts > 0, ssb_count / total_mounts, 0)
   )
 
 male_level <- counts |>
@@ -519,15 +515,16 @@ male_level <- counts |>
   tidyr::drop_na(age, davids_score, observability)
 
 m_aggr_activity_composition <- glmmTMB(
-  aggression_count ~ total_mounts + SSB_prop + age + davids_score + observability,
+  aggression_count ~ ssb_count + dsb_count + age + davids_score + observability,
   family = nbinom2,
   data   = male_level
 )
+
 summary(m_aggr_activity_composition)
 
 
 
-## Coalitions
+## Coalitions, SSB and DSB
 
 control   <- read_csv("control_variables_23_24_25.csv")
 raw_total <- read_csv("raw_coalition_mount_23_24_25.csv")
@@ -536,7 +533,7 @@ is_excluded_id <- function(x) {
   is.na(x) | x == "" | grepl("FUN|MUN|SAMUN|JVUN|JVMUN|INFANT|\\(F\\)", x, ignore.case = TRUE)
 }
 is_adult_male <- function(x) !is_excluded_id(x)
-is_female_id  <- function(x) grepl("FUN|\\(F\\)", x, ignore.case = TRUE)
+is_female_id  <- function(x) ifelse(is.na(x), FALSE, grepl("FUN|\\(F\\)", x, ignore.case = TRUE))
 
 make_mount_pairs_with_role <- function(df) {
   act_long <- df |>
@@ -577,13 +574,13 @@ make_coalition_same_side_pairs <- function(df) {
     filter(id1 != id2)
   
   bind_rows(
-    transmute(same_side_pairs, event_id, action, focal_id = id1, partner_id = id2),
-    transmute(same_side_pairs, event_id, action, focal_id = id2, partner_id = id1)
+    transmute(same_side_pairs, event_id, action, focal_id = id1, partner_id = id2, focal_role = NA_character_),
+    transmute(same_side_pairs, event_id, action, focal_id = id2, partner_id = id1, focal_role = NA_character_)
   )
 }
 
-mount  <- make_mount_pairs_with_role(raw_total) |> dplyr::filter(action == "M")
-coal   <- make_coalition_same_side_pairs(raw_total) |> dplyr::filter(action == "Ag")
+mount <- make_mount_pairs_with_role(raw_total) |> dplyr::filter(action == "M")
+coal  <- make_coalition_same_side_pairs(raw_total) |> dplyr::filter(action == "Ag")
 
 long <- dplyr::bind_rows(
   mount |> mutate(type = "mount"),
@@ -593,21 +590,18 @@ long <- dplyr::bind_rows(
   dplyr::mutate(
     partner_is_adult_male = is_adult_male(partner_id),
     partner_is_female     = is_female_id(partner_id),
-    is_mount_ssb = as.integer(type == "mount" & partner_is_adult_male),                      
-    is_mount_dsb = as.integer(type == "mount" & focal_role == "actor" & partner_is_female),  
+    is_mount_ssb = as.integer(type == "mount" & partner_is_adult_male),
+    # guard focal_role for coal rows (it's NA there)
+    is_mount_dsb = as.integer(type == "mount" & !is.na(focal_role) & focal_role == "actor" & partner_is_female),
     is_coal_any  = as.integer(type == "coal")
   )
 
 counts <- long |>
   summarise(
-    ssb_count    = sum(is_mount_ssb),
-    dsb_count    = sum(is_mount_dsb),
-    total_mounts = ssb_count + dsb_count,
-    coalition_count = sum(is_coal_any),
+    ssb_count       = sum(is_mount_ssb, na.rm = TRUE),
+    dsb_count       = sum(is_mount_dsb, na.rm = TRUE),
+    coalition_count = sum(is_coal_any,  na.rm = TRUE),
     .by = focal_id
-  ) |>
-  mutate(
-    SSB_prop = if_else(total_mounts > 0, ssb_count / total_mounts, 0)
   )
 
 male_level <- counts |>
@@ -615,17 +609,18 @@ male_level <- counts |>
   tidyr::drop_na(age, davids_score, observability)
 
 m_coal_activity_composition <- glmmTMB(
-  coalition_count ~ total_mounts + SSB_prop + age + davids_score + observability,
+  coalition_count ~ ssb_count + dsb_count + age + davids_score + observability,
   family = nbinom2,
   data   = male_level
 )
+
 summary(m_coal_activity_composition)
 
 
 
 
 
-### Male-male dyads which mount each other more also groom each other more, aggress each other less, and form more coalitions together ###
+### Comparisons of social behaviours and SSB within male-male dyads ###
 
 ## Data wrangling - Pairs Dataset Prep. ##
 
@@ -894,7 +889,7 @@ write_csv(coal_final, "coalition_mount_dyads_with_controls.csv")
 
 
 
-## Grooming
+## Model Grooming and SSB in Dyads
 
 df_clean <- read_csv("groom_mount_dyads_with_controls.csv")
 
@@ -920,7 +915,7 @@ summary(groom_dyads)
 
 
 
-## Aggression
+## Model Aggression and SSB in Dyads
 
 df_aggr <- read_csv("aggression_mount_dyads_with_controls.csv")
 
@@ -944,7 +939,7 @@ summary(aggr_dyads)
 
 
 
-## Coalitions
+## Model Coalitions and SSB in Dyads
 
 dyads_file  <- "coalition_mount_dyads_with_controls.csv"
 ag_file     <- "raw_male_aggression_mount_23_24_25.csv"
@@ -1064,7 +1059,7 @@ summary(mod_coal_rank)
 
 
 
-### In mounting pairs, the mounter also tend to be the recipient of grooming and initiator of aggression ###
+### Do the social roles of the mounter or mountee differ within SSB pairs? ###
 
 ## Data wrangling
 
@@ -1309,14 +1304,16 @@ plogis(-0.61121)
 
 
 
-### Individuals with higher SSB counts sit more centrally within the affiliative network ###
+### Social network analyses ###
 
-## SSB count
+## SSB count and network centrality
 
 raw <- read.csv("raw_male_groom_mount_23_24_25.csv")  
 controls <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE) %>%
   select(id, age, davids_score, observability)
 
+
+# Network centrality measures and PCA
 build_group_df <- function(g_label) {
   dat_g <- raw %>% filter(group == g_label)
   
@@ -1376,6 +1373,8 @@ build_group_df <- function(g_label) {
   merged
 }
 
+
+# Pool Groups 1 and 2
 df_1 <- build_group_df("1")
 df_2 <- build_group_df("2")
 
@@ -1389,6 +1388,8 @@ pooled <- bind_rows(df_1, df_2) %>%
 with(df_1, cor(centrality_PC1, eigenvector, use = "complete.obs"))
 with(df_2, cor(centrality_PC1, eigenvector, use = "complete.obs"))
 
+
+# Model social network with SSB
 mod_pooled_nb <- glmmTMB(
   n_ssb_mounts ~ centrality_PC1_z + age + davids_score + observability + factor(group),
   family = nbinom2,
@@ -1433,12 +1434,14 @@ raw_total  <- read.csv("raw_groom_mount_23_24_25.csv")
 controls   <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE) %>%
   select(id, age, davids_score, observability)
 
+
+# Network centrality measures and PCA
 is_female_id <- function(x) grepl("FUN|\\(F\\)", x, ignore.case = TRUE)
 is_male_id   <- function(x) !is.na(x) & !is_female_id(x)
 
 build_group_df_dsb <- function(g_label) {
-  dat_g_male  <- raw_male  %>% filter(group == g_label)     # Male-only for centrality
-  dat_g_total <- raw_total %>% filter(group == g_label)     # All-sex for DSB counts
+  dat_g_male  <- raw_male  %>% filter(group == g_label)     
+  dat_g_total <- raw_total %>% filter(group == g_label)     
   
   edges_g <- dat_g_male %>%
     filter(action == "Gr") %>%
@@ -1494,6 +1497,8 @@ build_group_df_dsb <- function(g_label) {
   merged_dsb
 }
 
+
+# Pool Groups 1 and 2
 df_1_dsb <- build_group_df_dsb("1")
 df_2_dsb <- build_group_df_dsb("2")
 
@@ -1507,6 +1512,8 @@ pooled_dsb <- bind_rows(df_1_dsb, df_2_dsb) %>%
 with(df_1_dsb, cor(centrality_PC1_dsb, eigenvector, use = "complete.obs"))
 with(df_2_dsb, cor(centrality_PC1_dsb, eigenvector, use = "complete.obs"))
 
+
+# Model social network with DSB
 mod_nb_dsb <- glmmTMB(
   n_dsb_mounts ~ centrality_PC1_z_dsb + age + davids_score + observability + factor(group),
   family = nbinom2,
@@ -1534,7 +1541,6 @@ se_diff_dsb   <- sqrt(vc_dsb["centrality_PC1_z_dsb:factor(group)2","centrality_P
 beta_2_dsb <- beta_1_dsb + beta_diff_dsb
 se_2_dsb   <- sqrt(se_1_dsb^2 + se_diff_dsb^2 + 2*vc_dsb["centrality_PC1_z_dsb","centrality_PC1_z_dsb:factor(group)2"])
 
-# 95% CIs (Wald)
 ci_1_dsb <- beta_1_dsb + c(-1,1)*1.96*se_1_dsb
 ci_2_dsb <- beta_2_dsb + c(-1,1)*1.96*se_2_dsb
 
@@ -1542,125 +1548,6 @@ data.frame(group=c("1","2"),
            beta_dsb=c(beta_1_dsb, beta_2_dsb),
            lo_dsb=c(ci_1_dsb[1], ci_2_dsb[1]),
            hi_dsb=c(ci_1_dsb[2], ci_2_dsb[2]))
-
-
-
-## Total mounts 
-
-raw_male   <- read.csv("raw_male_groom_mount_23_24_25.csv")   
-raw_total  <- read.csv("raw_groom_mount_23_24_25.csv")         
-controls   <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE) %>%
-  select(id, age, davids_score, observability)
-
-build_group_df_total <- function(g_label) {
-  dat_g_male  <- raw_male  %>% filter(group == g_label)
-  dat_g_total <- raw_total %>% filter(group == g_label)
-  
-  edges_g <- dat_g_male %>%
-    filter(action == "Gr") %>%
-    group_by(giver_id = actor1, receiver_id = recipient1) %>%
-    summarise(groom_count = n(), .groups = "drop") %>%
-    filter(!is.na(giver_id), !is.na(receiver_id), groom_count > 0)
-  
-  g_dir <- graph_from_data_frame(edges_g, directed = TRUE)
-  E(g_dir)$weight <- edges_g$groom_count
-  g_und <- as_undirected(
-    g_dir,
-    mode = "collapse",
-    edge.attr.comb = list(weight = "sum")
-  )
-  
-  eig_vec <- eigen_centrality(
-    g_und,
-    directed = FALSE,
-    weights = E(g_und)$weight
-  )$vector
-  
-  centrality_df <- data.frame(
-    ID          = V(g_dir)$name,
-    degree      = degree(g_dir, mode = "all"),
-    out_degree  = degree(g_dir, mode = "out"),
-    in_degree   = degree(g_dir, mode = "in"),
-    strength    = strength(g_dir, mode = "all", weights = E(g_dir)$weight),
-    eigenvector = eig_vec[ match(V(g_dir)$name, names(eig_vec)) ]
-  )
-  
-  total_counts <- dat_g_total %>%
-    filter(action == "M") %>%
-    transmute(ID = actor1) %>%
-    bind_rows(dat_g_total %>% filter(action == "M") %>% transmute(ID = recipient1)) %>%
-    filter(!is.na(ID)) %>%
-    count(ID, name = "n_total_mounts")
-  
-  merged_total <- centrality_df %>%
-    left_join(total_counts, by = "ID") %>%
-    left_join(controls, by = c("ID" = "id")) %>%
-    mutate(
-      n_total_mounts = if_else(
-        !is.na(observability) & observability > 0 & is.na(n_total_mounts),
-        0L, as.integer(n_total_mounts)
-      )
-    ) %>%
-    filter(complete.cases(degree, strength, eigenvector, age, davids_score, observability, n_total_mounts))
-  
-  pc <- prcomp(scale(merged_total[, c("degree","strength","eigenvector")]), center = TRUE, scale. = TRUE)
-  pc1 <- pc$x[, 1]
-  if (cor(pc1, merged_total$eigenvector, use = "complete.obs") < 0) pc1 <- -pc1
-  merged_total$centrality_PC1_total <- pc1
-  
-  merged_total$group <- g_label
-  merged_total
-}
-
-df_1_total <- build_group_df_total("1")
-df_2_total <- build_group_df_total("2")
-
-pooled_total <- bind_rows(df_1_total, df_2_total) %>%
-  group_by(group) %>%
-  mutate(
-    centrality_PC1_z_total = as.numeric(scale(centrality_PC1_total))
-  ) %>%
-  ungroup()
-
-with(df_1_total, cor(centrality_PC1_total, eigenvector, use = "complete.obs"))
-with(df_2_total, cor(centrality_PC1_total, eigenvector, use = "complete.obs"))
-
-pooled_total$group <- factor(pooled_total$group)
-
-mod_nb_total <- glmmTMB(
-  n_total_mounts ~ centrality_PC1_z_total + age + davids_score + observability + group,
-  family = nbinom2,
-  data = pooled_total
-)
-summary(mod_nb_total)
-
-mod_pooled_int_total <- glmmTMB(
-  n_total_mounts ~ centrality_PC1_z_total * group + age + davids_score + observability,
-  family = nbinom2,
-  data = pooled_total
-)
-
-anova(mod_nb_total, mod_pooled_int_total)
-
-vc_total <- vcov(mod_pooled_int_total)$cond
-co_total <- summary(mod_pooled_int_total)$coefficients$cond
-
-beta_1_total <- co_total["centrality_PC1_z_total","Estimate"]
-se_1_total   <- sqrt(vc_total["centrality_PC1_z_total","centrality_PC1_z_total"])
-
-beta_diff_total <- co_total["centrality_PC1_z_total:group2","Estimate"]
-se_diff_total   <- sqrt(vc_total["centrality_PC1_z_total:group2","centrality_PC1_z_total:group2"])
-
-beta_2_total <- beta_1_total + beta_diff_total
-se_2_total   <- sqrt(se_1_total^2 + se_diff_total^2 + 2*vc_total["centrality_PC1_z_total","centrality_PC1_z_total:group2"])
-
-ci_1_total <- beta_1_total + c(-1,1)*1.96*se_1_total
-ci_2_total <- beta_2_total + c(-1,1)*1.96*se_2_total
-
-data.frame(group=c("1","2"),
-           beta_total=c(beta_1_total, beta_2_total),
-           lo_total=c(ci_1_total[1], ci_2_total[1]),
-           hi_total=c(ci_1_total[2], ci_2_total[2]))
 
 
 
@@ -1872,108 +1759,6 @@ slopes_eig_dsb
 
 
 
-## Total Mounts
-
-pooled_cnt_total <- bind_rows(df_1_total, df_2_total) %>%
-  transmute(
-    ID,
-    group = factor(group, levels = c("1","2")),   # "1" as reference
-    degree, strength, eigenvector,
-    age, davids_score, observability,
-    n_total_mounts = as.integer(n_total_mounts)
-  ) %>%
-  filter(
-    !is.na(n_total_mounts),
-    is.finite(degree), is.finite(strength), is.finite(eigenvector),
-    is.finite(age), is.finite(davids_score), is.finite(observability)
-  )
-
-per_group_slopes_tmb_total <- function(mod, term, other_group = "2") {
-  co <- summary(mod)$coefficients$cond
-  vc <- vcov(mod)$cond
-  
-  b_1  <- co[term, "Estimate"]
-  se_1 <- sqrt(vc[term, term])
-  ci_1 <- b_1 + c(-1, 1) * 1.96 * se_1
-  
-  int_name <- paste0(term, ":group", other_group)
-  if (!int_name %in% rownames(co)) int_name <- paste0("group", other_group, ":", term)
-  
-  b_diff <- co[int_name, "Estimate"]
-  v_diff <- vc[int_name, int_name]
-  covar  <- vc[term, int_name]
-  
-  b_2  <- b_1 + b_diff
-  se_2 <- sqrt(se_1^2 + v_diff + 2 * covar)
-  ci_2 <- b_2 + c(-1, 1) * 1.96 * se_2
-  
-  data.frame(
-    group  = c("1", other_group),
-    beta   = c(b_1, b_2),
-    lo     = c(ci_1[1], ci_2[1]),
-    hi     = c(ci_1[2], ci_2[2]),
-    IRR    = exp(c(b_1, b_2)),
-    IRR_lo = exp(c(ci_1[1], ci_2[1])),
-    IRR_hi = exp(c(ci_1[2], ci_2[2]))
-  )
-}
-
-
-# Degree
-mod_total_deg <- glmmTMB(
-  n_total_mounts ~ degree + age + davids_score + observability + group,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-summary(mod_total_deg)
-
-mod_total_deg_int <- glmmTMB(
-  n_total_mounts ~ degree * group + age + davids_score + observability,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-anova(mod_total_deg, mod_total_deg_int)
-slopes_deg_total <- per_group_slopes_tmb_total(mod_total_deg_int, term = "degree")
-slopes_deg_total
-
-
-# Strength
-mod_total_str <- glmmTMB(
-  n_total_mounts ~ strength + age + davids_score + observability + group,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-summary(mod_total_str)
-
-mod_total_str_int <- glmmTMB(
-  n_total_mounts ~ strength * group + age + davids_score + observability,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-anova(mod_total_str, mod_total_str_int)
-slopes_str_total <- per_group_slopes_tmb_total(mod_total_str_int, term = "strength")
-slopes_str_total
-
-
-# Eigenvector Centrality
-mod_total_eig <- glmmTMB(
-  n_total_mounts ~ eigenvector + age + davids_score + observability + group,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-summary(mod_total_eig)
-
-mod_total_eig_int <- glmmTMB(
-  n_total_mounts ~ eigenvector * group + age + davids_score + observability,
-  family = nbinom2,
-  data = pooled_cnt_total
-)
-anova(mod_total_eig, mod_total_eig_int)
-slopes_eig_total <- per_group_slopes_tmb_total(mod_total_eig_int, term = "eigenvector")
-slopes_eig_total
-
-
-
 
 
 ### Plot Social Network Maps ###
@@ -1992,9 +1777,7 @@ make_edges <- function(dat, grp) {
 write_csv(make_edges(raw_male, "1"), "grooming_edge_list_1.csv")
 write_csv(make_edges(raw_male, "2"), "grooming_edge_list_2.csv")
 
-
 ## SSB 
-
 plot_group_map_count <- function(edges_file, df_group, title_text) {
   edges <- read_csv(edges_file, show_col_types = FALSE)
   
@@ -2023,15 +1806,15 @@ plot_group_map_count <- function(edges_file, df_group, title_text) {
       aes(edge_width = weight),
       arrow       = arrow(length = unit(2, 'mm')),
       end_cap     = circle(3, 'mm'),
-      edge_alpha  = 0.35,
-      edge_colour = "grey20",
+      edge_alpha  = 0.6,
+      edge_colour = "black",
       show.legend = TRUE
     ) +
     scale_edge_width(range = c(0.15, 1.6), trans = "sqrt", name = "Grooming amount") +
-    geom_node_point(aes(color = ssb_count), size = 8, show.legend = TRUE) +
+    geom_node_point(aes(color = ssb_count), size = 14, show.legend = TRUE) +
     scale_color_gradientn(
-      colours = RColorBrewer::brewer.pal(9, "Blues")[2:9],
-      na.value = "grey85",
+      colours = colorRampPalette(c("lightblue2", "darkblue"))(100),
+      na.value = "grey70",
       name = "SSB count"
     ) +
     theme_graph(base_family = "Arial") +
@@ -2086,15 +1869,15 @@ plot_group_map_count_dsb <- function(edges_file, df_group, title_text) {
       aes(edge_width = weight),
       arrow       = arrow(length = unit(2, 'mm')),
       end_cap     = circle(3, 'mm'),
-      edge_alpha  = 0.35,
-      edge_colour = "grey20",
+      edge_alpha  = 0.6,
+      edge_colour = "black",
       show.legend = TRUE
     ) +
     scale_edge_width(range = c(0.15, 1.6), trans = "sqrt", name = "Grooming amount") +
-    geom_node_point(aes(color = dsb_count), size = 8, show.legend = TRUE) +
+    geom_node_point(aes(color = dsb_count), size = 14, show.legend = TRUE) +
     scale_color_gradientn(
-      colours = RColorBrewer::brewer.pal(9, "Blues")[2:9],
-      na.value = "grey85",
+      colours = colorRampPalette(c("orange", "darkorange4"))(100),
+      na.value = "grey70",
       name = "DSB count"
     ) +
     theme_graph(base_family = "Arial") +
@@ -2117,730 +1900,11 @@ p_2_dsb
 
 
 
-## Total Mounts
 
-plot_group_map_count_total <- function(edges_file, df_group, title_text) {
-  edges <- read_csv(edges_file, show_col_types = FALSE)
-  
-  if ("groom_count" %in% names(edges) && !"weight" %in% names(edges)) {
-    edges <- edges %>% rename(weight = groom_count)
-  } else if (!"weight" %in% names(edges)) {
-    edges <- edges %>%
-      group_by(across(1:2)) %>%
-      summarise(weight = n(), .groups = "drop")
-  }
-  
-  g <- graph_from_data_frame(edges, directed = TRUE)
-  
-  col_or <- function(df, nm) if (nm %in% names(df)) df[[nm]] else rep(NA_real_, nrow(df))
-  
-  total_count_vec <- dplyr::coalesce(
-    suppressWarnings(as.numeric(col_or(df_group, "n_total_mounts"))),
-    suppressWarnings(as.numeric(col_or(df_group, "total_count")))
-  )
-  names(total_count_vec) <- df_group$ID
-  V(g)$total_count <- total_count_vec[ match(V(g)$name, df_group$ID) ]
-  
-  tg <- as_tbl_graph(g)
-  set.seed(123)  
-  
-  ggraph(tg, layout = "kk") +
-    geom_edge_link(
-      aes(edge_width = weight),
-      arrow       = arrow(length = unit(2, 'mm')),
-      end_cap     = circle(3, 'mm'),
-      edge_alpha  = 0.35,
-      edge_colour = "grey20",
-      show.legend = TRUE
-    ) +
-    scale_edge_width(range = c(0.15, 1.6), trans = "sqrt", name = "Grooming amount") +
-    geom_node_point(aes(color = total_count), size = 8, show.legend = TRUE) +
-    scale_color_gradientn(
-      colours = RColorBrewer::brewer.pal(9, "Blues")[2:9],
-      na.value = "grey85",
-      name = "Total mounts"
-    ) +
-    theme_graph(base_family = "Arial") +
-    theme(
-      legend.position = "right",
-      plot.title = element_text(size = 22, face = "bold", hjust = 0),
-      plot.subtitle = element_text(size = 18, hjust = 0)
-    ) +
-    labs(
-      title = title_text,
-      subtitle = "Node colour = total mount count; edge width = grooming amount"
-    )
-}
 
-p_1_total <- plot_group_map_count_total("grooming_edge_list_1.csv", df_1_total, "Grooming Network (Group 1) — Total mounts")
-p_2_total <- plot_group_map_count_total("grooming_edge_list_2.csv", df_2_total, "Grooming Network (Group 2) — Total mounts")
+### Comparing male affiliative partner diversity, SSB and DSB ### 
 
-p_1_total
-p_2_total
-
-
-
-
-
-### Potential Social Benefits of SSB - Rank Stability ###
-
-## Data Wrangling
-
-control <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
-aggr    <- read.csv("raw_aggression_mount_23_24_25.csv", stringsAsFactors = FALSE)  
-wl      <- read.csv("winner_loser_interactions_23_24_25.csv", stringsAsFactors = FALSE)
-
-is_disallowed <- function(x) {
-  bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
-  !is.na(x) & (x %in% bad | grepl("\\(F\\)", x))
-}
-is_male_id   <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
-is_female_id <- function(x) !is.na(x) & (x == "FUN" | grepl("\\(F\\)$", x))
-
-to_month_mixed <- function(v) {
-  mdy_ <- suppressWarnings(mdy(v)); dmy_ <- suppressWarnings(dmy(v))
-  out <- as.Date(NA)[seq_along(v)]
-  for (i in seq_along(v)) {
-    m_ok <- !is.na(mdy_[i]); d_ok <- !is.na(dmy_[i])
-    m_in <- m_ok && month(mdy_[i]) %in% 1:5
-    d_in <- d_ok && month(dmy_[i]) %in% 1:5
-    out[i] <- if (m_ok && !d_ok) mdy_[i]
-    else if (d_ok && !m_ok) dmy_[i]
-    else if (m_in && !d_in) mdy_[i]
-    else if (d_in && !m_in) dmy_[i]
-    else if (m_in && d_in)  mdy_[i]
-    else if (m_ok)          mdy_[i]
-    else if (d_ok)          dmy_[i]
-    else                    as.Date(NA)
-  }
-  floor_date(out, "month")
-}
-
-expand_pairs <- function(df) {
-  df %>%
-    mutate(row_id = dplyr::row_number()) %>%
-    pivot_longer(c(actor1, actor2, actor3), names_to = "actor_slot", values_to = "actor") %>%
-    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "recip_slot", values_to = "recipient") %>%
-    filter(!is.na(actor), !is.na(recipient), actor != recipient)
-}
-
-aggr <- aggr %>% mutate(month = to_month_mixed(date)) %>%
-  filter(!is.na(month), month(month) %in% 1:5)
-wl   <- wl   %>% mutate(month = to_month_mixed(date)) %>%
-  filter(!is.na(month), month(month) %in% 1:5)
-
-
-# Monthly SSB
-mounts <- aggr %>% filter(action == "M") %>%
-  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
-
-mount_pairs <- expand_pairs(mounts) %>%
-  mutate(is_ssb = is_male_id(actor) & is_male_id(recipient))
-
-mount_long_ssb <- bind_rows(
-  mount_pairs %>% transmute(month, id = actor,     is_ssb),
-  mount_pairs %>% transmute(month, id = recipient, is_ssb)
-) %>% filter(is_male_id(id))
-
-monthly_ssb <- mount_long_ssb %>%
-  group_by(id, month) %>%
-  summarise(ssb_count = sum(is_ssb), .groups = "drop")
-
-write.csv(monthly_ssb, "monthly_ssb_count_only.csv", row.names = FALSE)
-
-
-# Monthly DSB
-mount_long_dsb <- mount_pairs %>%
-  mutate(is_dsb = is_male_id(actor) & is_female_id(recipient)) %>%
-  transmute(month, id = actor, is_dsb) %>%
-  filter(is_male_id(id))
-
-monthly_dsb <- mount_long_dsb %>%
-  group_by(id, month) %>%
-  summarise(dsb_count = sum(is_dsb), .groups = "drop")
-
-write.csv(monthly_dsb, "monthly_dsb_count_only.csv", row.names = FALSE)
-
-
-# Monthly Total Mounts
-mount_long_total <- bind_rows(
-  mount_pairs %>% transmute(month, id = actor),
-  mount_pairs %>% transmute(month, id = recipient)
-) %>% filter(is_male_id(id))
-
-monthly_total_mounts <- mount_long_total %>%
-  group_by(id, month) %>%
-  summarise(total_mounts = n(), .groups = "drop")
-
-write.csv(monthly_total_mounts, "monthly_total_mounts_from_aggression.csv", row.names = FALSE)
-
-
-# Monthly Rank
-wl_core <- wl %>%
-  filter(action %in% c("Ag","Su")) %>%
-  select(month, action, actor1, actor2, actor3, recipient1, recipient2, recipient3)
-
-pairs_wl <- expand_pairs(wl_core) %>%
-  mutate(
-    winner = ifelse(action == "Ag", actor, recipient),
-    loser  = ifelse(action == "Ag", recipient, actor)
-  ) %>%
-  filter(is_male_id(winner) & is_male_id(loser)) %>%
-  select(month, winner, loser)
-
-compute_ds_month <- function(df_month) {
-  if (nrow(df_month) == 0) return(data.frame(id = character(0), DS = numeric(0)))
-  ids <- sort(unique(c(df_month$winner, df_month$loser)))
-  n <- length(ids)
-  if (n < 2) return(data.frame(id = ids, DS = 0))
-  W <- matrix(0, n, n, dimnames = list(ids, ids))
-  for (k in seq_len(nrow(df_month))) {
-    W[df_month$winner[k], df_month$loser[k]] <- W[df_month$winner[k], df_month$loser[k]] + 1
-  }
-  P <- matrix(NA_real_, n, n, dimnames = list(ids, ids))
-  for (i in ids) for (j in ids) {
-    if (i == j) { P[i,j] <- NA_real_; next }
-    denom <- W[i,j] + W[j,i]
-    P[i,j] <- if (denom > 0) W[i,j] / denom else NA_real_
-  }
-  w  <- rowSums(P, na.rm = TRUE)
-  l  <- colSums(P, na.rm = TRUE)
-  w2 <- setNames(numeric(n), ids)
-  l2 <- setNames(numeric(n), ids)
-  for (i in ids) { w2[i] <- sum(w * P[i, ], na.rm = TRUE); l2[i] <- sum(l * P[, i], na.rm = TRUE) }
-  DS <- w + w2 - l - l2
-  data.frame(id = ids, DS = as.numeric(DS), stringsAsFactors = FALSE)
-}
-
-monthly_ds <- pairs_wl %>% group_by(month) %>% group_modify(~ compute_ds_month(.x)) %>% ungroup()
-monthly_rank <- monthly_ds %>%
-  group_by(month) %>% arrange(desc(DS), .by_group = TRUE) %>% mutate(rank = dense_rank(desc(DS))) %>% ungroup()
-
-write.csv(monthly_rank, "monthly_rank.csv", row.names = FALSE)
-
-
-
-## SSB
-
-monthly_ssb  <- read.csv("monthly_ssb_count_only.csv", stringsAsFactors = FALSE)
-monthly_rank <- read.csv("monthly_rank.csv",               stringsAsFactors = FALSE)
-control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
-
-monthly_ssb$id   <- as.character(monthly_ssb$id)
-monthly_rank$id  <- as.character(monthly_rank$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_ssb$month,  "Date")) monthly_ssb$month  <- as.Date(monthly_ssb$month)
-if (!inherits(monthly_rank$month, "Date")) monthly_rank$month <- as.Date(monthly_rank$month)
-
-stab_monthly_ssb <- monthly_rank %>%
-  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
-  mutate(ssb_count = dplyr::coalesce(as.integer(ssb_count), 0L)) %>%
-  arrange(id, month)
-
-stab_var_ssb <- stab_monthly_ssb %>%
-  group_by(id) %>%
-  summarise(
-    months_obs     = sum(!is.na(rank)),
-    rank_var       = var(rank, na.rm = TRUE),
-    ssb_count_mean = mean(ssb_count, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  left_join(control %>% select(id, age, observability), by = "id") %>%
-  filter(months_obs >= 2) %>%
-  mutate(
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-write.csv(stab_var_ssb, "rank_stability_var_ssb_count.csv", row.names = FALSE)
-
-m_rank_var_ssb_count <- lm(
-  log1p(rank_var) ~ ssb_count_mean + age_z + observability_z,
-  data = stab_var_ssb
-)
-summary(m_rank_var_ssb_count)
-
-
-
-## DSB
-
-monthly_dsb  <- read.csv("monthly_dsb_count_only.csv", stringsAsFactors = FALSE)
-monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
-control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
-
-monthly_dsb$id   <- as.character(monthly_dsb$id)
-monthly_rank$id  <- as.character(monthly_rank$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_dsb$month,  "Date")) monthly_dsb$month  <- as.Date(monthly_dsb$month)
-if (!inherits(monthly_rank$month, "Date")) monthly_rank$month <- as.Date(monthly_rank$month)
-
-stab_monthly_dsb <- monthly_rank %>%
-  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
-  mutate(dsb_count = dplyr::coalesce(as.integer(dsb_count), 0L)) %>%
-  arrange(id, month)
-
-stab_var_dsb <- stab_monthly_dsb %>%
-  group_by(id) %>%
-  summarise(
-    months_obs    = sum(!is.na(rank)),
-    rank_var      = var(rank, na.rm = TRUE),
-    dsb_count_mean= mean(dsb_count, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  left_join(control %>% select(id, age, observability), by = "id") %>%
-  filter(months_obs >= 2) %>%
-  mutate(
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-write.csv(stab_var_dsb, "rank_stability_var_dsb_count.csv", row.names = FALSE)
-
-m_rank_var_dsb_count <- lm(
-  log1p(rank_var) ~ dsb_count_mean + age_z + observability_z,
-  data = stab_var_dsb
-)
-summary(m_rank_var_dsb_count)
-
-
-
-## Total Mounts
-
-monthly_total <- read.csv("monthly_total_mounts_from_aggression.csv", stringsAsFactors = FALSE)
-monthly_rank  <- read.csv("monthly_rank.csv",                          stringsAsFactors = FALSE)
-control       <- read.csv("control_variables_23_24_25.csv",            stringsAsFactors = FALSE)
-
-monthly_total$id <- as.character(monthly_total$id)
-monthly_rank$id  <- as.character(monthly_rank$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_total$month, "Date")) monthly_total$month <- as.Date(monthly_total$month)
-if (!inherits(monthly_rank$month,  "Date")) monthly_rank$month  <- as.Date(monthly_rank$month)
-
-stab_monthly_total <- monthly_rank %>%
-  left_join(monthly_total %>% select(id, month, total_mounts), by = c("id","month")) %>%
-  mutate(total_mounts = dplyr::coalesce(as.integer(total_mounts), 0L)) %>%
-  arrange(id, month)
-
-stab_var_total <- stab_monthly_total %>%
-  group_by(id) %>%
-  summarise(
-    months_obs        = sum(!is.na(rank)),
-    rank_var          = var(rank, na.rm = TRUE),
-    total_mounts_mean = mean(total_mounts, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  left_join(control %>% select(id, age, observability), by = "id") %>%
-  filter(months_obs >= 2) %>%
-  mutate(
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-write.csv(stab_var_total, "rank_stability_var_total_mounts.csv", row.names = FALSE)
-
-m_rank_var_total <- lm(
-  log1p(rank_var) ~ total_mounts_mean + age_z + observability_z,
-  data = stab_var_total
-)
-summary(m_rank_var_total)
-
-
-
-
-
-### Potential Social Benefits of SSB - Rank Gain ###
-
-## SSB
-
-monthly_ssb  <- read.csv("monthly_ssb_count_only.csv", stringsAsFactors = FALSE)
-monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
-control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
-
-control <- control %>% mutate(id = as.character(id))
-dat_rank_gain <- monthly_ssb %>%
-  inner_join(monthly_rank, by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  arrange(id, month) %>%
-  group_by(id) %>%
-  mutate(rank_lag = dplyr::lag(rank),
-         gain     = -(rank - rank_lag)) %>%
-  ungroup() %>%
-  mutate(rank_lag_z      = as.numeric(scale(rank_lag)),
-         age_z           = as.numeric(scale(age)),
-         observability_z = as.numeric(scale(observability)))
-write.csv(dat_rank_gain, "dat_rank_gain_ssb_count_only.csv", row.names = FALSE)
-
-m_rank_gain_count <- lmer(
-  gain ~ ssb_count + rank_lag_z + age_z + observability_z + (1 | id),
-  data = dat_rank_gain %>%
-    filter(!is.na(gain), !is.na(ssb_count), !is.na(rank_lag_z), !is.na(age_z), !is.na(observability_z))
-)
-summary(m_rank_gain_count)
-
-
-
-## DSB
-
-monthly_dsb  <- read.csv("monthly_dsb_count_only.csv", stringsAsFactors = FALSE)
-monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
-control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
-
-control <- control %>% mutate(id = as.character(id))
-dat_rank_gain <- monthly_dsb %>%
-  inner_join(monthly_rank, by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  arrange(id, month) %>%
-  group_by(id) %>%
-  mutate(rank_lag = dplyr::lag(rank),
-         gain     = -(rank - rank_lag)) %>%
-  ungroup() %>%
-  mutate(rank_lag_z      = as.numeric(scale(rank_lag)),
-         age_z           = as.numeric(scale(age)),
-         observability_z = as.numeric(scale(observability)))
-write.csv(dat_rank_gain, "dat_rank_gain_dsb_count_only.csv", row.names = FALSE)
-
-m_rank_gain_count_dsb <- lmer(
-  gain ~ dsb_count + rank_lag_z + age_z + observability_z + (1 | id),
-  data = dat_rank_gain %>%
-    filter(!is.na(gain), !is.na(dsb_count), !is.na(rank_lag_z), !is.na(age_z), !is.na(observability_z))
-)
-summary(m_rank_gain_count_dsb)
-
-
-
-## Total Mounts
-
-monthly_total <- read.csv("monthly_total_mounts_from_aggression.csv", stringsAsFactors = FALSE)
-monthly_rank  <- read.csv("monthly_rank.csv",                          stringsAsFactors = FALSE)
-control       <- read.csv("control_variables_23_24_25.csv",            stringsAsFactors = FALSE)
-
-control <- control %>% mutate(id = as.character(id))
-dat_rank_gain <- monthly_total %>%
-  inner_join(monthly_rank, by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  arrange(id, month) %>%
-  group_by(id) %>%
-  mutate(
-    rank_lag = dplyr::lag(rank),
-    gain     = -(rank - rank_lag)      
-  ) %>%
-  ungroup() %>%
-  mutate(
-    rank_lag_z      = as.numeric(scale(rank_lag)),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-write.csv(dat_rank_gain, "dat_rank_gain_total_mounts.csv", row.names = FALSE)
-
-m_rank_gain_total <- lmer(
-  gain ~ total_mounts + rank_lag_z + age_z + observability_z + (1 | id),
-  data = dat_rank_gain %>%
-    filter(!is.na(gain),
-           !is.na(total_mounts),
-           !is.na(rank_lag_z),
-           !is.na(age_z),
-           !is.na(observability_z))
-)
-summary(m_rank_gain_total)
-
-
-
-
-
-### Potential Social Benefits of SSB - Higher Ranking Partners (Coalitions and Grooming) ###
-
-## Data Wrangling
-
-monthly_rank <- read_csv("monthly_rank.csv", show_col_types = FALSE)  # id, month, rank (1 = highest)
-control      <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE) %>%
-  transmute(id = as.character(id), age, observability)
-
-is_disallowed <- function(x) {
-  bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
-  !is.na(x) & (x %in% bad | grepl("\\(F\\)$", x))
-}
-is_male_id <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
-
-parse_date_any <- function(x) {
-  if (inherits(x, "Date"))   return(x)
-  if (inherits(x, "POSIXt")) return(as.Date(x))
-  if (is.numeric(x)) {
-    ymd_guess <- suppressWarnings(lubridate::ymd(as.character(x)))
-    if (mean(!is.na(ymd_guess)) > 0.8) return(ymd_guess)
-    d <- as.Date(x, origin = "1899-12-30")
-    if (stats::median(d, na.rm = TRUE) < as.Date("1950-01-01")) d <- as.Date(x, origin = "1904-01-01")
-    return(d)
-  }
-  if (is.character(x)) {
-    d <- suppressWarnings(lubridate::mdy(x))
-    nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(lubridate::dmy(x[nas]))
-    nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(lubridate::ymd(x[nas]))
-    return(d)
-  }
-  stop("Unknown date type.")
-}
-
-expand_pairs <- function(df) {
-  df %>%
-    mutate(row_id = dplyr::row_number()) %>%
-    pivot_longer(c(actor1, actor2, actor3),     names_to="actor_slot", values_to="actor") %>%
-    pivot_longer(c(recipient1, recipient2, recipient3), names_to="recip_slot", values_to="recipient") %>%
-    filter(!is.na(actor), !is.na(recipient), actor != recipient)
-}
-
-N_by_month <- monthly_rank %>%
-  group_by(month) %>%
-  summarise(N = max(rank, na.rm = TRUE), .groups = "drop")
-
-
-
-## Coalitions with Higher Rank
-
-coal_raw <- read_csv("raw_male_coalition_mount_23_24_25.csv", show_col_types = FALSE)
-
-build_coal_unique <- function() {
-  coal <- coal_raw %>%
-    mutate(date_dt = parse_date_any(date),
-           month   = floor_date(date_dt, "month"),
-           event_id = dplyr::row_number()) %>%
-    filter(!is.na(month), month(month) %in% 1:5, action == "Ag")
-  
-  actors_long <- coal %>%
-    pivot_longer(c(actor1, actor2, actor3), names_to = "slot", values_to = "id") %>%
-    filter(is_male_id(id)) %>%
-    transmute(event_id, month, side = "actor_side", id)
-  
-  recips_long <- coal %>%
-    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "slot", values_to = "id") %>%
-    filter(is_male_id(id)) %>%
-    transmute(event_id, month, side = "recipient_side", id)
-  
-  parts <- bind_rows(actors_long, recips_long)
-  
-  pairs_undirected <- parts %>%
-    inner_join(parts, by = c("event_id","side"), suffix = c("_1","_2")) %>%
-    filter(id_1 < id_2) %>%
-    transmute(event_id, month = month_1, id1 = id_1, id2 = id_2)
-  
-  pairs_dir <- bind_rows(
-    pairs_undirected %>% transmute(month, id = id1, partner = id2),
-    pairs_undirected %>% transmute(month, id = id2, partner = id1)
-  )
-  
-  coal_ranked <- pairs_dir %>%
-    left_join(monthly_rank %>% select(id, month, rank) %>% rename(rank_id = rank),
-              by = c("id","month")) %>%
-    left_join(monthly_rank %>% select(id, month, rank) %>% rename(partner = id, rank_partner = rank),
-              by = c("partner","month")) %>%
-    left_join(N_by_month, by = "month") %>%
-    filter(!is.na(rank_id), !is.na(rank_partner), !is.na(N), N >= 2) %>%
-    mutate(
-      higher_partner   = as.integer(rank_partner < rank_id),
-      rank_id_pct      = 1 - (rank_id - 1)     / (N - 1),
-      rank_partner_pct = 1 - (rank_partner - 1)/ (N - 1),
-      abs_diff_pct     = abs(rank_partner_pct - rank_id_pct)
-    )
-  
-  coal_unique_month <- coal_ranked %>%
-    distinct(id, partner, month, higher_partner, abs_diff_pct) %>%
-    group_by(id, month) %>%
-    summarise(
-      higher_unique       = sum(higher_partner, na.rm = TRUE),
-      mean_abs_diff_pct_unique = mean(abs_diff_pct, na.rm = TRUE),
-      unique_total        = n(),
-      .groups = "drop"
-    ) %>%
-    filter(unique_total > 0)
-  
-  coal_unique_month
-}
-
-coal_unique_month <- build_coal_unique()
-
-
-# SSB
-
-monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE) %>%
-  mutate(id = as.character(id), month = as.Date(month))
-
-dat_coal_ssb <- coal_unique_month %>%
-  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    ssb_count       = coalesce(as.integer(ssb_count), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_coal_gap_unique_ssb <- glmmTMB(
-  mean_abs_diff_pct_unique ~ ssb_count + age_z + observability_z + (1|id),
-  data = dat_coal_ssb,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_coal_gap_unique_ssb)
-
-
-# DSB
-monthly_dsb <- read_csv("monthly_dsb_count_only.csv", show_col_types = FALSE) %>%
-  mutate(id = as.character(id), month = as.Date(month))
-
-dat_coal_dsb <- coal_unique_month %>%
-  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    dsb_count       = coalesce(as.integer(dsb_count), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_coal_gap_unique_dsb <- glmmTMB(
-  mean_abs_diff_pct_unique ~ dsb_count + age_z + observability_z + (1|id),
-  data = dat_coal_dsb,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_coal_gap_unique_dsb)
-
-
-# Total Mounts
-monthly_total <- read_csv("monthly_total_mounts_from_aggression.csv", show_col_types = FALSE) %>%
-  mutate(id = as.character(id), month = as.Date(month))
-
-dat_coal_total <- coal_unique_month %>%
-  left_join(monthly_total %>% select(id, month, total_mounts), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    total_mounts    = coalesce(as.integer(total_mounts), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_coal_gap_unique_total <- glmmTMB(
-  mean_abs_diff_pct_unique ~ total_mounts + age_z + observability_z + (1|id),
-  data = dat_coal_total,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_coal_gap_unique_total)
-
-
-
-## Groom with Higher Rank
-
-groom_raw <- read_csv("raw_groom_mount_23_24_25.csv", show_col_types = FALSE)
-
-build_groom_unique <- function() {
-  groom <- groom_raw %>%
-    mutate(date_dt = parse_date_any(date),
-           month   = floor_date(date_dt, "month")) %>%
-    filter(!is.na(month), month(month) %in% 1:5)
-  
-  gr_pairs_raw <- groom %>%
-    filter(action == "Gr") %>%
-    select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3) %>%
-    expand_pairs() %>%
-    filter(is_male_id(actor) & is_male_id(recipient))
-  
-  gr_pairs_any <- bind_rows(
-    gr_pairs_raw %>% transmute(id = actor,     partner = recipient, month),
-    gr_pairs_raw %>% transmute(id = recipient, partner = actor,     month)
-  )
-  
-  gr_ranked <- gr_pairs_any %>%
-    left_join(monthly_rank %>% select(id, month, rank) %>% rename(rank_id = rank),
-              by = c("id","month")) %>%
-    left_join(monthly_rank %>% select(id, month, rank) %>% rename(partner = id, rank_partner = rank),
-              by = c("partner","month")) %>%
-    left_join(N_by_month, by = "month") %>%
-    filter(!is.na(rank_id), !is.na(rank_partner), !is.na(N), N >= 2) %>%
-    mutate(
-      higher_partner   = as.integer(rank_partner < rank_id),
-      rank_id_pct      = 1 - (rank_id - 1)     / (N - 1),
-      rank_partner_pct = 1 - (rank_partner - 1)/ (N - 1),
-      abs_diff_pct     = abs(rank_partner_pct - rank_id_pct)
-    )
-  
-  gr_unique_month <- gr_ranked %>%
-    distinct(id, partner, month, higher_partner, abs_diff_pct) %>%
-    group_by(id, month) %>%
-    summarise(
-      higher_unique            = sum(higher_partner, na.rm = TRUE),
-      mean_abs_diff_pct_unique = mean(abs_diff_pct, na.rm = TRUE),
-      unique_total             = n(),
-      .groups = "drop"
-    ) %>%
-    filter(unique_total > 0)
-  
-  gr_unique_month
-}
-
-gr_unique_month <- build_groom_unique()
-
-
-# SSB
-dat_groom_ssb <- gr_unique_month %>%
-  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    ssb_count       = coalesce(as.integer(ssb_count), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_groom_gap_unique_ssb <- glmmTMB(
-  mean_abs_diff_pct_unique ~ ssb_count + age_z + observability_z + (1|id),
-  data = dat_groom_ssb,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_groom_gap_unique_ssb)
-
-
-# DSB
-dat_groom_dsb <- gr_unique_month %>%
-  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    dsb_count       = coalesce(as.integer(dsb_count), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_groom_gap_unique_dsb <- glmmTMB(
-  mean_abs_diff_pct_unique ~ dsb_count + age_z + observability_z + (1|id),
-  data = dat_groom_dsb,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_groom_gap_unique_dsb)
-
-
-# Total Mounts
-dat_groom_total <- gr_unique_month %>%
-  left_join(monthly_total %>% select(id, month, total_mounts), by = c("id","month")) %>%
-  left_join(control, by = "id") %>%
-  mutate(
-    total_mounts    = coalesce(as.integer(total_mounts), 0L),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability))
-  )
-
-m_groom_gap_unique_total <- glmmTMB(
-  mean_abs_diff_pct_unique ~ total_mounts + age_z + observability_z + (1|id),
-  data = dat_groom_total,
-  family = gaussian(),
-  weights = unique_total
-)
-summary(m_groom_gap_unique_total)
-
-
-
-
-
-### Potential Social Benefits of SSB - Partner Diversity 
-
-## SSB
+## Male affiliative partner diversity and SSB
 
 monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -2923,6 +1987,10 @@ dat_diversity <- id_month_base %>%
 
 write_csv(dat_diversity, "dat_partner_diversity_ssb_count.csv")
 
+
+# Model
+dat_diversity <- read_csv("dat_partner_diversity_ssb_count.csv")
+
 m_div_ssb_count <- glmmTMB(
   degree_male ~ ssb_count + age_z + observability_z +
     offset(log(exposure_gr)),
@@ -2932,8 +2000,62 @@ m_div_ssb_count <- glmmTMB(
 summary(m_div_ssb_count)
 
 
+# Plot
+pred_curve <- function(model, data, xvar, offset_var, id_var = NULL, n = 100) {
+  stopifnot(xvar %in% names(data), offset_var %in% names(data))
+  x_seq <- seq(min(data[[xvar]], na.rm = TRUE),
+               max(data[[xvar]], na.rm = TRUE),
+               length.out = n)
+  
+  newdat <- tibble(
+    !!xvar := x_seq,
+    age_z = 0,
+    observability_z = 0,
+    !!offset_var := median(data[[offset_var]], na.rm = TRUE)
+  )
+  
+  re_form <- NULL
+  if (!is.null(id_var)) {
+    stopifnot(id_var %in% names(data))
+    first_id <- data[[id_var]][which(!is.na(data[[id_var]]) )[1]]
+    newdat[[id_var]] <- first_id
+    re_form <- NA
+  }
+  
+  pr <- predict(model, newdata = newdat, type = "link", se.fit = TRUE, re.form = re_form)
+  newdat$fit_link <- as.numeric(pr$fit)
+  newdat$se_link  <- as.numeric(pr$se.fit)
+  newdat <- newdat %>%
+    mutate(lwr_link = fit_link - 1.96 * se_link,
+           upr_link = fit_link + 1.96 * se_link,
+           fit = exp(fit_link),
+           lwr = exp(lwr_link),
+           upr = exp(upr_link)) %>%
+    select(all_of(xvar), fit, lwr, upr)
+  newdat
+}
 
-## DSB
+col_ssb <- "cornflowerblue"
+
+pred1 <- pred_curve(
+  model = m_div_ssb_count,
+  data  = dat_diversity %>% filter(!is.na(age_z), !is.na(observability_z)),
+  xvar = "ssb_count",
+  offset_var = "exposure_gr"
+)
+
+p1 <- ggplot(pred1, aes(x = ssb_count, y = fit)) +
+  geom_line(linewidth = 1.1, colour = col_ssb) +
+  labs(x = "SSB count",
+       y = "Expected male grooming partners",
+       title = "Male grooming partners ~ SSB count (age/obs = 0; exposure = median)") +
+  theme_classic()
+
+p1
+
+
+
+## Male affiliative partner diversity and DSB
 
 monthly_dsb <- read_csv("monthly_dsb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -3016,6 +2138,10 @@ dat_diversity <- id_month_base %>%
 
 write_csv(dat_diversity, "dat_partner_diversity_dsb_count.csv")
 
+
+# Model
+dat_diversity <- read_csv("dat_partner_diversity_dsb_count.csv")
+
 m_div_dsb_count <- glmmTMB(
   degree_male ~ dsb_count + age_z + observability_z +
     offset(log(exposure_gr)),
@@ -3025,105 +2151,66 @@ m_div_dsb_count <- glmmTMB(
 summary(m_div_dsb_count)
 
 
-
-## Total Mounts
-
-monthly_total <- read_csv("monthly_total_mounts_from_aggression.csv", show_col_types = FALSE)
-control       <- read_csv("control_variables_23_24_25.csv",            show_col_types = FALSE)
-groom         <- read_csv("raw_groom_mount_23_24_25.csv",              show_col_types = FALSE)
-
-monthly_total$id <- as.character(monthly_total$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_total$month, "Date")) monthly_total$month <- as.Date(monthly_total$month)
-
-is_disallowed <- function(x) {
-  bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
-  !is.na(x) & (x %in% bad | grepl("\\(F\\)", x))
-}
-is_male_id <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
-
-parse_date_any <- function(x) {
-  if (inherits(x, "Date"))   return(x)
-  if (inherits(x, "POSIXt")) return(as.Date(x))
-  if (is.numeric(x)) {
-    ymd_guess <- suppressWarnings(ymd(as.character(x)))
-    if (sum(!is.na(ymd_guess)) > 0.8 * length(x)) return(ymd_guess)
-    d <- as.Date(x, origin = "1899-12-30")
-    if (median(d, na.rm = TRUE) < as.Date("1950-01-01")) d <- as.Date(x, origin = "1904-01-01")
-    return(d)
-  }
-  if (is.character(x)) {
-    d <- suppressWarnings(mdy(x))
-    d[is.na(d)] <- suppressWarnings(dmy(x[is.na(d)]))
-    d[is.na(d)] <- suppressWarnings(ymd(x[is_na(d)]))
-    return(d)
-  }
-  stop("Unknown date type in `date` column.")
-}
-
-groom <- groom %>%
-  mutate(date_dt = parse_date_any(date),
-         month   = floor_date(date_dt, "month")) %>%
-  filter(!is.na(month), month(month) %in% 1:5)
-
-expand_pairs <- function(df) {
-  df %>%
-    mutate(row_id = dplyr::row_number()) %>%
-    pivot_longer(c(actor1, actor2, actor3), names_to = "actor_slot", values_to = "actor") %>%
-    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "recip_slot", values_to = "recipient") %>%
-    filter(!is.na(actor), !is.na(recipient), actor != recipient)
-}
-
-groom_rows <- groom %>%
-  filter(action == "Gr") %>%
-  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
-
-groom_pairs <- expand_pairs(groom_rows)
-
-groom_deg_male <- groom_pairs %>%
-  mutate(recipient_is_male = is_male_id(recipient)) %>%
-  group_by(actor, month) %>%
-  summarise(
-    degree_male = n_distinct(recipient[recipient_is_male]),
-    gr_count    = n(),
-    .groups = "drop"
-  ) %>%
-  rename(id = actor)
-
-write_csv(groom_deg_male, "groom_degree_male.csv")
-
-id_month_base <- monthly_total %>% select(id, month) %>% distinct()
-
-dat_diversity <- id_month_base %>%
-  left_join(groom_deg_male, by = c("id","month")) %>%
-  left_join(monthly_total %>% select(id, month, total_mounts), by = c("id","month")) %>%
-  left_join(control %>% select(id, age, observability), by = "id") %>%
-  mutate(
-    degree_male     = ifelse(is.na(degree_male), 0L, as.integer(degree_male)),
-    gr_count        = ifelse(is.na(gr_count),    0L, as.integer(gr_count)),
-    total_mounts    = ifelse(is.na(total_mounts),0L, as.integer(total_mounts)),
-    age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability)),
-    exposure_gr     = pmax(gr_count, 1L)
+# Plot
+pred_curve <- function(model, data, xvar, offset_var, id_var = NULL, n = 100) {
+  stopifnot(xvar %in% names(data), offset_var %in% names(data))
+  x_seq <- seq(min(data[[xvar]], na.rm = TRUE),
+               max(data[[xvar]], na.rm = TRUE),
+               length.out = n)
+  
+  newdat <- tibble(
+    !!xvar := x_seq,
+    age_z = 0,
+    observability_z = 0,
+    !!offset_var := median(data[[offset_var]], na.rm = TRUE)
   )
+  
+  re_form <- NULL
+  if (!is.null(id_var)) {
+    stopifnot(id_var %in% names(data))
+    first_id <- data[[id_var]][which(!is.na(data[[id_var]]) )[1]]
+    newdat[[id_var]] <- first_id
+    re_form <- NA
+  }
+  
+  pr <- predict(model, newdata = newdat, type = "link", se.fit = TRUE, re.form = re_form)
+  newdat$fit_link <- as.numeric(pr$fit)
+  newdat$se_link  <- as.numeric(pr$se.fit)
+  newdat <- newdat %>%
+    mutate(lwr_link = fit_link - 1.96 * se_link,
+           upr_link = fit_link + 1.96 * se_link,
+           fit = exp(fit_link),
+           lwr = exp(lwr_link),
+           upr = exp(upr_link)) %>%
+    select(all_of(xvar), fit, lwr, upr)
+  newdat
+}
 
-write_csv(dat_diversity, "dat_partner_diversity_total_mounts.csv")
+col_dsb <- "darkorange"
 
-m_div_total_mounts <- glmmTMB(
-  degree_male ~ total_mounts + age_z + observability_z +
-    offset(log(exposure_gr)),
-  data   = dat_diversity %>% filter(!is.na(age_z), !is.na(observability_z)),
-  family = poisson(link = "log")
+pred2 <- pred_curve(
+  model = m_div_dsb_count,
+  data  = dat_diversity %>% filter(!is.na(age_z), !is.na(observability_z)),
+  xvar = "dsb_count",
+  offset_var = "exposure_gr"
 )
-summary(m_div_total_mounts)
+
+p2 <- ggplot(pred2, aes(x = dsb_count, y = fit)) +
+  geom_line(linewidth = 1.1, colour = col_dsb) +
+  labs(x = "DSB count",
+       y = "Expected male grooming partners",
+       title = "Male grooming partners ~ DSB count (age/obs = 0; exposure = median)") +
+  theme_classic()
+
+p2
 
 
 
 
 
-### Potential Social Benefits of SSB - Cross-Sex Interactions
+### Comparisons between cross-sex affiliative interactions, SSB and DSB ###
 
-## SSB
+## Cross-sex affiliative interactions and SSB
 
 monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -3204,6 +2291,10 @@ dat_crossex <- base_months %>%
 
 write_csv(dat_crossex, "dat_cross_sex_ssb_count.csv")
 
+
+# Model
+dat_crossex <- read_csv("dat_cross_sex_ssb_count.csv")
+
 m_csex_count_ssbcount <- glmmTMB(
   female_gr_count ~ ssb_count + age_z + observability_z +
     offset(log(gr_total_safe)) + (1|id),
@@ -3213,8 +2304,63 @@ m_csex_count_ssbcount <- glmmTMB(
 summary(m_csex_count_ssbcount)
 
 
+# Plot
+pred_curve <- function(model, data, xvar, offset_var, id_var = NULL, n = 100) {
+  stopifnot(xvar %in% names(data), offset_var %in% names(data))
+  x_seq <- seq(min(data[[xvar]], na.rm = TRUE),
+               max(data[[xvar]], na.rm = TRUE),
+               length.out = n)
+  
+  newdat <- tibble(
+    !!xvar := x_seq,
+    age_z = 0,
+    observability_z = 0,
+    !!offset_var := median(data[[offset_var]], na.rm = TRUE)
+  )
+  
+  re_form <- NULL
+  if (!is.null(id_var)) {
+    stopifnot(id_var %in% names(data))
+    first_id <- data[[id_var]][which(!is.na(data[[id_var]]) )[1]]
+    newdat[[id_var]] <- first_id
+    re_form <- NA
+  }
+  
+  pr <- predict(model, newdata = newdat, type = "link", se.fit = TRUE, re.form = re_form)
+  newdat$fit_link <- as.numeric(pr$fit)
+  newdat$se_link  <- as.numeric(pr$se.fit)
+  newdat <- newdat %>%
+    mutate(lwr_link = fit_link - 1.96 * se_link,
+           upr_link = fit_link + 1.96 * se_link,
+           fit = exp(fit_link),
+           lwr = exp(lwr_link),
+           upr = exp(upr_link)) %>%
+    select(all_of(xvar), fit, lwr, upr)
+  newdat
+}
 
-## DSB 
+col_ssb <- "cornflowerblue"
+
+pred3 <- pred_curve(
+  model = m_csex_count_ssbcount,
+  data  = dat_crossex %>% filter(!is.na(age_z), !is.na(observability_z)),
+  xvar = "ssb_count",
+  offset_var = "gr_total_safe",
+  id_var = "id"
+)
+
+p3 <- ggplot(pred3, aes(x = ssb_count, y = fit)) +
+  geom_line(linewidth = 1.1, colour = col_ssb) +
+  labs(x = "SSB count",
+       y = "Expected cross-sex grooming interactions",
+       title = "Cross-sex grooming ~ SSB count (population-level; age/obs = 0; exposure = median)") +
+  theme_classic()
+
+p3
+
+
+
+## Cross-sex affiliative interactions and DSB 
 
 monthly_dsb <- read_csv("monthly_dsb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -3291,6 +2437,10 @@ dat_crossex <- base_months %>%
 
 write_csv(dat_crossex, "dat_cross_sex_dsb_count.csv")
 
+
+# Model
+dat_crossex <- read_csv("dat_cross_sex_dsb_count.csv")
+
 m_csex_count_dsbcount <- glmmTMB(
   female_gr_count ~ dsb_count + age_z + observability_z +
     offset(log(gr_total_safe)) + (1|id),
@@ -3300,99 +2450,207 @@ m_csex_count_dsbcount <- glmmTMB(
 summary(m_csex_count_dsbcount)
 
 
+# Plot
+pred_curve <- function(model, data, xvar, offset_var, id_var = NULL, n = 100) {
+  stopifnot(xvar %in% names(data), offset_var %in% names(data))
+  x_seq <- seq(min(data[[xvar]], na.rm = TRUE),
+               max(data[[xvar]], na.rm = TRUE),
+               length.out = n)
+  
+  newdat <- tibble(
+    !!xvar := x_seq,
+    age_z = 0,
+    observability_z = 0,
+    !!offset_var := median(data[[offset_var]], na.rm = TRUE)
+  )
+  
+  re_form <- NULL
+  if (!is.null(id_var)) {
+    stopifnot(id_var %in% names(data))
+    first_id <- data[[id_var]][which(!is.na(data[[id_var]]) )[1]]
+    newdat[[id_var]] <- first_id
+    re_form <- NA
+  }
+  
+  pr <- predict(model, newdata = newdat, type = "link", se.fit = TRUE, re.form = re_form)
+  newdat$fit_link <- as.numeric(pr$fit)
+  newdat$se_link  <- as.numeric(pr$se.fit)
+  newdat <- newdat %>%
+    mutate(lwr_link = fit_link - 1.96 * se_link,
+           upr_link = fit_link + 1.96 * se_link,
+           fit = exp(fit_link),
+           lwr = exp(lwr_link),
+           upr = exp(upr_link)) %>%
+    select(all_of(xvar), fit, lwr, upr)
+  newdat
+}
 
-## Total Mounts 
+col_dsb <- "darkorange"
 
-monthly_total <- read_csv("monthly_total_mounts_from_aggression.csv", show_col_types = FALSE)
-control       <- read_csv("control_variables_23_24_25.csv",            show_col_types = FALSE)
-groom         <- read_csv("raw_groom_mount_23_24_25.csv",              show_col_types = FALSE)
+pred4 <- pred_curve(
+  model = m_csex_count_dsbcount,
+  data  = dat_crossex %>% filter(!is.na(age_z), !is.na(observability_z)),
+  xvar = "dsb_count",
+  offset_var = "gr_total_safe",
+  id_var = "id"
+)
 
-monthly_total$id <- as.character(monthly_total$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_total$month, "Date")) monthly_total$month <- as.Date(monthly_total$month)
+p4 <- ggplot(pred4, aes(x = dsb_count, y = fit)) +
+  geom_line(linewidth = 1.1, colour = col_dsb) +
+  labs(x = "DSB count",
+       y = "Expected cross-sex grooming interactions",
+       title = "Cross-sex grooming ~ DSB count (population-level; age/obs = 0; exposure = median)") +
+  theme_classic()
 
-parse_date_any <- function(x){  
-  if (inherits(x,"Date")) return(x)
-  if (inherits(x,"POSIXt")) return(as.Date(x))
-  if (is.numeric(x)){
-    ymd_guess <- suppressWarnings(ymd(as.character(x)))
-    if (mean(!is.na(ymd_guess))>0.8) return(ymd_guess)
-    d <- as.Date(x, origin="1899-12-30")
-    if (median(d,na.rm=TRUE) < as.Date("1950-01-01")) d <- as.Date(x, origin="1904-01-01")
+p4
+
+
+
+
+
+### Comparing higher ranking grooming partners across SSB and DSB ###
+
+## Data Wrangling
+
+monthly_rank <- read_csv("monthly_rank.csv", show_col_types = FALSE)  # id, month, rank (1 = highest)
+control      <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE) %>%
+  transmute(id = as.character(id), age, observability)
+
+is_disallowed <- function(x) {
+  bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
+  !is.na(x) & (x %in% bad | grepl("\\(F\\)$", x))
+}
+is_male_id <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
+
+parse_date_any <- function(x) {
+  if (inherits(x, "Date"))   return(x)
+  if (inherits(x, "POSIXt")) return(as.Date(x))
+  if (is.numeric(x)) {
+    ymd_guess <- suppressWarnings(lubridate::ymd(as.character(x)))
+    if (mean(!is.na(ymd_guess)) > 0.8) return(ymd_guess)
+    d <- as.Date(x, origin = "1899-12-30")
+    if (stats::median(d, na.rm = TRUE) < as.Date("1950-01-01")) d <- as.Date(x, origin = "1904-01-01")
     return(d)
   }
-  d <- suppressWarnings(mdy(x)); nas <- is.na(d)
-  if (any(nas)) d[nas] <- suppressWarnings(dmy(x[nas]))
-  nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(ymd(x[nas]))
-  d
+  if (is.character(x)) {
+    d <- suppressWarnings(lubridate::mdy(x))
+    nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(lubridate::dmy(x[nas]))
+    nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(lubridate::ymd(x[nas]))
+    return(d)
+  }
+  stop("Unknown date type.")
 }
 
-groom <- groom %>%
-  mutate(date_dt = parse_date_any(date),
-         month   = floor_date(date_dt,"month")) %>%
-  filter(!is.na(month), month(month)%in%1:5)
-
-expand_pairs <- function(df){
+expand_pairs <- function(df) {
   df %>%
     mutate(row_id = dplyr::row_number()) %>%
-    pivot_longer(c(actor1,actor2,actor3), names_to="actor_slot", values_to="actor") %>%
-    pivot_longer(c(recipient1,recipient2,recipient3), names_to="recip_slot", values_to="recipient") %>%
-    filter(!is.na(actor), !is.na(recipient), actor!=recipient)
+    pivot_longer(c(actor1, actor2, actor3),     names_to="actor_slot", values_to="actor") %>%
+    pivot_longer(c(recipient1, recipient2, recipient3), names_to="recip_slot", values_to="recipient") %>%
+    filter(!is.na(actor), !is.na(recipient), actor != recipient)
 }
 
-groom_rows <- groom %>%
-  filter(action=="Gr") %>%
-  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
+N_by_month <- monthly_rank %>%
+  group_by(month) %>%
+  summarise(N = max(rank, na.rm = TRUE), .groups = "drop")
 
-groom_pairs <- expand_pairs(groom_rows)
 
-groom_cross_sex <- groom_pairs %>%
-  mutate(recipient_is_female = (!is.na(recipient) & (recipient=="FUN" | grepl("\\(F\\)", recipient)))) %>%
-  group_by(actor, month) %>%
-  summarise(
-    female_gr_count = sum(recipient_is_female, na.rm=TRUE),
-    gr_total        = n(),
-    .groups="drop"
-  ) %>%
-  rename(id = actor)
 
-write_csv(groom_cross_sex, "groom_cross_sex_monthly.csv")
+## Groom with higher rank comparisons
 
-base_months <- bind_rows(
-  monthly_total %>% select(id, month),
-  groom_cross_sex %>% select(id, month)
-) %>% distinct()
+groom_raw <- read_csv("raw_groom_mount_23_24_25.csv", show_col_types = FALSE)
 
-dat_crossex <- base_months %>%
-  left_join(groom_cross_sex, by=c("id","month")) %>%
-  left_join(monthly_total %>% select(id, month, total_mounts), by=c("id","month")) %>%
-  left_join(control %>% select(id, age, observability), by="id") %>%
+build_groom_unique <- function() {
+  groom <- groom_raw %>%
+    mutate(date_dt = parse_date_any(date),
+           month   = floor_date(date_dt, "month")) %>%
+    filter(!is.na(month), month(month) %in% 1:5)
+  
+  gr_pairs_raw <- groom %>%
+    filter(action == "Gr") %>%
+    select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3) %>%
+    expand_pairs() %>%
+    filter(is_male_id(actor) & is_male_id(recipient))
+  
+  gr_pairs_any <- bind_rows(
+    gr_pairs_raw %>% transmute(id = actor,     partner = recipient, month),
+    gr_pairs_raw %>% transmute(id = recipient, partner = actor,     month)
+  )
+  
+  gr_ranked <- gr_pairs_any %>%
+    left_join(monthly_rank %>% select(id, month, rank) %>% rename(rank_id = rank),
+              by = c("id","month")) %>%
+    left_join(monthly_rank %>% select(id, month, rank) %>% rename(partner = id, rank_partner = rank),
+              by = c("partner","month")) %>%
+    left_join(N_by_month, by = "month") %>%
+    filter(!is.na(rank_id), !is.na(rank_partner), !is.na(N), N >= 2) %>%
+    mutate(
+      higher_partner   = as.integer(rank_partner < rank_id),
+      rank_id_pct      = 1 - (rank_id - 1)     / (N - 1),
+      rank_partner_pct = 1 - (rank_partner - 1)/ (N - 1),
+      abs_diff_pct     = abs(rank_partner_pct - rank_id_pct)
+    )
+  
+  gr_unique_month <- gr_ranked %>%
+    distinct(id, partner, month, higher_partner, abs_diff_pct) %>%
+    group_by(id, month) %>%
+    summarise(
+      higher_unique            = sum(higher_partner, na.rm = TRUE),
+      mean_abs_diff_pct_unique = mean(abs_diff_pct, na.rm = TRUE),
+      unique_total             = n(),
+      .groups = "drop"
+    ) %>%
+    filter(unique_total > 0)
+  
+  gr_unique_month
+}
+
+gr_unique_month <- build_groom_unique()
+
+
+# Model groom with higher rank and SSB
+dat_groom_ssb <- gr_unique_month %>%
+  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
   mutate(
-    female_gr_count = ifelse(is.na(female_gr_count), 0L, as.integer(female_gr_count)),
-    gr_total        = ifelse(is.na(gr_total),        0L, as.integer(gr_total)),
-    total_mounts    = ifelse(is.na(total_mounts),    0L, as.integer(total_mounts)),
+    ssb_count       = coalesce(as.integer(ssb_count), 0L),
     age_z           = as.numeric(scale(age)),
-    observability_z = as.numeric(scale(observability)),
-    gr_total_safe   = pmax(gr_total, 1L)
+    observability_z = as.numeric(scale(observability))
   )
 
-write_csv(dat_crossex, "dat_cross_sex_total_mounts.csv")
-
-m_csex_count_total <- glmmTMB(
-  female_gr_count ~ total_mounts + age_z + observability_z +
-    offset(log(gr_total_safe)) + (1|id),
-  data   = dat_crossex %>% filter(!is.na(age_z), !is.na(observability_z)),
-  family = poisson(link="log")
+m_groom_gap_unique_ssb <- glmmTMB(
+  mean_abs_diff_pct_unique ~ ssb_count + age_z + observability_z + (1|id),
+  data = dat_groom_ssb,
+  family = gaussian(),
+  weights = unique_total
 )
-summary(m_csex_count_total)
+summary(m_groom_gap_unique_ssb)
+
+
+# Model groom with higher rank and DSB
+dat_groom_dsb <- gr_unique_month %>%
+  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
+  mutate(
+    dsb_count       = coalesce(as.integer(dsb_count), 0L),
+    age_z           = as.numeric(scale(age)),
+    observability_z = as.numeric(scale(observability))
+  )
+
+m_groom_gap_unique_dsb <- glmmTMB(
+  mean_abs_diff_pct_unique ~ dsb_count + age_z + observability_z + (1|id),
+  data = dat_groom_dsb,
+  family = gaussian(),
+  weights = unique_total
+)
+summary(m_groom_gap_unique_dsb)
 
 
 
 
 
-### Potential Social Benefits of SSB - Bond Persistence
+### Comparisons between bond persistence, SSB and DSB ###
 
-## SSB
+## Bond persistence and SSB 
 
 monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -3485,6 +2743,8 @@ persist_dat <- persist_base %>%
 
 write_csv(persist_dat, "dat_bond_persistence_ssb_count.csv")
 
+
+# Model
 m_persist_ssbcount <- glmmTMB(
   persist ~ ssb_count_sum + age_z + observability_z + (1|dyad),
   data   = persist_dat %>% filter(!is.na(persist), !is.na(ssb_count_sum), !is.na(age_z), !is.na(observability_z)),
@@ -3494,7 +2754,7 @@ summary(m_persist_ssbcount)
 
 
 
-## DSB
+## Bond persistence and DSB
 
 monthly_dsb <- read_csv("monthly_dsb_count_only.csv", show_col_types = FALSE)
 control     <- read_csv("control_variables_23_24_25.csv", show_col_types = FALSE)
@@ -3587,6 +2847,8 @@ persist_dat <- persist_base %>%
 
 write_csv(persist_dat, "dat_bond_persistence_dsb_count.csv")
 
+
+# Model
 m_persist_dsbcount <- glmmTMB(
   persist ~ dsb_count_sum + age_z + observability_z + (1|dyad),
   data   = persist_dat %>% filter(!is.na(persist), !is.na(dsb_count_sum), !is.na(age_z), !is.na(observability_z)),
@@ -3596,105 +2858,390 @@ summary(m_persist_dsbcount)
 
 
 
-## Total Mounts
 
-monthly_total <- read_csv("monthly_total_mounts_from_aggression.csv", show_col_types = FALSE)
-control       <- read_csv("control_variables_23_24_25.csv",            show_col_types = FALSE)
-groom         <- read_csv("raw_groom_mount_23_24_25.csv",              show_col_types = FALSE)
 
-monthly_total$id <- as.character(monthly_total$id)
-control$id       <- as.character(control$id)
-if (!inherits(monthly_total$month, "Date")) monthly_total$month <- as.Date(monthly_total$month)
+### Comparisons between higher ranking coalition partners, SSB and DSB ### 
+
+## Data wrangling
+coal_raw <- read_csv("raw_male_coalition_mount_23_24_25.csv", show_col_types = FALSE)
+
+build_coal_unique <- function() {
+  coal <- coal_raw %>%
+    mutate(date_dt = parse_date_any(date),
+           month   = floor_date(date_dt, "month"),
+           event_id = dplyr::row_number()) %>%
+    filter(!is.na(month), month(month) %in% 1:5, action == "Ag")
+  
+  actors_long <- coal %>%
+    pivot_longer(c(actor1, actor2, actor3), names_to = "slot", values_to = "id") %>%
+    filter(is_male_id(id)) %>%
+    transmute(event_id, month, side = "actor_side", id)
+  
+  recips_long <- coal %>%
+    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "slot", values_to = "id") %>%
+    filter(is_male_id(id)) %>%
+    transmute(event_id, month, side = "recipient_side", id)
+  
+  parts <- bind_rows(actors_long, recips_long)
+  
+  pairs_undirected <- parts %>%
+    inner_join(parts, by = c("event_id","side"), suffix = c("_1","_2")) %>%
+    filter(id_1 < id_2) %>%
+    transmute(event_id, month = month_1, id1 = id_1, id2 = id_2)
+  
+  pairs_dir <- bind_rows(
+    pairs_undirected %>% transmute(month, id = id1, partner = id2),
+    pairs_undirected %>% transmute(month, id = id2, partner = id1)
+  )
+  
+  coal_ranked <- pairs_dir %>%
+    left_join(monthly_rank %>% select(id, month, rank) %>% rename(rank_id = rank),
+              by = c("id","month")) %>%
+    left_join(monthly_rank %>% select(id, month, rank) %>% rename(partner = id, rank_partner = rank),
+              by = c("partner","month")) %>%
+    left_join(N_by_month, by = "month") %>%
+    filter(!is.na(rank_id), !is.na(rank_partner), !is.na(N), N >= 2) %>%
+    mutate(
+      higher_partner   = as.integer(rank_partner < rank_id),
+      rank_id_pct      = 1 - (rank_id - 1)     / (N - 1),
+      rank_partner_pct = 1 - (rank_partner - 1)/ (N - 1),
+      abs_diff_pct     = abs(rank_partner_pct - rank_id_pct)
+    )
+  
+  coal_unique_month <- coal_ranked %>%
+    distinct(id, partner, month, higher_partner, abs_diff_pct) %>%
+    group_by(id, month) %>%
+    summarise(
+      higher_unique       = sum(higher_partner, na.rm = TRUE),
+      mean_abs_diff_pct_unique = mean(abs_diff_pct, na.rm = TRUE),
+      unique_total        = n(),
+      .groups = "drop"
+    ) %>%
+    filter(unique_total > 0)
+  
+  coal_unique_month
+}
+
+coal_unique_month <- build_coal_unique()
+
+
+
+## Coalition with higher rank and SSB
+monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE) %>%
+  mutate(id = as.character(id), month = as.Date(month))
+
+dat_coal_ssb <- coal_unique_month %>%
+  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
+  mutate(
+    ssb_count       = coalesce(as.integer(ssb_count), 0L),
+    age_z           = as.numeric(scale(age)),
+    observability_z = as.numeric(scale(observability))
+  )
+
+m_coal_gap_unique_ssb <- glmmTMB(
+  mean_abs_diff_pct_unique ~ ssb_count + age_z + observability_z + (1|id),
+  data = dat_coal_ssb,
+  family = gaussian(),
+  weights = unique_total
+)
+summary(m_coal_gap_unique_ssb)
+
+
+
+## Coalition with higher rank and DSB
+monthly_dsb <- read_csv("monthly_dsb_count_only.csv", show_col_types = FALSE) %>%
+  mutate(id = as.character(id), month = as.Date(month))
+
+dat_coal_dsb <- coal_unique_month %>%
+  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
+  mutate(
+    dsb_count       = coalesce(as.integer(dsb_count), 0L),
+    age_z           = as.numeric(scale(age)),
+    observability_z = as.numeric(scale(observability))
+  )
+
+m_coal_gap_unique_dsb <- glmmTMB(
+  mean_abs_diff_pct_unique ~ dsb_count + age_z + observability_z + (1|id),
+  data = dat_coal_dsb,
+  family = gaussian(),
+  weights = unique_total
+)
+summary(m_coal_gap_unique_dsb)
+
+
+
+
+
+### Comparisons between rank stability, SSB and DSB ###
+
+## Data Wrangling
+
+control <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+aggr    <- read.csv("raw_aggression_mount_23_24_25.csv", stringsAsFactors = FALSE)  
+wl      <- read.csv("winner_loser_interactions_23_24_25.csv", stringsAsFactors = FALSE)
 
 is_disallowed <- function(x) {
   bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
   !is.na(x) & (x %in% bad | grepl("\\(F\\)", x))
 }
-is_male_id <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
+is_male_id   <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
+is_female_id <- function(x) !is.na(x) & (x == "FUN" | grepl("\\(F\\)$", x))
 
-parse_date_any <- function(x){  # same as above
-  if (inherits(x,"Date")) return(x)
-  if (inherits(x,"POSIXt")) return(as.Date(x))
-  if (is.numeric(x)){
-    ymd_guess <- suppressWarnings(ymd(as.character(x)))
-    if (mean(!is.na(ymd_guess))>0.8) return(ymd_guess)
-    d <- as.Date(x, origin="1899-12-30")
-    if (median(d,na.rm=TRUE) < as.Date("1950-01-01")) d <- as.Date(x, origin="1904-01-01")
-    return(d)
+to_month_mixed <- function(v) {
+  mdy_ <- suppressWarnings(mdy(v)); dmy_ <- suppressWarnings(dmy(v))
+  out <- as.Date(NA)[seq_along(v)]
+  for (i in seq_along(v)) {
+    m_ok <- !is.na(mdy_[i]); d_ok <- !is.na(dmy_[i])
+    m_in <- m_ok && month(mdy_[i]) %in% 1:5
+    d_in <- d_ok && month(dmy_[i]) %in% 1:5
+    out[i] <- if (m_ok && !d_ok) mdy_[i]
+    else if (d_ok && !m_ok) dmy_[i]
+    else if (m_in && !d_in) mdy_[i]
+    else if (d_in && !m_in) dmy_[i]
+    else if (m_in && d_in)  mdy_[i]
+    else if (m_ok)          mdy_[i]
+    else if (d_ok)          dmy_[i]
+    else                    as.Date(NA)
   }
-  d <- suppressWarnings(mdy(x)); nas <- is.na(d)
-  if (any(nas)) d[nas] <- suppressWarnings(dmy(x[nas]))
-  nas <- is.na(d); if (any(nas)) d[nas] <- suppressWarnings(ymd(x[nas]))
-  d
+  floor_date(out, "month")
 }
 
-expand_pairs <- function(df){
+expand_pairs <- function(df) {
   df %>%
     mutate(row_id = dplyr::row_number()) %>%
-    pivot_longer(c(actor1,actor2,actor3), names_to="actor_slot", values_to="actor") %>%
-    pivot_longer(c(recipient1,recipient2,recipient3), names_to="recip_slot", values_to="recipient") %>%
-    filter(!is.na(actor), !is.na(recipient), actor!=recipient)
+    pivot_longer(c(actor1, actor2, actor3), names_to = "actor_slot", values_to = "actor") %>%
+    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "recip_slot", values_to = "recipient") %>%
+    filter(!is.na(actor), !is.na(recipient), actor != recipient)
 }
 
-groom <- groom %>%
-  mutate(date_dt = parse_date_any(date),
-         month   = floor_date(date_dt,"month")) %>%
-  filter(!is.na(month), month(month)%in%1:5)
+aggr <- aggr %>% mutate(month = to_month_mixed(date)) %>%
+  filter(!is.na(month), month(month) %in% 1:5)
+wl   <- wl   %>% mutate(month = to_month_mixed(date)) %>%
+  filter(!is.na(month), month(month) %in% 1:5)
 
-groom_pairs <- groom %>%
-  filter(action=="Gr") %>%
-  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3) %>%
-  expand_pairs() %>%
-  filter(is_male_id(actor) & is_male_id(recipient)) %>%
-  transmute(month, id1 = pmin(actor,recipient), id2 = pmax(actor,recipient))
 
-dyad_month <- groom_pairs %>%
-  group_by(id1, id2, month) %>%
-  summarise(gr_events = n(), present = as.integer(gr_events>0), .groups="drop") %>%
-  mutate(dyad = paste(id1, id2, sep="_"))
+# Monthly SSB
+mounts <- aggr %>% filter(action == "M") %>%
+  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
 
-write_csv(dyad_month, "groom_dyad_monthly_presence.csv")
+mount_pairs <- expand_pairs(mounts) %>%
+  mutate(is_ssb = is_male_id(actor) & is_male_id(recipient))
 
-available_months <- sort(unique(dyad_month$month))
+mount_long_ssb <- bind_rows(
+  mount_pairs %>% transmute(month, id = actor,     is_ssb),
+  mount_pairs %>% transmute(month, id = recipient, is_ssb)
+) %>% filter(is_male_id(id))
 
-dyad_t  <- dyad_month %>%
-  mutate(month_t1 = month %m+% months(1)) %>%
-  filter(month_t1 %in% available_months)
+monthly_ssb <- mount_long_ssb %>%
+  group_by(id, month) %>%
+  summarise(ssb_count = sum(is_ssb), .groups = "drop")
 
-dyad_t1 <- dyad_month %>%
-  transmute(dyad, month_t1 = month, present_t1 = present)
+write.csv(monthly_ssb, "monthly_ssb_count_only.csv", row.names = FALSE)
 
-persist_base <- dyad_t %>%
-  filter(present == 1) %>%
-  left_join(dyad_t1, by=c("dyad","month_t1")) %>%
-  mutate(persist = ifelse(is.na(present_t1), 0L, present_t1))
 
-tm_1 <- monthly_total %>% select(id, month, total_mounts) %>% rename(id1=id, total_mounts_1=total_mounts)
-tm_2 <- monthly_total %>% select(id, month, total_mounts) %>% rename(id2=id, total_mounts_2=total_mounts)
+# Monthly DSB
+mount_long_dsb <- mount_pairs %>%
+  mutate(is_dsb = is_male_id(actor) & is_female_id(recipient)) %>%
+  transmute(month, id = actor, is_dsb) %>%
+  filter(is_male_id(id))
 
-persist_dat <- persist_base %>%
-  left_join(tm_1, by=c("id1","month")) %>%
-  left_join(tm_2, by=c("id2","month")) %>%
-  left_join(control %>% select(id, age, observability) %>% rename(id1=id, age1=age, obs1=observability), by="id1") %>%
-  left_join(control %>% select(id, age, observability) %>% rename(id2=id, age2=age, obs2=observability), by="id2") %>%
+monthly_dsb <- mount_long_dsb %>%
+  group_by(id, month) %>%
+  summarise(dsb_count = sum(is_dsb), .groups = "drop")
+
+write.csv(monthly_dsb, "monthly_dsb_count_only.csv", row.names = FALSE)
+
+
+# Monthly Rank
+wl_core <- wl %>%
+  filter(action %in% c("Ag","Su")) %>%
+  select(month, action, actor1, actor2, actor3, recipient1, recipient2, recipient3)
+
+pairs_wl <- expand_pairs(wl_core) %>%
   mutate(
-    total_mounts_1   = coalesce(as.integer(total_mounts_1), 0L),
-    total_mounts_2   = coalesce(as.integer(total_mounts_2), 0L),
-    total_mounts_sum = total_mounts_1 + total_mounts_2,
-    age_mean         = rowMeans(cbind(age1, age2), na.rm=TRUE),
-    observability_m  = rowMeans(cbind(obs1, obs2), na.rm=TRUE),
-    age_z            = as.numeric(scale(age_mean)),
-    observability_z  = as.numeric(scale(observability_m))
+    winner = ifelse(action == "Ag", actor, recipient),
+    loser  = ifelse(action == "Ag", recipient, actor)
+  ) %>%
+  filter(is_male_id(winner) & is_male_id(loser)) %>%
+  select(month, winner, loser)
+
+compute_ds_month <- function(df_month) {
+  if (nrow(df_month) == 0) return(data.frame(id = character(0), DS = numeric(0)))
+  ids <- sort(unique(c(df_month$winner, df_month$loser)))
+  n <- length(ids)
+  if (n < 2) return(data.frame(id = ids, DS = 0))
+  W <- matrix(0, n, n, dimnames = list(ids, ids))
+  for (k in seq_len(nrow(df_month))) {
+    W[df_month$winner[k], df_month$loser[k]] <- W[df_month$winner[k], df_month$loser[k]] + 1
+  }
+  P <- matrix(NA_real_, n, n, dimnames = list(ids, ids))
+  for (i in ids) for (j in ids) {
+    if (i == j) { P[i,j] <- NA_real_; next }
+    denom <- W[i,j] + W[j,i]
+    P[i,j] <- if (denom > 0) W[i,j] / denom else NA_real_
+  }
+  w  <- rowSums(P, na.rm = TRUE)
+  l  <- colSums(P, na.rm = TRUE)
+  w2 <- setNames(numeric(n), ids)
+  l2 <- setNames(numeric(n), ids)
+  for (i in ids) { w2[i] <- sum(w * P[i, ], na.rm = TRUE); l2[i] <- sum(l * P[, i], na.rm = TRUE) }
+  DS <- w + w2 - l - l2
+  data.frame(id = ids, DS = as.numeric(DS), stringsAsFactors = FALSE)
+}
+
+monthly_ds <- pairs_wl %>% group_by(month) %>% group_modify(~ compute_ds_month(.x)) %>% ungroup()
+monthly_rank <- monthly_ds %>%
+  group_by(month) %>% arrange(desc(DS), .by_group = TRUE) %>% mutate(rank = dense_rank(desc(DS))) %>% ungroup()
+
+write.csv(monthly_rank, "monthly_rank.csv", row.names = FALSE)
+
+
+
+## Rank stability and SSB
+
+monthly_ssb  <- read.csv("monthly_ssb_count_only.csv", stringsAsFactors = FALSE)
+monthly_rank <- read.csv("monthly_rank.csv",               stringsAsFactors = FALSE)
+control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+
+monthly_ssb$id   <- as.character(monthly_ssb$id)
+monthly_rank$id  <- as.character(monthly_rank$id)
+control$id       <- as.character(control$id)
+if (!inherits(monthly_ssb$month,  "Date")) monthly_ssb$month  <- as.Date(monthly_ssb$month)
+if (!inherits(monthly_rank$month, "Date")) monthly_rank$month <- as.Date(monthly_rank$month)
+
+stab_monthly_ssb <- monthly_rank %>%
+  left_join(monthly_ssb %>% select(id, month, ssb_count), by = c("id","month")) %>%
+  mutate(ssb_count = dplyr::coalesce(as.integer(ssb_count), 0L)) %>%
+  arrange(id, month)
+
+stab_var_ssb <- stab_monthly_ssb %>%
+  group_by(id) %>%
+  summarise(
+    months_obs     = sum(!is.na(rank)),
+    rank_var       = var(rank, na.rm = TRUE),
+    ssb_count_mean = mean(ssb_count, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(control %>% select(id, age, observability), by = "id") %>%
+  filter(months_obs >= 2) %>%
+  mutate(
+    age_z           = as.numeric(scale(age)),
+    observability_z = as.numeric(scale(observability))
   )
 
-write_csv(persist_dat, "dat_bond_persistence_total_mounts.csv")
+write.csv(stab_var_ssb, "rank_stability_var_ssb_count.csv", row.names = FALSE)
 
-m_persist_total <- glmmTMB(
-  persist ~ total_mounts_sum + age_z + observability_z + (1|dyad),
-  data   = persist_dat %>% filter(!is.na(persist), !is.na(total_mounts_sum), !is.na(age_z), !is.na(observability_z)),
-  family = binomial(link="logit")
+m_rank_var_ssb_count <- lm(
+  log1p(rank_var) ~ ssb_count_mean + age_z + observability_z,
+  data = stab_var_ssb
 )
-summary(m_persist_total)
+summary(m_rank_var_ssb_count)
+
+
+
+## Rank stability and DSB
+
+monthly_dsb  <- read.csv("monthly_dsb_count_only.csv", stringsAsFactors = FALSE)
+monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
+control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+
+monthly_dsb$id   <- as.character(monthly_dsb$id)
+monthly_rank$id  <- as.character(monthly_rank$id)
+control$id       <- as.character(control$id)
+if (!inherits(monthly_dsb$month,  "Date")) monthly_dsb$month  <- as.Date(monthly_dsb$month)
+if (!inherits(monthly_rank$month, "Date")) monthly_rank$month <- as.Date(monthly_rank$month)
+
+stab_monthly_dsb <- monthly_rank %>%
+  left_join(monthly_dsb %>% select(id, month, dsb_count), by = c("id","month")) %>%
+  mutate(dsb_count = dplyr::coalesce(as.integer(dsb_count), 0L)) %>%
+  arrange(id, month)
+
+stab_var_dsb <- stab_monthly_dsb %>%
+  group_by(id) %>%
+  summarise(
+    months_obs    = sum(!is.na(rank)),
+    rank_var      = var(rank, na.rm = TRUE),
+    dsb_count_mean= mean(dsb_count, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  left_join(control %>% select(id, age, observability), by = "id") %>%
+  filter(months_obs >= 2) %>%
+  mutate(
+    age_z           = as.numeric(scale(age)),
+    observability_z = as.numeric(scale(observability))
+  )
+
+write.csv(stab_var_dsb, "rank_stability_var_dsb_count.csv", row.names = FALSE)
+
+m_rank_var_dsb_count <- lm(
+  log1p(rank_var) ~ dsb_count_mean + age_z + observability_z,
+  data = stab_var_dsb
+)
+summary(m_rank_var_dsb_count)
+
+
+
+
+
+### Comparisons between rank gain, SSB and DSB ###
+
+## Rank gain and SSB
+
+monthly_ssb  <- read.csv("monthly_ssb_count_only.csv", stringsAsFactors = FALSE)
+monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
+control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+
+control <- control %>% mutate(id = as.character(id))
+dat_rank_gain <- monthly_ssb %>%
+  inner_join(monthly_rank, by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
+  arrange(id, month) %>%
+  group_by(id) %>%
+  mutate(rank_lag = dplyr::lag(rank),
+         gain     = -(rank - rank_lag)) %>%
+  ungroup() %>%
+  mutate(rank_lag_z      = as.numeric(scale(rank_lag)),
+         age_z           = as.numeric(scale(age)),
+         observability_z = as.numeric(scale(observability)))
+write.csv(dat_rank_gain, "dat_rank_gain_ssb_count_only.csv", row.names = FALSE)
+
+m_rank_gain_count <- lmer(
+  gain ~ ssb_count + rank_lag_z + age_z + observability_z + (1 | id),
+  data = dat_rank_gain %>%
+    filter(!is.na(gain), !is.na(ssb_count), !is.na(rank_lag_z), !is.na(age_z), !is.na(observability_z))
+)
+summary(m_rank_gain_count)
+
+
+
+## Rank gain and DSB
+
+monthly_dsb  <- read.csv("monthly_dsb_count_only.csv", stringsAsFactors = FALSE)
+monthly_rank <- read.csv("monthly_rank.csv",            stringsAsFactors = FALSE)
+control      <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+
+control <- control %>% mutate(id = as.character(id))
+dat_rank_gain <- monthly_dsb %>%
+  inner_join(monthly_rank, by = c("id","month")) %>%
+  left_join(control, by = "id") %>%
+  arrange(id, month) %>%
+  group_by(id) %>%
+  mutate(rank_lag = dplyr::lag(rank),
+         gain     = -(rank - rank_lag)) %>%
+  ungroup() %>%
+  mutate(rank_lag_z      = as.numeric(scale(rank_lag)),
+         age_z           = as.numeric(scale(age)),
+         observability_z = as.numeric(scale(observability)))
+write.csv(dat_rank_gain, "dat_rank_gain_dsb_count_only.csv", row.names = FALSE)
+
+m_rank_gain_count_dsb <- lmer(
+  gain ~ dsb_count + rank_lag_z + age_z + observability_z + (1 | id),
+  data = dat_rank_gain %>%
+    filter(!is.na(gain), !is.na(dsb_count), !is.na(rank_lag_z), !is.na(age_z), !is.na(observability_z))
+)
+summary(m_rank_gain_count_dsb)
 
 
 
@@ -3726,6 +3273,7 @@ print(list(
   p_value = k_res$p.value,
   percent_agreement = round(PA, 2)
 ))
+
 
 
 
