@@ -1904,6 +1904,81 @@ p_2_dsb
 
 ### Comparing male affiliative partner diversity, SSB and DSB ### 
 
+## Data wrangling
+
+control <- read.csv("control_variables_23_24_25.csv", stringsAsFactors = FALSE)
+aggr    <- read.csv("raw_aggression_mount_23_24_25.csv", stringsAsFactors = FALSE)  
+
+is_disallowed <- function(x) {
+  bad <- c("FUN","MUN","SAMUN","JVUN","JVMUN","INFANT")
+  !is.na(x) & (x %in% bad | grepl("\\(F\\)", x))
+}
+is_male_id   <- function(x) !is.na(x) & !is_disallowed(x) & grepl("^[A-Za-z0-9]+$", x)
+is_female_id <- function(x) !is.na(x) & (x == "FUN" | grepl("\\(F\\)$", x))
+
+to_month_mixed <- function(v) {
+  mdy_ <- suppressWarnings(mdy(v)); dmy_ <- suppressWarnings(dmy(v))
+  out <- as.Date(NA)[seq_along(v)]
+  for (i in seq_along(v)) {
+    m_ok <- !is.na(mdy_[i]); d_ok <- !is.na(dmy_[i])
+    m_in <- m_ok && month(mdy_[i]) %in% 1:5
+    d_in <- d_ok && month(dmy_[i]) %in% 1:5
+    out[i] <- if (m_ok && !d_ok) mdy_[i]
+    else if (d_ok && !m_ok) dmy_[i]
+    else if (m_in && !d_in) mdy_[i]
+    else if (d_in && !m_in) dmy_[i]
+    else if (m_in && d_in)  mdy_[i]
+    else if (m_ok)          mdy_[i]
+    else if (d_ok)          dmy_[i]
+    else                    as.Date(NA)
+  }
+  floor_date(out, "month")
+}
+
+expand_pairs <- function(df) {
+  df %>%
+    mutate(row_id = dplyr::row_number()) %>%
+    pivot_longer(c(actor1, actor2, actor3), names_to = "actor_slot", values_to = "actor") %>%
+    pivot_longer(c(recipient1, recipient2, recipient3), names_to = "recip_slot", values_to = "recipient") %>%
+    filter(!is.na(actor), !is.na(recipient), actor != recipient)
+}
+
+aggr <- aggr %>% mutate(month = to_month_mixed(date)) %>%
+  filter(!is.na(month), month(month) %in% 1:5)
+
+# Monthly SSB
+mounts <- aggr %>% filter(action == "M") %>%
+  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
+
+mount_pairs <- expand_pairs(mounts) %>%
+  mutate(is_ssb = is_male_id(actor) & is_male_id(recipient))
+
+mount_long_ssb <- bind_rows(
+  mount_pairs %>% transmute(month, id = actor,     is_ssb),
+  mount_pairs %>% transmute(month, id = recipient, is_ssb)
+) %>% filter(is_male_id(id))
+
+monthly_ssb <- mount_long_ssb %>%
+  group_by(id, month) %>%
+  summarise(ssb_count = sum(is_ssb), .groups = "drop")
+
+write.csv(monthly_ssb, "monthly_ssb_count_only.csv", row.names = FALSE)
+
+
+# Monthly DSB
+mount_long_dsb <- mount_pairs %>%
+  mutate(is_dsb = is_male_id(actor) & is_female_id(recipient)) %>%
+  transmute(month, id = actor, is_dsb) %>%
+  filter(is_male_id(id))
+
+monthly_dsb <- mount_long_dsb %>%
+  group_by(id, month) %>%
+  summarise(dsb_count = sum(is_dsb), .groups = "drop")
+
+write.csv(monthly_dsb, "monthly_dsb_count_only.csv", row.names = FALSE)
+
+
+
 ## Male affiliative partner diversity and SSB
 
 monthly_ssb <- read_csv("monthly_ssb_count_only.csv", show_col_types = FALSE)
@@ -2045,10 +2120,17 @@ pred1 <- pred_curve(
 )
 
 p1 <- ggplot(pred1, aes(x = ssb_count, y = fit)) +
-  geom_line(linewidth = 1.1, colour = col_ssb) +
-  labs(x = "SSB count",
-       y = "Expected male grooming partners",
-       title = "Male grooming partners ~ SSB count (age/obs = 0; exposure = median)") +
+  geom_ribbon(aes(ymin = lwr, ymax = upr),
+              fill  = col_ssb,
+              alpha = 0.3) +
+  
+  geom_line(linewidth = 1.1, colour = "black") +
+  
+  labs(
+    x = "SSB count",
+    y = "Expected male grooming partners",
+    title = "Male grooming partners ~ SSB count (age/obs = 0; exposure = median)"
+  ) +
   theme_classic()
 
 p1
@@ -2196,10 +2278,17 @@ pred2 <- pred_curve(
 )
 
 p2 <- ggplot(pred2, aes(x = dsb_count, y = fit)) +
-  geom_line(linewidth = 1.1, colour = col_dsb) +
-  labs(x = "DSB count",
-       y = "Expected male grooming partners",
-       title = "Male grooming partners ~ DSB count (age/obs = 0; exposure = median)") +
+  geom_ribbon(aes(ymin = lwr, ymax = upr),
+              fill  = col_dsb,
+              alpha = 0.3) +
+  
+  geom_line(linewidth = 1.1, colour = "black") +
+  
+  labs(
+    x = "DSB count",
+    y = "Expected male grooming partners",
+    title = "Male grooming partners ~ DSB count (age/obs = 0; exposure = median)"
+  ) +
   theme_classic()
 
 p2
@@ -2350,10 +2439,17 @@ pred3 <- pred_curve(
 )
 
 p3 <- ggplot(pred3, aes(x = ssb_count, y = fit)) +
-  geom_line(linewidth = 1.1, colour = col_ssb) +
-  labs(x = "SSB count",
-       y = "Expected cross-sex grooming interactions",
-       title = "Cross-sex grooming ~ SSB count (population-level; age/obs = 0; exposure = median)") +
+  geom_ribbon(aes(ymin = lwr, ymax = upr),
+              fill  = col_ssb,
+              alpha = 0.3) +
+  
+  geom_line(linewidth = 1.1, colour = "black") +
+  
+  labs(
+    x = "SSB count",
+    y = "Expected cross-sex grooming interactions",
+    title = "Cross-sex grooming ~ SSB count (population-level; age/obs = 0; exposure = median)"
+  ) +
   theme_classic()
 
 p3
@@ -2496,10 +2592,17 @@ pred4 <- pred_curve(
 )
 
 p4 <- ggplot(pred4, aes(x = dsb_count, y = fit)) +
-  geom_line(linewidth = 1.1, colour = col_dsb) +
-  labs(x = "DSB count",
-       y = "Expected cross-sex grooming interactions",
-       title = "Cross-sex grooming ~ DSB count (population-level; age/obs = 0; exposure = median)") +
+  geom_ribbon(aes(ymin = lwr, ymax = upr),
+              fill  = col_dsb,
+              alpha = 0.3) +
+  
+  geom_line(linewidth = 1.1, colour = "black") +
+  
+  labs(
+    x = "DSB count",
+    y = "Expected cross-sex grooming interactions",
+    title = "Cross-sex grooming ~ DSB count (population-level; age/obs = 0; exposure = median)"
+  ) +
   theme_classic()
 
 p4
@@ -3020,38 +3123,6 @@ aggr <- aggr %>% mutate(month = to_month_mixed(date)) %>%
   filter(!is.na(month), month(month) %in% 1:5)
 wl   <- wl   %>% mutate(month = to_month_mixed(date)) %>%
   filter(!is.na(month), month(month) %in% 1:5)
-
-
-# Monthly SSB
-mounts <- aggr %>% filter(action == "M") %>%
-  select(month, actor1, actor2, actor3, recipient1, recipient2, recipient3)
-
-mount_pairs <- expand_pairs(mounts) %>%
-  mutate(is_ssb = is_male_id(actor) & is_male_id(recipient))
-
-mount_long_ssb <- bind_rows(
-  mount_pairs %>% transmute(month, id = actor,     is_ssb),
-  mount_pairs %>% transmute(month, id = recipient, is_ssb)
-) %>% filter(is_male_id(id))
-
-monthly_ssb <- mount_long_ssb %>%
-  group_by(id, month) %>%
-  summarise(ssb_count = sum(is_ssb), .groups = "drop")
-
-write.csv(monthly_ssb, "monthly_ssb_count_only.csv", row.names = FALSE)
-
-
-# Monthly DSB
-mount_long_dsb <- mount_pairs %>%
-  mutate(is_dsb = is_male_id(actor) & is_female_id(recipient)) %>%
-  transmute(month, id = actor, is_dsb) %>%
-  filter(is_male_id(id))
-
-monthly_dsb <- mount_long_dsb %>%
-  group_by(id, month) %>%
-  summarise(dsb_count = sum(is_dsb), .groups = "drop")
-
-write.csv(monthly_dsb, "monthly_dsb_count_only.csv", row.names = FALSE)
 
 
 # Monthly Rank
